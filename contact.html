@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Concierge & Salon Appointments | Time & Gold</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+ <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- Shared Reusable SVG Symbol for Precision Emblem -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sharedLogoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F8E5A7" />
+        <stop offset="50%" stop-color="#D4AF37" />
+        <stop offset="100%" stop-color="#947514" />
+      </linearGradient>
+      <g id="brandHorologyEmblem">
+        <circle cx="50" cy="50" r="46" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" />
+        <circle cx="50" cy="50" r="41" stroke="url(#sharedLogoGoldGrad)" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+        <circle cx="50" cy="12" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="88" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="50" cy="88" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="12" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <line x1="50" y1="50" x2="31" y2="29" stroke="url(#sharedLogoGoldGrad)" stroke-width="3" stroke-linecap="round" />
+        <line x1="50" y1="50" x2="71" y2="33" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="50" cy="50" r="3.5" fill="#0a0a0c" stroke="url(#sharedLogoGoldGrad)" stroke-width="2" />
+        <path d="M42 66 H58 M50 66 V78" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- Main Luxury Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- Header Brand Logo with Image and Vector Fallback -->
+      <a href="index.html#home" class="brand-logo" aria-label="Time & Gold Home">
+        <div class="brand-logo-frame">
+          <div class="brand-dial-ring"></div>
+          <img 
+            class="brand-logo-img" 
+            src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+            alt="Time & Gold Emblem"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+            <use href="#brandHorologyEmblem" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Time &amp; Gold</span>
+          <span class="brand-sub">Short and Stylish</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <ul class="nav-menu" id="navMenu">
+          <li class="nav-item has-dropdown" id="homeNavItem">
+            <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-chevron"></i>
+            </a>
+
+            <!-- Luxury Home Sub-links Dropdown Menu -->
+            <ul class="dropdown-vault-menu" id="homeDropdownMenu">
+              <li class="dropdown-vault-item">
+                <a href="/index.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-1</span>
+                    
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-vault-item">
+                <a href="/home2.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-2</span>
+                    
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="/aboutus.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="/brands.html" class="nav-link">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gifting.html" class="nav-link">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+
+        <!-- Circular Shape RTL Button -->
+        <button class="rtl-circle-btn" id="rtlToggleBtn" title="Toggle Reading Direction (RTL/LTR)">
+          RTL
+        </button>
+
+        <!-- Book Item Button -->
+        <button class="btn-book-header" id="openBookModalBtn" title="Book a Timepiece or Solitaire Viewing">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Item</span>
+        </button>
+
+        <!-- Bag / Cart -->
+        <button class="action-btn" id="openCartBtn" title="View Luxury Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count-badge" id="cartCountBadge">2</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="contact-hero">
+    <div class="container contact-hero-content">
+      <div class="contact-hero-badge">
+        <i class="fa-solid fa-gem"></i>
+        <span>White-Glove Private Concierge</span>
+      </div>
+      <h1 class="contact-hero-title">
+        Schedule a Private Consultation &amp; <br />
+        <span class="gold-gradient-text">Boutique Viewing</span>
+      </h1>
+      <p class="contact-hero-desc">
+        Whether reserving numbered Swiss calibres, commissioning bespoke solitaires, or seeking accredited master restoration, our senior horological advisors await your arrival.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section with Rotating Glow Borders -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Left Column: Interactive Concierge Form -->
+      <div class="border-glow-wrapper">
+        <div class="border-glow-inner concierge-form-card">
+          <div class="form-heading-wrap">
+            <span class="section-subtitle">VIP Reservation Desk</span>
+            <h3>Bespoke Appointment Request</h3>
+            <p>Complete the private docket below to arrange personal viewing suites, certified gemmology viewings, or champagne salon receptions.</p>
+          </div>
+
+          <form id="contactConciergeForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="conciergeName">Client Full Name *</label>
+                <input type="text" id="conciergeName" class="form-input" placeholder="e.g. Lord Sterling" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="conciergePhone">Direct Telephone / Mobile *</label>
+                <input type="tel" id="conciergePhone" class="form-input" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="conciergeEmail">Confidential Email *</label>
+                <input type="email" id="conciergeEmail" class="form-input" placeholder="client@sovereign.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="conciergeService">Consultation Nature</label>
+                <select id="conciergeService" class="form-select">
+                  <option value="Grand Complication Acquisition">Grand Complication Acquisition</option>
+                  <option value="Certified Solitaire & Bespoke Jewellery">Certified Solitaire &amp; Bespoke Jewellery</option>
+                  <option value="Geneva Calibre Restoration & Service">Geneva Calibre Restoration &amp; Service</option>
+                  <option value="VIP Collector Vault Preview">VIP Collector Vault Preview</option>
+                  <option value="Corporate & Royal Gifting Docket">Corporate &amp; Royal Gifting Docket</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="conciergeSalon">Preferred Flagship Maison</label>
+                <select id="conciergeSalon" class="form-select">
+                  <option value="Mumbai — Palladium Mall Flagship">Mumbai — Palladium Mall Flagship</option>
+                  <option value="Delhi NCR — DLF Emporio Luxury Pavilion">Delhi NCR — DLF Emporio Luxury Pavilion</option>
+                  <option value="Bengaluru — UB City Mall Collection">Bengaluru — UB City Mall Collection</option>
+                  <option value="Hyderabad — Jubilee Hills Private Estate">Hyderabad — Jubilee Hills Private Estate</option>
+                  <option value="Virtual High-Security Video Salon">Virtual High-Security Video Salon</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="conciergeDate">Target Appointment Date</label>
+                <input type="date" id="conciergeDate" class="form-input" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="conciergeNotes">Specific References or Dietary &amp; Escort Requirements</label>
+              <textarea id="conciergeNotes" class="form-textarea" placeholder="Detail any specific tourbillon serial numbers, diamond carat ranges, or private valet/security coordination requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-stamp"></i>
+              <span>Submit Confidential Request</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Column: Direct Concierge Channels with Animated Conic Borders -->
+      <div class="channels-stack">
+
+        <!-- Channel 1 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner channel-box">
+            <div class="channel-icon-wrap">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="channel-info">
+              <h4>Direct VIP Concierge Line</h4>
+              <p>Priority access for collectors, private vault allocations, and emergency timepiece courier inquiries.</p>
+              <a href="tel:+912224900012" class="channel-link">
+                <span>+91 (022) 2490 0012</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 2 -->
+        <div class="border-glow-jewel">
+          <div class="border-glow-inner channel-box">
+            <div class="channel-icon-wrap" style="color: #4e5d61; border-color: #b9f2ff;">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="channel-info">
+              <h4>Encrypted WhatsApp Desk</h4>
+              <p>Instant high-definition dial macro photographs, live movement videos, and GIA certificate dossiers.</p>
+              <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="channel-link">
+                <span>Initiate Private Chat</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 3 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner channel-box">
+            <div class="channel-icon-wrap">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <div class="channel-info">
+              <h4>Curatorial Correspondence</h4>
+              <p>Written appraisals, inheritance valuations, and bespoke horological commissions.</p>
+              <a href="mailto:concierge@timeandgold.in" class="channel-link">
+                <span>concierge@timeandgold.in</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 4 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner channel-box">
+            <div class="channel-icon-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="channel-info">
+              <h4>Insured In-Residence Presentation</h4>
+              <p>Armored transit delivery and private viewing at your personal residence or office with armed escort.</p>
+              <a href="#openBookModalBtn" class="channel-link" onclick="triggerBookingModal('In-Residence Private Viewing Consultation'); return false;">
+                <span>Book In-Home Presentation</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Flagship Salon Inspector -->
+  <section class="locator-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Pan-India Network</span>
+        <h2 class="section-title">Flagship Showroom Directory</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Select a premier location to view dedicated atelier capabilities, private lounges, and master horologists on-site.
+        </p>
+      </div>
+
+      <!-- Salon Location Tabs -->
+      <div class="salon-tabs">
+        <button class="salon-tab-btn active" data-city="mumbai">Mumbai — Lower Parel</button>
+        <button class="salon-tab-btn" data-city="delhi">Delhi NCR — Vasant Kunj</button>
+        <button class="salon-tab-btn" data-city="bengaluru">Bengaluru — UB City</button>
+        <button class="salon-tab-btn" data-city="hyderabad">Hyderabad — Jubilee Hills</button>
+      </div>
+
+      <!-- Salon Display Card with Animated Border -->
+      <div class="border-glow-wrapper" style="border-radius: var(--radius-lg);">
+        <div class="border-glow-inner salon-display-card" id="salonDisplayCard">
+          <div class="salon-media-frame">
+            <img 
+              id="salonImage" 
+              src="https://tse4.mm.bing.net/th/id/OIP.eL1VLdqdwm4EKE0-TWNfhgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              alt="Mumbai Flagship Salon" 
+            />
+          </div>
+
+          <div class="salon-content-frame">
+            <div>
+              <div class="salon-header-badge" id="salonBadge">
+                <i class="fa-solid fa-gem"></i> Flagship Maison &amp; VIP Vault
+              </div>
+              <h3 class="salon-city-name" id="salonTitle">Mumbai — High Street Phoenix</h3>
+              
+              <ul class="salon-details-list">
+                <li class="salon-detail-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span id="salonAddress">Level 2, Palladium Mall, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013</span>
+                </li>
+                <li class="salon-detail-item">
+                  <i class="fa-regular fa-clock"></i>
+                  <span id="salonHours">Monday – Sunday: 11:00 AM – 9:30 PM (Concierge on call 24/7)</span>
+                </li>
+                <li class="salon-detail-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <span id="salonPhone">+91 (022) 2490 0012 / +91 98200 44101</span>
+                </li>
+                <li class="salon-detail-item">
+                  <i class="fa-solid fa-car"></i>
+                  <span id="salonAmenities">Dedicated Luxury Valet, Private Champagne Lounge, Ultrasonic Watch Spa</span>
+                </li>
+              </ul>
+            </div>
+
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="https://maps.google.com/?q=Palladium+Mall+Lower+Parel+Mumbai" target="_blank" rel="noopener" id="salonMapLink" class="btn-gold" style="padding: 10px 22px; font-size: 0.76rem;">
+                <i class="fa-solid fa-location-arrow"></i>
+                <span>Get Directions</span>
+              </a>
+              <button class="btn-outline quick-book-trigger" id="salonReserveBtn" data-item="Mumbai Palladium VIP Salon Consultation" style="padding: 10px 22px; font-size: 0.76rem;">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Reserve Salon</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Frequently Asked Inquiries Accordion -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Private Client Protocol</span>
+        <h2 class="section-title">Frequently Clarified Questions</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Standards regarding security, authentications, private viewings, and global delivery guarantees.
+        </p>
+      </div>
+
+      <div class="faq-container">
+
+        <div class="faq-item active">
+          <button class="faq-trigger">
+            <span>Are all appointments conducted in complete privacy?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-body">
+            Yes. Every flagship salon houses a dedicated soundproof VIP salon room with private keycard access, independent climate controls, and dedicated refreshments. You will meet one-on-one with a senior horological specialist or master gemmologist with no retail floor overlap.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Can I request a viewing of specific numbered timepieces?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-body">
+            Absolutely. If the particular reference, grand complication, or diamond solitaire you wish to inspect is housed in our central vault or another city atelier, we arrange insured overnight transit to your nearest boutique ahead of your appointment.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>What authentication credentials accompany each acquisition?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-body">
+            Every timepiece is delivered with its official international manufacturer warranty card, chronometer certification (COSC or Geneva Seal where applicable), and unique serial registry. All loose diamonds above 1.00 carat include certified GIA or IGI dossiers.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>How does the In-Residence White-Glove Presentation work?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-body">
+            For designated collectors and high jewellery commissions, two senior advisors and an insured security detail will bring a curated collection directly to your home, office, or private aircraft lounge anywhere in India, accompanied by mobile diagnostic equipment.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Assurance Strip -->
+  <section class="trust-assurance-strip">
+    <div class="container assurance-grid">
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="assurance-text">
+          <h5>100% Genuine</h5>
+          <p>Official Brand Authorization</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="assurance-text">
+          <h5>Insured Transit</h5>
+          <p>Complimentary Doorstep Delivery</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="assurance-text">
+          <h5>Authorized Service</h5>
+          <p>Geneva-Trained Watchmakers</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
+        <div class="assurance-text">
+          <h5>Secure Payment</h5>
+          <p>Encrypted Global Checkouts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Identical Brand Logo & Emblem as Header) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <div class="footer-about">
+          <a href="index.html#home" class="brand-logo" style="margin-bottom: 16px;" aria-label="Time & Gold Home">
+            <div class="brand-logo-frame">
+              <div class="brand-dial-ring"></div>
+              <img 
+                class="brand-logo-img" 
+                src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+                alt="Time & Gold Emblem"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+              <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+                <use href="#brandHorologyEmblem" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Time &amp; Gold</span>
+              <span class="brand-sub">Short and Stylish</span>
+            </div>
+          </a>
+
+          <p>
+            India's most trusted luxury watch destination. Official authorized retailers for over 40 iconic Swiss and global horological maisons and fine diamond jewellery creators.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#products" class="footer-link">Grand Complications</a></li>
+            <li><a href="index.html#products" class="footer-link">Men's Swiss Automatic</a></li>
+            <li><a href="index.html#products" class="footer-link">Women's Diamond Bezel</a></li>
+            <li><a href="index.html#jewellery-salon" class="footer-link">High Solitaire Jewellery</a></li>
+            <li><a href="index.html#about" class="footer-link">Calibre Architecture</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Maison Services</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Book Boutique Viewing</a></li>
+            <li><a href="index.html#about" class="footer-link">Horology Restoration</a></li>
+            <li><a href="contact.html" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="index.html#jewellery-salon" class="footer-link">Diamond Authentication</a></li>
+            <li><a href="contact.html" class="footer-link">Corporate Gifting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Gazette</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px; font-weight: 500;">
+            Receive encrypted announcements regarding limited dial allocations and salon previews.
+          </p>
+          <form class="newsletter-box" onsubmit="event.preventDefault(); alert('You have been enrolled into the Time & Gold VIP Gazette.');">
+            <input type="email" class="newsletter-input" placeholder="Your direct email" required />
+            <button type="submit" class="btn-gold" style="padding: 10px 18px;" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TIME &amp; GOLD. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link" style="font-size: 0.75rem;">Privacy Policy</a>
+          <a href="#" class="footer-link" style="font-size: 0.75rem;">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--text-primary);">Your Luxury Bag</h3>
+        <button id="closeCartBtn" style="font-size: 1.2rem; color: var(--text-muted);"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-drawer-items" id="cartDrawerItems">
+        <div class="cart-item-row" data-id="1">
+          <div class="cart-item-img">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tourbillon" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Monarch Celestial Tourbillon</h6>
+            <div class="cart-item-price">₹ 1,850,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="cart-item-row" data-id="2">
+          <div class="cart-item-img">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diamond Ring" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Aurelia Cushion Pavé Ring</h6>
+            <div class="cart-item-price">₹ 840,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Total Investment</span>
+          <span class="gold-gradient-text" id="cartTotalVal">₹ 2,690,000</span>
+        </div>
+        <button class="btn-gold" style="width: 100%; justify-content: center;" onclick="alert('Redirecting to 256-bit Encrypted Luxury Checkout.');">
+          <span>Proceed To VIP Checkout</span>
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive "Book Item" VIP Reservation Modal -->
+  <div class="book-modal-overlay" id="bookModalOverlay">
+    <div class="book-modal-dialog">
+      <button class="modal-close-btn" id="closeBookModalBtn" aria-label="Close Booking Window">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="gold-gradient-text" style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 800; letter-spacing: 2px;">
+          TIME &amp; GOLD
+        </div>
+        <div style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 4px; font-weight: 600;">
+          Reserve Private Viewing &amp; Item Allocation
+        </div>
+      </div>
+
+      <form id="bookingModalForm">
+        <div class="form-group">
+          <label class="form-label" for="bookItemSelect">Selected Masterpiece / Reference</label>
+          <input type="text" id="bookItemSelect" class="form-input" value="Private Concierge Consultation" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookSalon">Preferred Salon Location</label>
+          <select id="bookSalon" class="form-select">
+            <option value="Mumbai — Palladium Mall">Mumbai — Palladium Mall Flagship</option>
+            <option value="Delhi NCR — DLF Emporio">Delhi NCR — DLF Emporio</option>
+            <option value="Bengaluru — UB City Mall">Bengaluru — UB City Mall</option>
+            <option value="Hyderabad — Jubilee Hills">Hyderabad — Jubilee Hills Private Estate</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="bookDate">Viewing Date</label>
+            <input type="date" id="bookDate" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookTime">Preferred Time</label>
+            <input type="time" id="bookTime" class="form-input" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookGuestName">Full Name</label>
+          <input type="text" id="bookGuestName" class="form-input" placeholder="e.g. Lord Sterling" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookContact">Direct Telephone / Mobile</label>
+          <input type="tel" id="bookContact" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <span>Confirm Private Appointment</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT ENGINE -->
+  <script src="contact.js">
+    
+  </script>
+</body>
+</html>

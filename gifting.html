@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bespoke Luxury Gifting &amp; Heirlooms | Time &amp; Gold</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<link rel="stylesheet" href="gifting.css">
+</head>
+<body>
+
+  <!-- Shared Reusable SVG Symbol for Precision Emblem Fallback -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sharedLogoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fff2be" />
+        <stop offset="50%" stop-color="#f0c742" />
+        <stop offset="100%" stop-color="#b8860b" />
+      </linearGradient>
+      <g id="brandHorologyEmblem">
+        <circle cx="50" cy="50" r="46" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" />
+        <circle cx="50" cy="50" r="41" stroke="url(#sharedLogoGoldGrad)" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+        <circle cx="50" cy="12" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="88" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="50" cy="88" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="12" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <line x1="50" y1="50" x2="31" y2="29" stroke="url(#sharedLogoGoldGrad)" stroke-width="3" stroke-linecap="round" />
+        <line x1="50" y1="50" x2="71" y2="33" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="50" cy="50" r="3.5" fill="#0a0a0c" stroke="url(#sharedLogoGoldGrad)" stroke-width="2" />
+        <path d="M42 66 H58 M50 66 V78" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- Header Brand Logo with Image and Vector Fallback -->
+      <a href="index.html" class="brand-logo" aria-label="Time & Gold Home">
+        <div class="brand-logo-frame">
+          <div class="brand-dial-ring"></div>
+          <img 
+            class="brand-logo-img" 
+            src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+            alt="Time & Gold Emblem"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+            <use href="#brandHorologyEmblem" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Time &amp; Gold</span>
+          <span class="brand-sub">Short and Stylish</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu: Home, About, Products, Brands, Gifting (Active), Contact -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <ul class="nav-menu" id="navMenu">
+          <li class="nav-item has-dropdown" id="homeNavItem">
+            <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-chevron"></i>
+            </a>
+
+            <!-- Luxury Home Sub-links Dropdown Menu -->
+            <ul class="dropdown-vault-menu" id="homeDropdownMenu">
+              <li class="dropdown-vault-item">
+                <a href="/index.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-1</span>
+                    
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-vault-item">
+                <a href="/home2.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-2</span>
+                    
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="/aboutus.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="/brands.html" class="nav-link">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gifting.html" class="nav-link active">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+
+        <!-- Circular Shape RTL Button -->
+        <button class="rtl-circle-btn" id="rtlToggleBtn" title="Toggle Reading Direction (RTL/LTR)">
+          RTL
+        </button>
+
+        <!-- Book Item Button -->
+        <button class="btn-book-header" id="openBookModalBtn" title="Book a Timepiece or Solitaire Viewing">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Item</span>
+        </button>
+
+        <!-- Bag / Cart -->
+        <button class="action-btn" id="openCartBtn" title="View Luxury Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count-badge" id="cartCountBadge">2</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Gifting Hero Section -->
+  <section class="gifting-hero">
+    <div class="container gifting-hero-grid">
+      <div>
+        <div class="gifting-hero-badge">
+          <i class="fa-solid fa-gift"></i>
+          <span>The Sovereign Gifting Suite</span>
+        </div>
+        <h1 class="gifting-hero-title">
+          Trophies of Eternal Value <br />
+          <span class="gold-gradient-text">For Unforgettable Milestones</span>
+        </h1>
+        <p class="gifting-hero-desc">
+          Celebrate monumental achievements, royal weddings, and couple anniversaries with certified Swiss mechanical pairs, harmonized couple bands, and high solitaire heirlooms presented in bespoke monogrammed packaging.
+        </p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="#gifting-vault" class="btn-gold">
+            <span>Explore Anniversary Suite</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <button class="btn-outline quick-book-trigger" data-item="Bespoke Anniversary Gifting Consultation">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Concierge Consultation</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="gifting-stage-visual">
+        <div class="border-glow-wrapper gifting-hero-card">
+          <div class="border-glow-inner media-sheen">
+            <img 
+              class="img-cinematic-zoom"
+              src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" 
+              alt="Bespoke luxury gift presentation box" 
+            />
+            <div class="gifting-hero-card-tag">
+              <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 800; color: var(--text-primary);">
+                The Royal Imperial Box
+              </div>
+              <div style="font-size: 0.74rem; color: var(--gold-primary); font-weight: 700; margin-top: 4px;">
+                Handmade Velvet • Wax-Sealed Letter • Armoured Transit
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasions Section with Animated Borders -->
+  <section class="occasions-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Curated by Celebration</span>
+        <h2 class="section-title">Heirlooms for Every Occasion</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.7;">
+          Every milestone deserves a creation forged to withstand generations of time.
+        </p>
+      </div>
+
+      <div class="occasions-grid">
+        <!-- Occasion 1 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner occasion-tile">
+            <div class="occasion-icon-frame">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+            <h3 class="occasion-name">Wedding Anniversaries</h3>
+            <p class="occasion-desc">
+              Harmonized anniversary duo watches, matching eternity bands, and interlocking couple chains.
+            </p>
+          </div>
+        </div>
+
+        <!-- Occasion 2 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner occasion-tile">
+            <div class="occasion-icon-frame">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h3 class="occasion-name">Golden Jubilees</h3>
+            <p class="occasion-desc">
+              Solid 22K handcrafted gold couples' link chains and certified D-Flawless emerald and solitaire rivieras.
+            </p>
+          </div>
+        </div>
+
+        <!-- Occasion 3 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner occasion-tile">
+            <div class="occasion-icon-frame">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h3 class="occasion-name">Corporate Honors</h3>
+            <p class="occasion-desc">
+              Direct factory allocations of numbered mechanical chronometers for boardroom summits and legacy honors.
+            </p>
+          </div>
+        </div>
+
+        <!-- Occasion 4 -->
+        <div class="border-glow-wrapper">
+          <div class="border-glow-inner occasion-tile">
+            <div class="occasion-icon-frame">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="occasion-name">Life Milestones</h3>
+            <p class="occasion-desc">
+              Commemorative graduation timepieces, heirloom gold necklaces, and sovereign solitaire gifts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Gifting Vault Grid Featuring Wedding Anniversary Couple Suite -->
+  <section class="gifting-vault-section" id="gifting-vault">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Authenticated Anniversary Treasures</span>
+        <h2 class="section-title">The Wedding Anniversary Couple Vault</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.7;">
+          Featuring harmonized couple timepieces, matching anniversary eternity rings, solid gold couple chains, companion bracelets, and grand solitaire necklaces.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs (15 total gifts) -->
+      <div class="gifting-filter-cluster">
+        <button class="gifting-filter-btn active" data-filter="all"><i class="fa-solid fa-heart"></i> All Anniversary Gifts </button>
+        <button class="gifting-filter-btn" data-filter="couple-watches"><i class="fa-solid fa-clock"></i> Couple Watches </button>
+        <button class="gifting-filter-btn" data-filter="couple-rings"><i class="fa-solid fa-ring"></i> Couple Rings </button>
+        <button class="gifting-filter-btn" data-filter="couple-chains"><i class="fa-solid fa-link"></i> Couple Chains </button>
+        <button class="gifting-filter-btn" data-filter="couple-bracelets"><i class="fa-solid fa-circle-notch"></i> Couple Bracelets </button>
+        <button class="gifting-filter-btn" data-filter="necklaces"><i class="fa-solid fa-gem"></i> Necklaces </button>
+      </div>
+
+      <div class="vault-grid" id="giftingGrid">
+
+        <!-- ==================== 4 WEDDING ANNIVERSARY COUPLE WATCHES ==================== -->
+        <!-- Couple Watch 1 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-watches">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Anniversary Watch Duo</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse1.mm.bing.net/th/id/OIP.vVAQwpseA9Sdc-jZ_7sOcQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Sovereign Dual-Calibre Anniversary Duo" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Geneva Manufacture • Couple Watches</div>
+                <h3 class="product-name">Sovereign Dual-Calibre Anniversary Duo</h3>
+                <p class="product-specs-summary">His 41mm Tourbillon &amp; Hers 34mm Diamond Bezel in 18K Solid Rose Gold</p>
+                <div class="product-pricing">₹ 3,250,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="401" data-title="Sovereign Dual-Calibre Anniversary Duo" data-price="3250000" data-img="https://tse1.mm.bing.net/th/id/OIP.vVAQwpseA9Sdc-jZ_7sOcQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Sovereign Dual-Calibre Anniversary Duo (₹ 3,250,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Watch 2 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-watches">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Anniversary Chronometer Pair</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://th.bing.com/th/id/OIP.sOGcD0I-C5kbbPULzq0brgAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Royal Chronomètre Platinum Couple Pair" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Le Locle Atelier 1853 • Couple Watches</div>
+                <h3 class="product-name">Royal Chronomètre Platinum Pair</h3>
+                <p class="product-specs-summary">Matching Solid Platinum 950, Sunray Silver &amp; Tahiti Nacre Dials</p>
+                <div class="product-pricing">₹ 1,980,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="402" data-title="Royal Chronomètre Platinum Pair" data-price="1980000" data-img="https://th.bing.com/th/id/OIP.sOGcD0I-C5kbbPULzq0brgAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Royal Chronomètre Platinum Pair (₹ 1,980,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Watch 3 (EXTRA WATCH 1) -->
+        <div class="border-glow-wrapper product-card" data-category="couple-watches">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Guilloché Gold Duo</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.hamiltonwatch.com/media/wysiwyg/Confidential/SEO_Content/Wedding_mobile.jpg" 
+                alt="Grand Patrimony Automatic Couple Set" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Swiss Manufacture • Couple Watches</div>
+                <h3 class="product-name">Grand Patrimony Automatic Set</h3>
+                <p class="product-specs-summary">Matching 18K Yellow Gold 40mm &amp; 31mm with Hand-Guilloché Dials</p>
+                <div class="product-pricing">₹ 2,650,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="410" data-title="Grand Patrimony Automatic Set" data-price="2650000" data-img="https://www.hamiltonwatch.com/media/wysiwyg/Confidential/SEO_Content/Wedding_mobile.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Grand Patrimony Automatic Set (₹ 2,650,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Watch 4 (EXTRA WATCH 2) -->
+        <div class="border-glow-wrapper product-card" data-category="couple-watches">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">High-Tech Ceramic Duo</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://image.dhgate.com/webp/m/0x0s/f2-albu-g22-M01-BD-C5-rBVaE2L81uKAd5aKAAP_bb-4Tkg513.jpg/couple-watches-stainless-steel-quartz-ladies.jpg" 
+                alt="L'Étoile Diamond Ceramic Couple Pair" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Lengnau Atelier • Couple Watches</div>
+                <h3 class="product-name">L'Étoile Diamond Ceramic Pair</h3>
+                <p class="product-specs-summary">Scratchproof Monobloc Ceramic &amp; Rose Gold Accents with 80h Power Reserve</p>
+                <div class="product-pricing">₹ 1,480,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="411" data-title="L'Étoile Diamond Ceramic Pair" data-price="1480000" data-img="https://image.dhgate.com/webp/m/0x0s/f2-albu-g22-M01-BD-C5-rBVaE2L81uKAd5aKAAP_bb-4Tkg513.jpg/couple-watches-stainless-steel-quartz-ladies.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="L'Étoile Diamond Ceramic Pair (₹ 1,480,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 2 COUPLE RINGS ==================== -->
+        <!-- Couple Ring 1 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-rings">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Dual-Tone Eternity Bands</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.zilgi.com/cdn/shop/files/Dual_Tone_Sparkle_Diamond_925_Sterling_Silver_Couple_Band_for_Women_7.jpg?v=1773380948&width=3200" 
+                alt="Imperial Dual-Tone Couple Bands" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Fine Goldsmith Atelier • Couple Rings</div>
+                <h3 class="product-name">Imperial Dual-Tone Eternity Bands</h3>
+                <p class="product-specs-summary">Matching Platinum 950 &amp; 18K Yellow Gold with Channel Set Diamonds</p>
+                <div class="product-pricing">₹ 680,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="403" data-title="Imperial Dual-Tone Eternity Bands" data-price="680000" data-img="https://www.zilgi.com/cdn/shop/files/Dual_Tone_Sparkle_Diamond_925_Sterling_Silver_Couple_Band_for_Women_7.jpg?v=1773380948&width=3200" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Imperial Dual-Tone Eternity Bands (₹ 680,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Ring 2 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-rings">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Solitaire &amp; Beveled Band</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://img-new.cgtrader.com/items/4051725/1e843ec5df/large/solitaire-couple-band-rings-3d-model-1e843ec5df.jpg" 
+                alt="The Elysian Solitaire & Beveled Pair" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">GIA Certified • Couple Rings</div>
+                <h3 class="product-name">The Elysian Solitaire &amp; Beveled Pair</h3>
+                <p class="product-specs-summary">His Brushed Platinum Beveled Band &amp; Hers 2.80 CT Oval D-Flawless Solitaire</p>
+                <div class="product-pricing">₹ 1,450,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="404" data-title="The Elysian Solitaire & Beveled Pair" data-price="1450000" data-img="https://img-new.cgtrader.com/items/4051725/1e843ec5df/large/solitaire-couple-band-rings-3d-model-1e843ec5df.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Elysian Solitaire & Beveled Pair (₹ 1,450,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 4 COUPLE CHAINS ==================== -->
+        <!-- Couple Chain 1 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-chains">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">22K Solid Gold Pair</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.etsystatic.com/18244334/r/il/0b830f/5006045145/il_fullxfull.5006045145_cxd8.jpg" 
+                alt="Eternal Harmony 22K Solid Gold Chains" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Royal Goldsmiths • Couple Chains</div>
+                <h3 class="product-name">Eternal Harmony 22K Gold Chains</h3>
+                <p class="product-specs-summary">His 85g Hand-Interlocked Byzantine &amp; Hers 45g Diamond-Cut Rope Chain</p>
+                <div class="product-pricing">₹ 920,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="405" data-title="Eternal Harmony 22K Gold Chains" data-price="920000" data-img="https://i.etsystatic.com/18244334/r/il/0b830f/5006045145/il_fullxfull.5006045145_cxd8.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Eternal Harmony 22K Gold Chains (₹ 920,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Chain 2 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-chains">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Platinum 950 Duo</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://shop.chowtaiseng.com/cdn/shop/files/P1N300032CH-hui_bd5a7070-adbd-4881-8b18-ac5745cff9c8.jpg?v=1770020336&width=1445" 
+                alt="Platinum 950 Interlocking Couple Chains" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Vault Collection • Couple Chains</div>
+                <h3 class="product-name">Platinum 950 Couple Chain Duo</h3>
+                <p class="product-specs-summary">Matching Solid Platinum Beveled Curb &amp; Diamond-Faceted Venetian Links</p>
+                <div class="product-pricing">₹ 1,150,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="406" data-title="Platinum 950 Couple Chain Duo" data-price="1150000" data-img="https://shop.chowtaiseng.com/cdn/shop/files/P1N300032CH-hui_bd5a7070-adbd-4881-8b18-ac5745cff9c8.jpg?v=1770020336&width=1445" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Platinum 950 Couple Chain Duo (₹ 1,150,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Chain 3 (EXTRA CHAIN 1) -->
+        <div class="border-glow-wrapper product-card" data-category="couple-chains">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Italian 18K Figaro</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.etsystatic.com/18228585/r/il/126fdf/4698533697/il_1588xN.4698533697_7094.jpg" 
+                alt="Imperial Figaro & Rope Gold Pair" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Italian Atelier • Couple Chains</div>
+                <h3 class="product-name">Imperial Figaro &amp; Rope Gold Pair</h3>
+                <p class="product-specs-summary">18K Solid Yellow Gold Diamond-Cut 3+1 Figaro &amp; Silken Twisted Rope Chain</p>
+                <div class="product-pricing">₹ 780,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="414" data-title="Imperial Figaro & Rope Gold Pair" data-price="780000" data-img="https://i.etsystatic.com/18228585/r/il/126fdf/4698533697/il_1588xN.4698533697_7094.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Imperial Figaro & Rope Gold Pair (₹ 780,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Chain 4 (EXTRA CHAIN 2) -->
+        <div class="border-glow-wrapper product-card" data-category="couple-chains">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">18K Rose Gold Spiga</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://thelockettree.co.uk/cdn/shop/files/18ctRGSpiga-Heavy.jpg?v=1723211255&width=5000" 
+                alt="Sovereign Rose Gold Spiga Couple Chains" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Bespoke Goldsmith • Couple Chains</div>
+                <h3 class="product-name">Sovereign Rose Gold Spiga Chains</h3>
+                <p class="product-specs-summary">18K Rose Gold Braided Wheat Spiga Weave with Reinforced Vault Clasps</p>
+                <div class="product-pricing">₹ 850,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="415" data-title="Sovereign Rose Gold Spiga Chains" data-price="850000" data-img="https://thelockettree.co.uk/cdn/shop/files/18ctRGSpiga-Heavy.jpg?v=1723211255&width=5000" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Sovereign Rose Gold Spiga Chains (₹ 850,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 2 COUPLE BRACELETS ==================== -->
+        <!-- Couple Bracelet 1 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-bracelets">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Twin Hinged Bangles</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.asteriajewellerysa.com/wp-content/uploads/2024/04/IMG_9631.jpeg" 
+                alt="Milanese Magnetique 18K Gold Couple Bangles" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Italian Goldsmith Guild • Couple Bracelets</div>
+                <h3 class="product-name">Milanese Magnetique 18K Bangles</h3>
+                <p class="product-specs-summary">Twin Concealed Clasp Bangles with Pavé Diamond Bar &amp; Engraved Numerals</p>
+                <div class="product-pricing">₹ 1,280,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="407" data-title="Milanese Magnetique 18K Bangles" data-price="1280000" data-img="https://www.asteriajewellerysa.com/wp-content/uploads/2024/04/IMG_9631.jpeg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Milanese Magnetique 18K Bangles (₹ 1,280,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Couple Bracelet 2 -->
+        <div class="border-glow-wrapper product-card" data-category="couple-bracelets">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Rivière &amp; Matte Link</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://cloverbliss.com/cdn/shop/products/product-image-1445587806_640x640.jpg?v=1600482407" 
+                alt="Aurora Rivière & Matte Titanium Couple Pair" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Haute Joaillerie • Couple Bracelets</div>
+                <h3 class="product-name">Aurora Rivière &amp; Matte Titanium Pair</h3>
+                <p class="product-specs-summary">His Matte Black Diamond Link &amp; Hers 12.50 CTW Round Brilliant Line</p>
+                <div class="product-pricing">₹ 1,840,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="408" data-title="Aurora Rivière & Matte Titanium Pair" data-price="1840000" data-img="https://cloverbliss.com/cdn/shop/products/product-image-1445587806_640x640.jpg?v=1600482407" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Aurora Rivière & Matte Titanium Pair (₹ 1,840,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 3 NECKLACES ==================== -->
+        <!-- Necklace 1 -->
+        <div class="border-glow-wrapper product-card" data-category="necklaces">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Masterpiece Choker</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://a.1stdibscdn.com/emerald-2800-carats-diamond-18k-gold-fringe-necklace-for-sale/j_412/j_249478621734549740542/j_24947862_1734549740933_bg_processed.jpg?disable=upscale&auto=webp&quality=60&width=640" 
+                alt="The Empress Imperial Solitaire & Emerald Choker" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">High Joaillerie Vault • Necklace</div>
+                <h3 class="product-name">The Empress Imperial Emerald Choker</h3>
+                <p class="product-specs-summary">14 CT Colombian Emerald Drop &amp; 28 CT D-Flawless Graduated Riviera</p>
+                <div class="product-pricing">₹ 4,800,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="409" data-title="The Empress Imperial Emerald Choker" data-price="4800000" data-img="https://a.1stdibscdn.com/emerald-2800-carats-diamond-18k-gold-fringe-necklace-for-sale/j_412/j_249478621734549740542/j_24947862_1734549740933_bg_processed.jpg?disable=upscale&auto=webp&quality=60&width=640" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Empress Imperial Emerald Choker (₹ 4,800,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Necklace 2 (EXTRA NECKLACE 1) -->
+        <div class="border-glow-wrapper product-card" data-category="necklaces">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">GIA Type IIa • 6.42 CT</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse3.mm.bing.net/th/id/OIP.agAfqoy-cc_iWY4RZCRvKAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="The Sovereign Pear Solitaire Cascade" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Master Atelier • Necklace</div>
+                <h3 class="product-name">The Sovereign Pear Diamond Cascade</h3>
+                <p class="product-specs-summary">6.42 CT D-Flawless Pear Solitaire • Double Micro-Pavé Halo • Tennis Collar</p>
+                <div class="product-pricing">₹ 4,250,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="412" data-title="The Sovereign Pear Diamond Cascade" data-price="4250000" data-img="https://tse3.mm.bing.net/th/id/OIP.agAfqoy-cc_iWY4RZCRvKAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Sovereign Pear Diamond Cascade (₹ 4,250,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Necklace 3 (EXTRA NECKLACE 2) -->
+        <div class="border-glow-wrapper product-card" data-category="necklaces">
+          <div class="border-glow-inner">
+            <div class="product-media-frame media-sheen">
+              <span class="product-badge-flag">Tiered Briolette</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.pinimg.com/736x/6c/39/a8/6c39a8b4fd8541e4fce8a1b5bbda814a.jpg" 
+                alt="Celeste Diamond Chandelier Drops" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Haute Joaillerie • Necklace</div>
+                <h3 class="product-name">Celeste Diamond Chandelier Drops</h3>
+                <p class="product-specs-summary">18K Solid Gold &amp; Platinum • Articulating Pavé Drops • 14.50 CTW</p>
+                <div class="product-pricing">₹ 2,400,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="413" data-title="Celeste Diamond Chandelier Drops" data-price="2400000" data-img="https://i.pinimg.com/736x/6c/39/a8/6c39a8b4fd8541e4fce8a1b5bbda814a.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Celeste Diamond Chandelier Drops (₹ 2,400,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bespoke Packaging Experience Section -->
+  <section class="unboxing-section">
+    <div class="container unboxing-grid">
+      <div class="border-glow-wrapper" style="border-radius: var(--radius-lg);">
+        <div class="border-glow-inner media-sheen" style="height: 480px;">
+          <img 
+            class="img-cinematic-zoom"
+            src="https://i.etsystatic.com/43748223/r/il/6fce1d/5441724238/il_1080xN.5441724238_tlc3.jpg" 
+            alt="Artisanal luxury gift wrapping with gold seal" 
+          />
+        </div>
+      </div>
+
+      <div>
+        <span class="section-subtitle">White-Glove Presentation</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 18px;">The Unboxing Ceremonial</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; font-weight: 500;">
+          Every anniversary couple creation from Time &amp; Gold is delivered in dual-compartment handcrafted Italian leather boxes, sealed with genuine gold wax crests, and accompanied by hand-calligraphed commemorative letters.
+        </p>
+
+        <ul class="unboxing-feature-list">
+          <li class="unboxing-feature-item">
+            <div class="unboxing-icon"><i class="fa-solid fa-stamp"></i></div>
+            <div>
+              <h5>Custom Calligraphy &amp; Gold-Leaf Seal</h5>
+              <p>Each gift includes heavy stock parchment embossed with a custom wax seal and hand-inscribed with your personal anniversary date.</p>
+            </div>
+          </li>
+          <li class="unboxing-feature-item">
+            <div class="unboxing-icon"><i class="fa-solid fa-gem"></i></div>
+            <div>
+              <h5>Dual Leather-Bound Gemmological Passports</h5>
+              <p>Every certified diamond and complication set is delivered with matching GIA dossiers bound in genuine saffiano leather.</p>
+            </div>
+          </li>
+          <li class="unboxing-feature-item">
+            <div class="unboxing-icon"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <h5>Armoured Hand-Delivery Available</h5>
+              <p>Opt for discreet, white-glove security delivery directly to your luxury hotel, residence, or private anniversary banquet across India.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Assurance Strip -->
+  <section class="trust-assurance-strip">
+    <div class="container assurance-grid">
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="assurance-text">
+          <h5>100% Genuine</h5>
+          <p>Official Brand Authorization</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="assurance-text">
+          <h5>Insured Transit</h5>
+          <p>Complimentary Doorstep Delivery</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="assurance-text">
+          <h5>Authorized Service</h5>
+          <p>Geneva-Trained Watchmakers</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
+        <div class="assurance-text">
+          <h5>Secure Payment</h5>
+          <p>Encrypted Global Checkouts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer Matching Header Exactly -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;" aria-label="Time & Gold Home">
+            <div class="brand-logo-frame">
+              <div class="brand-dial-ring"></div>
+              <img 
+                class="brand-logo-img" 
+                src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+                alt="Time & Gold Emblem"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+              <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+                <use href="#brandHorologyEmblem" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Time &amp; Gold</span>
+              <span class="brand-sub">Short and Stylish</span>
+            </div>
+          </a>
+
+          <p>
+            India's most trusted luxury watch destination. Official authorized retailers for over 40 iconic Swiss and global horological maisons and fine diamond jewellery creators.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Grand Complications</a></li>
+            <li><a href="products.html" class="footer-link">Men's Swiss Automatic</a></li>
+            <li><a href="products.html" class="footer-link">Women's Diamond Bezel</a></li>
+            <li><a href="products.html" class="footer-link">High Solitaire Jewellery</a></li>
+            <li><a href="about.html" class="footer-link">Calibre Architecture</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Maison Services</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#contact" class="footer-link">Book Boutique Viewing</a></li>
+            <li><a href="about.html" class="footer-link">Horology Restoration</a></li>
+            <li><a href="index.html#contact" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="products.html" class="footer-link">Diamond Authentication</a></li>
+            <li><a href="gifting.html" class="footer-link">Corporate Gifting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Gazette</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px; font-weight: 500;">
+            Receive encrypted announcements regarding limited dial allocations and salon previews.
+          </p>
+          <form class="newsletter-box" onsubmit="event.preventDefault(); alert('You have been enrolled into the Time & Gold VIP Gazette.');">
+            <input type="email" class="newsletter-input" placeholder="Your direct email" required />
+            <button type="submit" class="btn-gold" style="padding: 10px 18px;" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TIME &amp; GOLD. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link" style="font-size: 0.78rem;">Privacy Policy</a>
+          <a href="#" class="footer-link" style="font-size: 0.78rem;">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--text-primary);">Your Luxury Bag</h3>
+        <button id="closeCartBtn" style="font-size: 1.25rem; color: var(--text-muted);"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-drawer-items" id="cartDrawerItems">
+        <div class="cart-item-row" data-id="401">
+          <div class="cart-item-img">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Sovereign Dual-Calibre Anniversary Duo" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Sovereign Dual-Calibre Anniversary Duo</h6>
+            <div class="cart-item-price">₹ 3,250,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="cart-item-row" data-id="403">
+          <div class="cart-item-img">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imperial Dual-Tone Eternity Bands" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Imperial Dual-Tone Eternity Bands</h6>
+            <div class="cart-item-price">₹ 680,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Total Investment</span>
+          <span class="gold-gradient-text" id="cartTotalVal">₹ 3,930,000</span>
+        </div>
+        <button class="btn-gold" style="width: 100%; justify-content: center;" onclick="alert('Redirecting to 256-bit Encrypted Luxury Checkout.');">
+          <span>Proceed To VIP Checkout</span>
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive "Book Item" VIP Reservation Modal -->
+  <div class="book-modal-overlay" id="bookModalOverlay">
+    <div class="book-modal-dialog">
+      <button class="modal-close-btn" id="closeBookModalBtn" aria-label="Close Booking Window">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="gold-gradient-text" style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 800; letter-spacing: 2px;">
+          TIME &amp; GOLD
+        </div>
+        <div style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 4px; font-weight: 700;">
+          Reserve Bespoke Anniversary Gifting &amp; Private Viewing
+        </div>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookItemSelect">Selected Anniversary Gift Reference</label>
+          <input type="text" id="bookItemSelect" class="form-input" value="Sovereign Dual-Calibre Anniversary Duo" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookSalon">Preferred Salon Location</label>
+          <select id="bookSalon" class="form-select">
+            <option value="Mumbai — Palladium Mall">Mumbai — Palladium Mall Flagship</option>
+            <option value="Delhi NCR — DLF Emporio">Delhi NCR — DLF Emporio</option>
+            <option value="Bengaluru — UB City Mall">Bengaluru — UB City Mall</option>
+            <option value="Hyderabad — Jubilee Hills">Hyderabad — Jubilee Hills Private Estate</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="bookDate">Viewing Date</label>
+            <input type="date" id="bookDate" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookTime">Preferred Time</label>
+            <input type="time" id="bookTime" class="form-input" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookGuestName">Full Name</label>
+          <input type="text" id="bookGuestName" class="form-input" placeholder="e.g. Lord Sterling" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookContact">Direct Telephone / Mobile</label>
+          <input type="tel" id="bookContact" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <span>Confirm Private Appointment</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & INTERACTION ENGINE -->
+  <script src="gifting.js">
+    
+  </script>
+</body>
+</html>

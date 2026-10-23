@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Our Heritage &amp; Artisans | Time &amp; Gold</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+ <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+
+  <!-- Shared Reusable SVG Symbol for Precision Emblem Fallback -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sharedLogoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fff2be" />
+        <stop offset="50%" stop-color="#f0c742" />
+        <stop offset="100%" stop-color="#b8860b" />
+      </linearGradient>
+      <g id="brandHorologyEmblem">
+        <circle cx="50" cy="50" r="46" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" />
+        <circle cx="50" cy="50" r="41" stroke="url(#sharedLogoGoldGrad)" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+        <circle cx="50" cy="12" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="88" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="50" cy="88" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="12" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <line x1="50" y1="50" x2="31" y2="29" stroke="url(#sharedLogoGoldGrad)" stroke-width="3" stroke-linecap="round" />
+        <line x1="50" y1="50" x2="71" y2="33" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="50" cy="50" r="3.5" fill="#0a0a0c" stroke="url(#sharedLogoGoldGrad)" stroke-width="2" />
+        <path d="M42 66 H58 M50 66 V78" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- Header Brand Logo with Image and SVG Fallback -->
+      <a href="index.html" class="brand-logo" aria-label="Time & Gold Home">
+        <div class="brand-logo-frame">
+          <div class="brand-dial-ring"></div>
+          <img 
+            class="brand-logo-img" 
+            src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+            alt="Time & Gold Emblem"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+            <use href="#brandHorologyEmblem" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Time &amp; Gold</span>
+          <span class="brand-sub">Short and Stylish</span>
+        </div>
+      </a>
+
+      <!-- Same Navigation Links (About Set to Active) -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item has-dropdown" id="homeNavItem">
+            <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-chevron"></i>
+            </a>
+
+            <!-- Luxury Home Sub-links Dropdown Menu -->
+            <ul class="dropdown-vault-menu" id="homeDropdownMenu">
+              <li class="dropdown-vault-item">
+                <a href="/index.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-1</span>
+                    
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-vault-item">
+                <a href="/home2.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-2</span>
+                    
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/aboutus.html" class="nav-link active">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="/brands.html" class="nav-link">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gifting.html" class="nav-link">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+
+        <!-- Circular Shape RTL Button -->
+        <button class="rtl-circle-btn" id="rtlToggleBtn" title="Toggle Reading Direction (RTL/LTR)">
+          RTL
+        </button>
+
+        <!-- Book Item Button -->
+        <button class="btn-book-header" id="openBookModalBtn" title="Book a Timepiece or Solitaire Viewing">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Item</span>
+        </button>
+
+        <!-- Bag / Cart -->
+        <button class="action-btn" id="openCartBtn" title="View Luxury Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count-badge" id="cartCountBadge">2</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- About Hero Section -->
+  <section class="about-hero">
+    <div class="container about-hero-grid">
+      <div>
+        <div class="about-hero-badge">
+          <i class="fa-solid fa-crown"></i>
+          <span>The Sovereign Maison of Horology</span>
+        </div>
+        <h1 class="about-hero-title">
+          Guarding The Sacred <br />
+          <span class="gold-gradient-text">Art of Mechanical Time</span>
+        </h1>
+        <p class="about-hero-desc">
+          Founded upon an uncompromised quest for horological transcendence, Time &amp; Gold unites the storied traditions of Geneva master watchmakers with the exquisite heritage of Indian high jewelry. We do not simply trade in timepieces; we preserve centuries of human brilliance.
+        </p>
+
+        <div class="about-stat-strip">
+          <div>
+            <div class="stat-number">1926</div>
+            <div class="stat-label">Foundational Heritage</div>
+          </div>
+          <div>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">Swiss Grand Maisons</div>
+          </div>
+          <div>
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Geneva &amp; GIA Certified</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stage-visual">
+        <div class="about-stage-halo"></div>
+        <div class="border-glow-wrapper about-hero-card">
+          <div class="border-glow-inner media-sheen">
+            <img 
+              class="img-cinematic-zoom"
+              src="https://tse2.mm.bing.net/th/id/OIP.Mh25GlL3V1-V_vW5_e2ENAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              alt="Artisan inspecting movement" 
+            />
+            <div class="about-card-badge">
+              <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 800; color: var(--text-primary);">
+                The Geneva Calibre Laboratory
+              </div>
+              <div style="font-size: 0.75rem; color: var(--gold-primary); font-weight: 700; margin-top: 4px;">
+                Hand-Finished Bridges &amp; Tourbillon Cages
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA SECTION 1: THE EPOCHS OF HOROLOGY (INTERACTIVE TIMELINE) -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">A Century of Provenance</span>
+        <h2 class="section-title">The Epochs of Mastery</h2>
+        <p class="section-desc">
+          Trace the century-long lineage of Time &amp; Gold from our humble beginnings in Swiss atelier workshops to becoming India's pre-eminent salon for numbered complications.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Epoch 1 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">1926 — Geneva, Switzerland</div>
+            <h3 class="timeline-headline">The Genesis of the Calibre Escapement</h3>
+            <p class="timeline-text">
+              Master Horologist Émile Vaneau establishes our first restoration bench overlooking Lake Geneva, engineering custom hairsprings for royal pocket watches and marine chronometers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Epoch 2 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">1964 — Mumbai &amp; Hyderabad</div>
+            <h3 class="timeline-headline">The Royal Indian Commission</h3>
+            <p class="timeline-text">
+              Invited by the royal dynasties of the Deccan to curate bespoke high jewelry dials, setting rare Golconda diamonds and Ceylon unheated sapphires directly into Swiss automatic movements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Epoch 3 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">1998 — Vallée de Joux</div>
+            <h3 class="timeline-headline">Grand Complications Consortium</h3>
+            <p class="timeline-text">
+              Formalized official direct partnerships with over 40 prestigious Swiss maisons, securing exclusive allocations for perpetual calendars, minute repeaters, and gyroscopic tourbillons.
+            </p>
+          </div>
+        </div>
+
+        <!-- Epoch 4 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2026 — Pan-India Flagships</div>
+            <h3 class="timeline-headline">The Sanctuary of High Horology</h3>
+            <p class="timeline-text">
+              Over 65 luxury boutiques across Mumbai, Delhi, Bengaluru, and Hyderabad offering bespoke private collector vaults, certified pressure testing laboratories, and GIA Type IIa solitaire atelier viewing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA SECTION 2: GUILD OF ARTISANS ATELIER -->
+  <section class="artisans-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Behind The Loupe</span>
+        <h2 class="section-title">The Master Craftsmen Guild</h2>
+        <p class="section-desc">
+          Every gemstone is hand-selected and every calibre pinion is individually chamfered. Meet the guardians of our relentless pursuit of mechanical and gemmological perfection.
+        </p>
+      </div>
+
+      <div class="artisans-grid">
+        <!-- Artisan 1 -->
+        <div class="border-glow-wrapper artisan-card">
+          <div class="border-glow-inner">
+            <div class="artisan-photo-frame media-sheen">
+              <span class="artisan-role-pill">Master Watchmaker</span>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://static.vecteezy.com/system/resources/thumbnails/037/477/519/small_2x/ai-generated-handsome-man-model-wearing-blue-tuxedo-bokeh-style-background-with-generated-ai-photo.jpeg" 
+                alt="Henri Delacroix" 
+              />
+            </div>
+            <div class="artisan-info">
+              <div>
+                <h4 class="artisan-name">Henri Delacroix</h4>
+                <div class="artisan-specialty">35 Yrs • Geneva Seal Master</div>
+                <p class="artisan-bio">
+                  Accredited by the Geneva Horological Society; specializes in flying tourbillon cage balancing and hand-anglage bridge beveling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artisan 2 -->
+        <div class="border-glow-wrapper artisan-card">
+          <div class="border-glow-inner">
+            <div class="artisan-photo-frame media-sheen">
+              <span class="artisan-role-pill">Chief Gemmologist</span>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.pinimg.com/736x/fe/0a/f4/fe0af45037efc7a894c4ef3d66716e11.jpg" 
+                alt="Aadhya Singhania" 
+              />
+            </div>
+            <div class="artisan-info">
+              <div>
+                <h4 class="artisan-name">Dr. Aadhya Singhania</h4>
+                <div class="artisan-specialty">GIA Fellow • Diamond Vault</div>
+                <p class="artisan-bio">
+                  Direct curator of our rare Type IIa D-Flawless solitaires, Colombian emeralds, and unheated royal blue Ceylon sapphires.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artisan 3 -->
+        <div class="border-glow-wrapper artisan-card">
+          <div class="border-glow-inner">
+            <div class="artisan-photo-frame media-sheen">
+              <span class="artisan-role-pill">Master Guillocheur</span>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse2.mm.bing.net/th/id/OIP.af_C6X7kru4BaW1QlQ8gGQHaJb?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Laurent Mercier" 
+              />
+            </div>
+            <div class="artisan-info">
+              <div>
+                <h4 class="artisan-name">Laurent Mercier</h4>
+                <div class="artisan-specialty">Hand Rose-Engine Lathe</div>
+                <p class="artisan-bio">
+                  Carves bespoke Clous de Paris and wave dials utilizing restored 19th-century manual rose lathes with micron-level precision.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artisan 4 -->
+        <div class="border-glow-wrapper artisan-card">
+          <div class="border-glow-inner">
+            <div class="artisan-photo-frame media-sheen">
+              <span class="artisan-role-pill">High Joaillerie Setter</span>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.pinimg.com/originals/71/7d/60/717d60741b08da81fd905e2d57bd292b.jpg" 
+                alt="Kavita Somani" 
+              />
+            </div>
+            <div class="artisan-info">
+              <div>
+                <h4 class="artisan-name">Kavita Somani</h4>
+                <div class="artisan-specialty">Invisible &amp; Pavé Setting</div>
+                <p class="artisan-bio">
+                  Renowned for setting microscopic brilliant-cut pavé diamonds on curved platinum bezels without visible metal prongs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA SECTION 3: THE SOVEREIGN OATH & CERTIFICATIONS -->
+  <section class="charter-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Uncompromised Ethics &amp; Standards</span>
+        <h2 class="section-title">The Sovereign Charter</h2>
+        <p class="section-desc">
+          When you acquire a masterpiece from Time &amp; Gold, you receive the full weight of global verification, ethical sourcing, and lifelong technical guardianship.
+        </p>
+      </div>
+
+      <div class="charter-grid">
+        <div class="charter-box">
+          <div class="charter-icon-emblem"><i class="fa-solid fa-stamp"></i></div>
+          <h3 class="charter-title">Geneva Seal &amp; COSC Testing</h3>
+          <p class="charter-text">
+            Every movement undergoes five-position dynamic testing across 360 hours to assure daily variance under -2/+2 seconds, certified under strict Swiss chronometer protocols.
+          </p>
+        </div>
+
+        <div class="charter-box">
+          <div class="charter-icon-emblem"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3 class="charter-title">100% Conflict-Free Diamonds</h3>
+          <p class="charter-text">
+            Compliant with the Kimberley Process and the Responsible Jewellery Council (RJC). Every solitaire is tracked from ethical mine to our private platinum mounting atelier.
+          </p>
+        </div>
+
+        <div class="charter-box">
+          <div class="charter-icon-emblem"><i class="fa-solid fa-vault"></i></div>
+          <h3 class="charter-title">Lifelong Vault Archiving</h3>
+          <p class="charter-text">
+            Every client acquisition is assigned a permanent ledger number in our Geneva Archives, providing guaranteed authenticity, insurance appraisal updates, and lifetime service provenance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Assurance Strip -->
+  <section class="trust-assurance-strip">
+    <div class="container assurance-grid">
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="assurance-text">
+          <h5>100% Genuine</h5>
+          <p>Official Brand Authorization</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="assurance-text">
+          <h5>Insured Transit</h5>
+          <p>Complimentary Doorstep Delivery</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="assurance-text">
+          <h5>Authorized Service</h5>
+          <p>Geneva-Trained Watchmakers</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
+        <div class="assurance-text">
+          <h5>Secure Payment</h5>
+          <p>Encrypted Global Checkouts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer Matching Header Exactly -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;" aria-label="Time & Gold Home">
+            <div class="brand-logo-frame">
+              <div class="brand-dial-ring"></div>
+              <img 
+                class="brand-logo-img" 
+                src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+                alt="Time & Gold Emblem"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+              <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+                <use href="#brandHorologyEmblem" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Time &amp; Gold</span>
+              <span class="brand-sub">Short and Stylish</span>
+            </div>
+          </a>
+
+          <p>
+            India's most trusted luxury watch destination. Official authorized retailers for over 40 iconic Swiss and global horological maisons and fine diamond jewellery creators.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#products" class="footer-link">Grand Complications</a></li>
+            <li><a href="index.html#products" class="footer-link">Men's Swiss Automatic</a></li>
+            <li><a href="index.html#products" class="footer-link">Women's Diamond Bezel</a></li>
+            <li><a href="index.html#jewellery-salon" class="footer-link">High Solitaire Jewellery</a></li>
+            <li><a href="about.html" class="footer-link">Calibre Architecture</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Maison Services</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#contact" class="footer-link">Book Boutique Viewing</a></li>
+            <li><a href="about.html" class="footer-link">Horology Restoration</a></li>
+            <li><a href="index.html#contact" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="index.html#jewellery-salon" class="footer-link">Diamond Authentication</a></li>
+            <li><a href="index.html#contact" class="footer-link">Corporate Gifting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Gazette</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px; font-weight: 500;">
+            Receive encrypted announcements regarding limited dial allocations and salon previews.
+          </p>
+          <form class="newsletter-box" onsubmit="event.preventDefault(); alert('You have been enrolled into the Time & Gold VIP Gazette.');">
+            <input type="email" class="newsletter-input" placeholder="Your direct email" required />
+            <button type="submit" class="btn-gold" style="padding: 10px 18px;" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TIME &amp; GOLD. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link" style="font-size: 0.78rem;">Privacy Policy</a>
+          <a href="#" class="footer-link" style="font-size: 0.78rem;">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--text-primary);">Your Luxury Bag</h3>
+        <button id="closeCartBtn" style="font-size: 1.25rem; color: var(--text-muted);"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-drawer-items" id="cartDrawerItems">
+        <div class="cart-item-row">
+          <div class="cart-item-img">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tourbillon" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Monarch Celestial Tourbillon</h6>
+            <div class="cart-item-price">₹ 1,850,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="cart-item-row">
+          <div class="cart-item-img">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diamond Ring" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Aurelia Cushion Pavé Ring</h6>
+            <div class="cart-item-price">₹ 840,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Total Investment</span>
+          <span class="gold-gradient-text" id="cartTotalVal">₹ 2,690,000</span>
+        </div>
+        <button class="btn-gold" style="width: 100%; justify-content: center;" onclick="alert('Redirecting to 256-bit Encrypted Luxury Checkout.');">
+          <span>Proceed To VIP Checkout</span>
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive "Book Item" VIP Reservation Modal -->
+  <div class="book-modal-overlay" id="bookModalOverlay">
+    <div class="book-modal-dialog">
+      <button class="modal-close-btn" id="closeBookModalBtn" aria-label="Close Booking Window">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="gold-gradient-text" style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 800; letter-spacing: 2px;">
+          TIME &amp; GOLD
+        </div>
+        <div style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 4px; font-weight: 700;">
+          Reserve Private Viewing &amp; Atelier Consultation
+        </div>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookItemSelect">Consultation Focus</label>
+          <input type="text" id="bookItemSelect" class="form-input" value="Bespoke Horological & Solitaire Viewing" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookSalon">Preferred Salon Location</label>
+          <select id="bookSalon" class="form-select">
+            <option value="Mumbai — Palladium Mall">Mumbai — Palladium Mall Flagship</option>
+            <option value="Delhi NCR — DLF Emporio">Delhi NCR — DLF Emporio</option>
+            <option value="Bengaluru — UB City Mall">Bengaluru — UB City Mall</option>
+            <option value="Hyderabad — Jubilee Hills">Hyderabad — Jubilee Hills Private Estate</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="bookDate">Viewing Date</label>
+            <input type="date" id="bookDate" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookTime">Preferred Time</label>
+            <input type="time" id="bookTime" class="form-input" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookGuestName">Full Name</label>
+          <input type="text" id="bookGuestName" class="form-input" placeholder="e.g. Lord Sterling" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookContact">Direct Telephone / Mobile</label>
+          <input type="tel" id="bookContact" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <span>Confirm Private Appointment</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & ENGINE -->
+  <script src="aboutus.js">
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time &amp; Gold | Watch &amp; Fine Jewellery Showroom</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Shared Reusable SVG Symbol for Precision Emblem -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sharedLogoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F8E5A7" />
+        <stop offset="50%" stop-color="#D4AF37" />
+        <stop offset="100%" stop-color="#947514" />
+      </linearGradient>
+      <g id="brandHorologyEmblem">
+        <circle cx="50" cy="50" r="46" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" />
+        <circle cx="50" cy="50" r="41" stroke="url(#sharedLogoGoldGrad)" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+        <circle cx="50" cy="12" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="88" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="50" cy="88" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="12" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <line x1="50" y1="50" x2="31" y2="29" stroke="url(#sharedLogoGoldGrad)" stroke-width="3" stroke-linecap="round" />
+        <line x1="50" y1="50" x2="71" y2="33" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="50" cy="50" r="3.5" fill="#0a0a0c" stroke="url(#sharedLogoGoldGrad)" stroke-width="2" />
+        <path d="M42 66 H58 M50 66 V78" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- Main Luxury Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <!-- Header Brand Logo with Image and Vector Fallback -->
+      <a href="#home" class="brand-logo" aria-label="Time & Gold Home">
+        <div class="brand-logo-frame">
+          <div class="brand-dial-ring"></div>
+          <img 
+            class="brand-logo-img" 
+            src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+            alt="Time & Gold Emblem"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+            <use href="#brandHorologyEmblem" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Time &amp; Gold</span>
+          <span class="brand-sub">Short and Stylish</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu: Home with Luxury Dropdown, About, Products, Brands, Gifting, Contact -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item has-dropdown" id="homeNavItem">
+            <a href="/index.html" class="nav-link active" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-chevron"></i>
+            </a>
+
+            <!-- Luxury Home Sub-links Dropdown Menu -->
+            <ul class="dropdown-vault-menu" id="homeDropdownMenu">
+              <li class="dropdown-vault-item">
+                <a href="/index.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-1</span>
+                    
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-vault-item">
+                <a href="/home2.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-2</span>
+                    
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="/aboutus.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="/brands.html" class="nav-link">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gifting.html" class="nav-link">Gifting</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+
+        <!-- Circular Shape RTL Button -->
+        <button class="rtl-circle-btn" id="rtlToggleBtn" title="Toggle Reading Direction (RTL/LTR)">
+          RTL
+        </button>
+
+        <!-- Book Item Button -->
+        <button class="btn-book-header" id="openBookModalBtn" title="Book a Timepiece or Solitaire Viewing">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Item</span>
+        </button>
+
+        <!-- Bag / Cart -->
+        <button class="action-btn" id="openCartBtn" title="View Luxury Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count-badge" id="cartCountBadge">2</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-gem"></i>
+          <span>Official Authorized Retailer • 40+ Brands</span>
+        </div>
+        <h1 class="hero-title">
+          India's Premier <br />
+          <span class="gold-gradient-text">Luxury Watch Sanctuary</span>
+        </h1>
+        <p class="hero-desc">
+          Immerse yourself in high Swiss horology and bespoke fine diamond jewellery. Discover numbered tourbillons, perpetual calendars, and certified solitaire gems.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#products" class="btn-gold">
+            <span>Explore Timepieces</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#jewellery-salon" class="btn-outline">
+            <i class="fa-solid fa-gem"></i>
+            <span>High Jewellery</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-metrics">
+          <div class="trust-metric-item">
+            <h4>65+</h4>
+            <p>Boutiques Pan-India</p>
+          </div>
+          <div class="trust-metric-item">
+            <h4>40+</h4>
+            <p>Swiss &amp; Luxury Brands</p>
+          </div>
+          <div class="trust-metric-item">
+            <h4>100%</h4>
+            <p>Original &amp; Warranted</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="stage-ambient-halo"></div>
+
+        <div class="satellite-auth-pill">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Official Brand Warranty Guaranteed</span>
+        </div>
+
+        <!-- Floating Watch Showcase -->
+        <div class="border-glow-wrapper floating-watch-showcase">
+          <div class="border-glow-inner media-sheen">
+            <img 
+              class="img-cinematic-zoom"
+              src="https://tse3.mm.bing.net/th/id/OIP.VjG_KpUXAKj-yY_oFqhc8QHaJ3?r=0&w=852&h=1135&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              alt="Time and Gold Flying Tourbillon" 
+            />
+            <div class="watch-card-tag">
+              <div>
+                <div style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">Aethelgard Chrono Tourbillon</div>
+                <div style="font-size: 0.72rem; color: var(--gold-primary); font-weight: 600;">18K Rose Gold • Swiss Calibre</div>
+              </div>
+              <i class="fa-solid fa-clock" style="color: var(--gold-primary);"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Jewel Showcase -->
+        <div class="border-glow-wrapper floating-jewel-showcase">
+          <div class="border-glow-inner media-sheen">
+            <span class="jewel-badge-micro">D-Flawless</span>
+            <img 
+              class="img-cinematic-zoom"
+              src="https://i.pinimg.com/736x/e9/71/62/e9716285d9e331fc0c17ecf71240797c.jpg" 
+              alt="Solitaire Diamond Cascade" 
+            />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Brands Marquee Section -->
+  <section class="brands-marquee-section" id="brands">
+    <div class="marquee-track">
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> RADO SWITZERLAND</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> TISSOT 1853</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> LONGINES</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> FREDERIQUE CONSTANT</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> SEIKO PROSPEX</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> MAURICE LACROIX</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> MOVADO</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> BALMAIN PARIS</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> RADO SWITZERLAND</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> TISSOT 1853</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> LONGINES</div>
+      <div class="marquee-item"><i class="fa-solid fa-certificate"></i> FREDERIQUE CONSTANT</div>
+    </div>
+  </section>
+
+  <!-- Curated Category Tiles / Gifting Section -->
+  <section class="curated-category-section" id="gifting">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Exquisite Departures</span>
+        <h2 class="section-title">Curated For Connoisseurs &amp; Gifting</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          From Grand Complications to brilliant diamond pavé solitaires, explore curations tailored to every celebration.
+        </p>
+      </div>
+
+      <div class="category-grid">
+        <div class="border-glow-wrapper category-tile">
+          <div class="border-glow-inner media-sheen">
+            <img 
+              class="img-cinematic-zoom"
+              src="https://p1.liveauctioneers.com/8184/247554/129520619_1_x.jpg?height=512&quality=70&version=1653366361" 
+              alt="Haute Horlogerie Timepieces" 
+            />
+            <div class="category-tile-overlay">
+              <span class="category-pre">Master Calibres</span>
+              <h3 class="category-tile-title">Men's Haute Horlogerie</h3>
+              <a href="/products.html#catalogGrid" class="category-explore-link">
+                <span>View Timepieces</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-glow-wrapper category-tile">
+          <div class="border-glow-inner media-sheen">
+            <img 
+              class="img-cinematic-zoom"
+              src="https://www.luxurman.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/964775.jpg" 
+              alt="Women's Diamond Watches" 
+            />
+            <div class="category-tile-overlay">
+              <span class="category-pre">Feminine Radiance</span>
+              <h3 class="category-tile-title">Women's Diamond Dials</h3>
+              <a href="/products.html#sudha" class="category-explore-link">
+                <span>View Collection</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-glow-wrapper category-tile">
+          <div class="border-glow-inner media-sheen">
+            <img 
+              class="img-cinematic-zoom"
+              src="https://somethingaboutrocks.com/wp-content/uploads/2023/07/SUNRISE-Graff-Yellow-Diamond-Necklace-Close-Up-2.jpeg" 
+              alt="Fine Jewellery & Solitaires" 
+            />
+            <div class="category-tile-overlay">
+              <span class="category-pre">Precious Vault</span>
+              <h3 class="category-tile-title">High Jewellery &amp; Diamonds</h3>
+              <a href="/products.html#kasi" class="category-explore-link">
+                <span>Explore Jewels</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Authenticated Vault</span>
+        <h2 class="section-title">Iconic Bestsellers &amp; New Arrivals</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          Every item delivered in original brand packaging with certified international warranty cards.
+        </p>
+      </div>
+
+      <div class="product-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Treasures</button>
+        <button class="filter-btn" data-filter="swiss">Swiss Complications</button>
+        <button class="filter-btn" data-filter="mens">Men's Executive</button>
+        <button class="filter-btn" data-filter="womens">Women's Diamond</button>
+        <button class="filter-btn" data-filter="jewel">Fine Jewellery</button>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="border-glow-wrapper product-card" data-category="swiss">
+          <div class="border-glow-inner">
+            <div class="product-media-container media-sheen">
+              <span class="product-badge-flag">Swiss Limited</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Monarch Perpetual Flying Tourbillon" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Geneva Manufacture</div>
+                <h4 class="product-name">Monarch Celestial Tourbillon</h4>
+                <div class="product-pricing">₹ 1,850,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="1" data-title="Monarch Celestial Tourbillon" data-price="1850000" data-img="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Monarch Celestial Tourbillon (₹ 1,850,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="border-glow-wrapper product-card" data-category="jewel">
+          <div class="border-glow-inner">
+            <div class="product-media-container media-sheen">
+              <span class="product-badge-flag">Certified Solitaire</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Aurelia Cushion Pavé Diamond Ring" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">High Jewellery Vault</div>
+                <h4 class="product-name">The Aurelia Cushion Pavé Ring</h4>
+                <div class="product-pricing">₹ 840,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="2" data-title="Aurelia Cushion Diamond Ring" data-price="840000" data-img="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Aurelia Cushion Pavé Ring (₹ 840,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="border-glow-wrapper product-card" data-category="mens">
+          <div class="border-glow-inner">
+            <div class="product-media-container media-sheen">
+              <span class="product-badge-flag">300M Diver</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://matixwatches.com/cdn/shop/files/custom_seiko_mod_40mm_no_logo__1736334313_26ab1f98_progressive.webp?v=1763823217&width=1445" 
+                alt="Nautique Skeleton Titanium Chrono" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Swiss Automatic</div>
+                <h4 class="product-name">Nautique Skeleton Titanium</h4>
+                <div class="product-pricing">₹ 420,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="3" data-title="Nautique Skeleton Titanium" data-price="420000" data-img="https://matixwatches.com/cdn/shop/files/custom_seiko_mod_40mm_no_logo__1736334313_26ab1f98_progressive.webp?v=1763823217&width=1445" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Nautique Skeleton Titanium (₹ 420,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="border-glow-wrapper product-card" data-category="womens">
+          <div class="border-glow-inner">
+            <div class="product-media-container media-sheen">
+              <span class="product-badge-flag">Mother of Pearl</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.etsystatic.com/25385875/r/il/88f34b/7882702662/il_1080xN.7882702662_kmen.jpg" 
+                alt="Seraphina Diamond Bezel Watch" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Haute Joaillerie</div>
+                <h4 class="product-name">Seraphina Diamond Bezel</h4>
+                <div class="product-pricing">₹ 650,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="4" data-title="Seraphina Diamond Bezel" data-price="650000" data-img="https://i.etsystatic.com/25385875/r/il/88f34b/7882702662/il_1080xN.7882702662_kmen.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Seraphina Diamond Bezel (₹ 650,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Calibre Movement Architecture Section -->
+  <section class="calibre-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">About Our Horological Heritage</span>
+        <h2 class="section-title">The Engineering of Perpetual Accuracy</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          Founded on uncompromised Swiss horological standards, Time &amp; Gold bridges Geneva master craftsmanship with bespoke Indian fine jewelry traditions.
+        </p>
+      </div>
+
+      <div class="border-glow-wrapper calibre-stage-card-wrapper" style="border-radius: var(--radius-lg);">
+        <div class="border-glow-inner">
+          <div class="calibre-stage-card" id="calibreStageCard">
+            <!-- Interactive Visual Stage -->
+            <div class="calibre-visual-wrapper media-sheen">
+              <div class="calibre-inspect-badge">
+                <i class="fa-solid fa-microscope"></i>
+                <span id="inspectModeLabel">Macro 10x Caseback View</span>
+              </div>
+
+              <img 
+                id="calibreMainImage" 
+                class="img-cinematic-zoom"
+                src="https://www.highendwatchteam.com/wp-content/uploads/2026/01/20260116_52117.webp" 
+                alt="Mechanical Tourbillon Calibre Escapement" 
+              />
+
+              <div class="calibre-glass-lens"></div>
+
+              <div id="calibrePinsContainer">
+                <div class="movement-pin" style="top: 36%; left: 48%;">
+                  <div class="movement-pin-tooltip">Flying Tourbillon Escapement Cage</div>
+                </div>
+                <div class="movement-pin" style="top: 68%; left: 34%;">
+                  <div class="movement-pin-tooltip">Twin Glucydur Mainspring Barrels</div>
+                </div>
+                <div class="movement-pin" style="top: 25%; left: 72%;">
+                  <div class="movement-pin-tooltip">Hand-Chamfered Bridges (Anglage)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Description & Architecture Switcher -->
+            <div class="calibre-content-box">
+              <div>
+                <div class="calibre-sync-pill" id="calibreSyncBadge">
+                  <i class="fa-solid fa-arrows-rotate"></i>
+                  <span>Geneva Precision Manufacture</span>
+                </div>
+
+                <div class="calibre-view-selector">
+                  <button class="calibre-view-btn active" data-calibre="tourbillon">
+                    <div class="calibre-btn-thumb-frame">
+                      <img src="https://www.highendwatchteam.com/wp-content/uploads/2026/01/20260116_52117.webp" alt="TT-901 Tourbillon" />
+                    </div>
+                    <div class="calibre-btn-text-wrap">
+                      <span class="calibre-btn-ref">TT-901</span>
+                      <span class="calibre-btn-name">Tourbillon</span>
+                    </div>
+                  </button>
+
+                  <button class="calibre-view-btn" data-calibre="skeleton">
+                    <div class="calibre-btn-thumb-frame">
+                      <img src="https://sothebys-md.brightspotcdn.com/dims4/default/2cb4d3c/2147483647/strip/true/crop/1000x1000+0+0/resize/800x800!/quality/90/?url=http:%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fbc%2F43%2F142928794706ac8eb82ab3856cc6%2F3.jpg" alt="TT-902 Skeleton" />
+                    </div>
+                    <div class="calibre-btn-text-wrap">
+                      <span class="calibre-btn-ref">TT-902</span>
+                      <span class="calibre-btn-name">Skeleton</span>
+                    </div>
+                  </button>
+
+                  <button class="calibre-view-btn" data-calibre="chronograph">
+                    <div class="calibre-btn-thumb-frame">
+                      <img src="https://assets.catawiki.nl/assets/2022/12/23/f/4/8/f4856ad3-8d57-4344-843a-a4facc0218c8.jpg" alt="TT-903 Chrono" />
+                    </div>
+                    <div class="calibre-btn-text-wrap">
+                      <span class="calibre-btn-ref">TT-903</span>
+                      <span class="calibre-btn-name">Chrono</span>
+                    </div>
+                  </button>
+                </div>
+
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--gold-primary); letter-spacing: 2px; font-weight: 700;" id="calibreRefText">
+                  Manufacture Reference: TT-901
+                </span>
+                <h3 style="font-family: var(--font-display); font-size: 2.1rem; margin-top: 6px; margin-bottom: 14px; font-weight: 700; color: var(--text-primary);" id="calibreTitleText">
+                  Geneva Calibre Chronomètre
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; font-weight: 450;" id="calibreDescText">
+                  Every movement undergoes five-position temperature testing across 360 hours. Fitted with a flying tourbillon cage and a silicon hairspring invulnerable to magnetic fields up to 15,000 Gauss.
+                </p>
+
+                <div class="calibre-specs-table" id="calibreSpecsTable">
+                  <div class="calibre-spec-box">
+                    <span>Beat Frequency</span>
+                    <strong id="specBeat">28,800 VPH (4Hz)</strong>
+                  </div>
+                  <div class="calibre-spec-box">
+                    <span>Jewels Count</span>
+                    <strong id="specJewels">42 Synthetic Rubies</strong>
+                  </div>
+                  <div class="calibre-spec-box">
+                    <span>Power Autonomy</span>
+                    <strong id="specReserve">72 Hours Reserve</strong>
+                  </div>
+                  <div class="calibre-spec-box">
+                    <span>Certification</span>
+                    <strong id="specCert">COSC &amp; Geneva Seal</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button class="btn-gold" id="bookMovementConsultBtn" style="padding: 10px 22px; font-size: 0.78rem;">
+                  <i class="fa-solid fa-calendar-check"></i>
+                  <span>Book Calibre Viewing</span>
+                </button>
+                <a href="#products" class="btn-outline" style="padding: 10px 20px; font-size: 0.78rem;">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Explore Masterpieces</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fine Jewellery Atelier Section -->
+  <section class="jewellery-section" id="jewellery-salon">
+    <div class="jewel-sparkle-ambient jewel-sparkle-1"></div>
+    <div class="jewel-sparkle-ambient jewel-sparkle-2"></div>
+    <div class="jewel-sparkle-ambient jewel-sparkle-3"></div>
+
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-regular fa-gem"></i> Haute Joaillerie Atelier</span>
+        <h2 class="section-title">The Solitaire &amp; <span class="diamond-gradient-text">High Gemstone</span> Vault</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          Handcrafted in platinum and 18K solid gold with certified GIA Type IIa diamonds, Colombian emeralds, and unheated Ceylon sapphires.
+        </p>
+      </div>
+
+      <div class="border-glow-jewel" style="border-radius: var(--radius-lg); margin-bottom: 40px;">
+        <div class="border-glow-inner">
+          <div class="jewel-feature-hero">
+
+            <div class="jewel-hero-media-wrap media-sheen">
+              <span class="jewel-badge-tag"><i class="fa-solid fa-certificate"></i> GIA Type IIa • 6.42 CT</span>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.etsystatic.com/14859358/r/il/4d8424/4629526964/il_1080xN.4629526964_65oa.jpg" 
+                alt="Imperial Pear Solitaire Diamond Pendant" 
+              />
+            </div>
+
+            <div class="jewel-hero-content">
+              <span class="jewel-origin-tag">
+                <i class="fa-solid fa-star"></i> Master Atelier Exclusive Reference
+              </span>
+              <h3 class="jewel-hero-title">The Sovereign Pear Diamond Cascade</h3>
+              <p class="jewel-hero-desc">
+                An extraordinary 6.42-carat D-Flawless pear-shaped solitaire surrounded by a double halo of micropavé brilliants. Hand-mounted on platinum with an articulating diamond tennis collar.
+              </p>
+
+              <div class="jewel-specs-pills">
+                <span class="spec-pill"><i class="fa-solid fa-gem"></i> D Color / Flawless</span>
+                <span class="spec-pill"><i class="fa-solid fa-certificate"></i> Triple Excellent Cut</span>
+                <span class="spec-pill"><i class="fa-solid fa-feather-pointed"></i> Platinum 950</span>
+              </div>
+
+              <div style="font-size: 1.6rem; font-weight: 800; color: var(--gold-primary); margin-bottom: 24px; font-family: var(--font-display);">
+                ₹ 4,250,000
+              </div>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button 
+                  class="btn-gold add-to-bag-btn" 
+                  data-id="101" 
+                  data-title="The Sovereign Pear Diamond Cascade" 
+                  data-price="4250000" 
+                  data-img="https://i.etsystatic.com/14859358/r/il/4d8424/4629526964/il_1080xN.4629526964_65oa.jpg">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span>Acquire Masterpiece</span>
+                </button>
+                <button class="btn-outline quick-book-trigger" data-item="The Sovereign Pear Diamond Cascade (₹ 4,250,000)">
+                  <i class="fa-solid fa-calendar-check"></i>
+                  <span>Book Private Viewing</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="jewel-grid-showcase">
+        <!-- Jewel Item 1 -->
+        <div class="border-glow-jewel jewel-card">
+          <div class="border-glow-inner">
+            <div class="jewel-media-box media-sheen">
+              <span class="jewel-badge-tag">Solitaire Pavé</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://diamondrensu.com/cdn/shop/files/0101_ae6e6914-d3a7-4ee9-944f-adb03a5eaee6.jpg?v=1740567165" 
+                alt="Oval Shape Diamond Rings" 
+              />
+            </div>
+            <div class="jewel-details-area">
+              <div>
+                <div class="jewel-stone-type">Platinum 950 • 3.10 CT</div>
+                <h4 class="jewel-item-name">The Elysian Oval Solitaire</h4>
+                <div class="jewel-pricing">₹ 1,450,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button 
+                  class="btn-outline add-to-bag-btn" 
+                  data-id="102" 
+                  data-title="The Elysian Oval Solitaire" 
+                  data-price="1450000" 
+                  data-img="https://diamondrensu.com/cdn/shop/files/01_513fdde3-d5bd-48d7-bfc4-a5cd89b1ac59.jpg?v=1740567689" 
+                  style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Elysian Oval Solitaire (₹ 1,450,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jewel Item 2 -->
+        <div class="border-glow-jewel jewel-card">
+          <div class="border-glow-inner">
+            <div class="jewel-media-box media-sheen">
+              <span class="jewel-badge-tag">Tennis Rivière</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://5.imimg.com/data5/SELLER/Default/2025/10/550211960/NR/CE/DU/121692302/aurora-diamond-bracelet-1000x1000.jpg" 
+                alt="Aurora Diamond Line Bracelet" 
+              />
+            </div>
+            <div class="jewel-details-area">
+              <div>
+                <div class="jewel-stone-type">18K White Gold • 12.50 CTW</div>
+                <h4 class="jewel-item-name">Aurora Diamond Line Bracelet</h4>
+                <div class="jewel-pricing">₹ 1,180,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button 
+                  class="btn-outline add-to-bag-btn" 
+                  data-id="103" 
+                  data-title="Aurora Diamond Line Bracelet" 
+                  data-price="1180000" 
+                  data-img="https://5.imimg.com/data5/SELLER/Default/2025/10/550211960/NR/CE/DU/121692302/aurora-diamond-bracelet-1000x1000.jpg" 
+                  style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Aurora Diamond Line Bracelet (₹ 1,180,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jewel Item 3 -->
+        <div class="border-glow-jewel jewel-card">
+          <div class="border-glow-inner">
+            <div class="jewel-media-box media-sheen">
+              <span class="jewel-badge-tag">High Chandelier</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://hadleydecor.com/cdn/shop/products/product-image-1646996842.jpg?v=1656645343&width=1445" 
+                alt="Celeste Chandelier Diamond Drops" 
+              />
+            </div>
+            <div class="jewel-details-area">
+              <div>
+                <div class="jewel-stone-type">18K Yellow Gold &amp; Platinum</div>
+                <h4 class="jewel-item-name">Celeste Diamond Chandeliers</h4>
+                <div class="jewel-pricing">₹ 980,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button 
+                  class="btn-outline add-to-bag-btn" 
+                  data-id="104" 
+                  data-title="Celeste Diamond Chandeliers" 
+                  data-price="980000" 
+                  data-img="https://hadleydecor.com/cdn/shop/products/product-image-1646996842.jpg?v=1656645343&width=1445" 
+                  style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Celeste Diamond Chandeliers (₹ 980,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinematic Documentary Video Showcase -->
+  <section class="cinema-showcase-section" id="cinematics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Horological Cinema</span>
+        <h2 class="section-title">The Poetry of Precision in Motion</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          Step into the artisan workshops of Geneva and Vallée de Joux. Watch our master horologists hand-chamfer bridges, balance hairsprings, and set solitaire gems.
+        </p>
+      </div>
+
+      <div class="border-glow-wrapper cinema-player-card" style="border-radius: var(--radius-lg);">
+        <div class="border-glow-inner">
+          <div class="cinema-media-frame">
+            <video 
+              id="featureCinemaVideo" 
+              class="cinema-video-el" 
+              loop 
+              playsinline 
+              poster="https://i.pinimg.com/originals/19/ff/36/19ff363dd093f96ebc4ae0564e703d9e.jpg">
+              <source src="/WhatsApp Video 2026-10-17 at 3.29.27 PM.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video streaming.
+            </video>
+
+            <div class="cinema-overlay-backdrop" id="cinemaBackdrop"></div>
+
+            <div class="cinema-top-badges">
+              <span class="cinema-tag"><i class="fa-solid fa-film"></i> 4K Ultra-HD Master Film</span>
+              <span class="cinema-duration"><i class="fa-regular fa-clock"></i> 00:15 Master Cut</span>
+            </div>
+
+            <button class="cinema-hero-play-btn" id="cinemaHeroPlayBtn" aria-label="Play Horology Film">
+              <i class="fa-solid fa-play" id="cinemaHeroIcon"></i>
+            </button>
+
+            <div class="cinema-info-bar">
+              <div>
+                <span class="cinema-eyebrow">Manufacture Atelier Archives</span>
+                <h3 class="cinema-headline">Precision at 28,800 Vibrations Per Hour</h3>
+              </div>
+              <div class="cinema-controls-cluster">
+                <button class="cinema-ctrl-btn" id="cinemaMuteBtn" title="Toggle Sound">
+                  <i class="fa-solid fa-volume-xmark" id="muteIcon"></i>
+                </button>
+                <button class="cinema-ctrl-btn" id="cinemaFullscreenBtn" title="Fullscreen">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boutiques Showroom & Contact Section -->
+  <section class="boutique-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Pan-India Boutiques &amp; Salons</span>
+        <h2 class="section-title">Visit Our Flagship Boutiques</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+          Click any boutique card to reverse and inspect complete showroom amenities, private vault access, valet options, and concierge hours.
+        </p>
+      </div>
+
+      <div class="boutique-grid">
+
+        <!-- BOUTIQUE 1: MUMBAI -->
+        <div class="boutique-card-container" tabindex="0" role="button" aria-label="Toggle Mumbai Showroom Details">
+          <div class="boutique-card-inner">
+            <div class="boutique-card-face boutique-face-front bg-mumbai">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-gem"></i> Flagship Maison</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-arrow-rotate-right"></i> Flip Details</span>
+                  </div>
+                  <h4 class="boutique-city">Mumbai — Palladium Mall</h4>
+                  <p class="boutique-address">
+                    Level 2, High Street Phoenix, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013
+                  </p>
+                </div>
+                <div>
+                  <a href="tel:+912224900012" class="boutique-contact-link no-flip-action">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 (022) 2490 0012</span>
+                  </a>
+                  <button class="boutique-flip-trigger-btn" type="button">
+                    <span>Showroom Amenities &amp; Timing</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="boutique-card-face boutique-face-back bg-mumbai">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-door-open"></i> Salon Overview</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-rotate-left"></i> Return</span>
+                  </div>
+                  <h5 class="reverse-title">Mumbai High Horology Salon</h5>
+                  <div class="reverse-sub">Lower Parel • Flagship Vault</div>
+                  <ul class="reverse-specs-list">
+                    <li class="reverse-spec-item">
+                      <i class="fa-regular fa-clock"></i>
+                      <div><strong>Hours:</strong> Mon – Sun: 11:00 AM – 9:30 PM</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-champagne-glasses"></i>
+                      <div><strong>VIP Experience:</strong> Private Collector's Lounge &amp; Champagne Bar</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-screwdriver-wrench"></i>
+                      <div><strong>Atelier Services:</strong> Ultrasonic Watch Spa &amp; Bespoke Strap Bar</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-car"></i>
+                      <div><strong>Parking:</strong> Dedicated Valet at Luxury Drop-Off</div>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="reverse-actions-grid">
+                    <a href="https://maps.google.com/?q=Palladium+Mall+Lower+Parel+Mumbai" target="_blank" rel="noopener" class="btn-gold reverse-action-btn no-flip-action">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <span>Directions</span>
+                    </a>
+                    <button class="btn-outline reverse-action-btn no-flip-action quick-book-trigger" data-item="Mumbai Palladium VIP Salon Consultation">
+                      <i class="fa-solid fa-calendar-check"></i>
+                      <span>Book Salon</span>
+                    </button>
+                  </div>
+                  <div class="reverse-flip-back-link">
+                    <i class="fa-solid fa-arrow-left"></i> Click card to reverse
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOUTIQUE 2: DELHI NCR -->
+        <div class="boutique-card-container" tabindex="0" role="button" aria-label="Toggle Delhi Showroom Details">
+          <div class="boutique-card-inner">
+            <div class="boutique-card-face boutique-face-front bg-delhi">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-crown"></i> Haute Joaillerie</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-arrow-rotate-right"></i> Flip Details</span>
+                  </div>
+                  <h4 class="boutique-city">Delhi NCR — DLF Emporio</h4>
+                  <p class="boutique-address">
+                    Ground Floor, Luxury Pavilion, 4 Nelson Mandela Marg, Vasant Kunj II, New Delhi 110070
+                  </p>
+                </div>
+                <div>
+                  <a href="tel:+911145000023" class="boutique-contact-link no-flip-action">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 (011) 4500 0023</span>
+                  </a>
+                  <button class="boutique-flip-trigger-btn" type="button">
+                    <span>Showroom Amenities &amp; Timing</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="boutique-card-face boutique-face-back bg-delhi">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-shield-halved"></i> Certified Vault</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-rotate-left"></i> Return</span>
+                  </div>
+                  <h5 class="reverse-title">Emporio Diamond &amp; Watch Salon</h5>
+                  <div class="reverse-sub">Vasant Kunj • Central Atrium</div>
+                  <ul class="reverse-specs-list">
+                    <li class="reverse-spec-item">
+                      <i class="fa-regular fa-clock"></i>
+                      <div><strong>Hours:</strong> Mon – Sun: 11:00 AM – 9:00 PM</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-gem"></i>
+                      <div><strong>Gemmology:</strong> GIA &amp; IGI Certified Solitaire Consultation On-Site</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-user-tie"></i>
+                      <div><strong>Private Service:</strong> Dedicated Haute Horlogerie Concierge</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-car"></i>
+                      <div><strong>Arrival:</strong> Dedicated Chauffeur Drop-off at Gate 3</div>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="reverse-actions-grid">
+                    <a href="https://maps.google.com/?q=DLF+Emporio+Vasant+Kunj+New+Delhi" target="_blank" rel="noopener" class="btn-gold reverse-action-btn no-flip-action">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <span>Directions</span>
+                    </a>
+                    <button class="btn-outline reverse-action-btn no-flip-action quick-book-trigger" data-item="Delhi DLF Emporio Private Salon Consultation">
+                      <i class="fa-solid fa-calendar-check"></i>
+                      <span>Book Salon</span>
+                    </button>
+                  </div>
+                  <div class="reverse-flip-back-link">
+                    <i class="fa-solid fa-arrow-left"></i> Click card to reverse
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOUTIQUE 3: BENGALURU -->
+        <div class="boutique-card-container" tabindex="0" role="button" aria-label="Toggle Bengaluru Showroom Details">
+          <div class="boutique-card-inner">
+            <div class="boutique-card-face boutique-face-front bg-bengaluru">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-clock"></i> Grand Complications</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-arrow-rotate-right"></i> Flip Details</span>
+                  </div>
+                  <h4 class="boutique-city">Bengaluru — UB City Mall</h4>
+                  <p class="boutique-address">
+                    The Collection, 24 Vittal Mallya Road, D'Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001
+                  </p>
+                </div>
+                <div>
+                  <a href="tel:+918022000034" class="boutique-contact-link no-flip-action">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 (080) 2200 0034</span>
+                  </a>
+                  <button class="boutique-flip-trigger-btn" type="button">
+                    <span>Showroom Amenities &amp; Timing</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="boutique-card-face boutique-face-back bg-bengaluru">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-award"></i> Master Workshop</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-rotate-left"></i> Return</span>
+                  </div>
+                  <h5 class="reverse-title">UB City Haute Horlogerie Atelier</h5>
+                  <div class="reverse-sub">Vittal Mallya Road • Luxury Piazza</div>
+                  <ul class="reverse-specs-list">
+                    <li class="reverse-spec-item">
+                      <i class="fa-regular fa-clock"></i>
+                      <div><strong>Hours:</strong> Mon – Sun: 10:30 AM – 8:30 PM</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-microchip"></i>
+                      <div><strong>Diagnostic Lab:</strong> Dry &amp; Wet Pressure Testing to 100 Bar</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-wine-glass"></i>
+                      <div><strong>Private Hospitality:</strong> Helipad Transfer &amp; VIP Balcony Lounge</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-fingerprint"></i>
+                      <div><strong>Exclusives:</strong> Limited numbered tourbillon allocations</div>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="reverse-actions-grid">
+                    <a href="https://maps.google.com/?q=UB+City+Mall+Bengaluru" target="_blank" rel="noopener" class="btn-gold reverse-action-btn no-flip-action">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <span>Directions</span>
+                    </a>
+                    <button class="btn-outline reverse-action-btn no-flip-action quick-book-trigger" data-item="Bengaluru UB City VIP Atelier Consultation">
+                      <i class="fa-solid fa-calendar-check"></i>
+                      <span>Book Salon</span>
+                    </button>
+                  </div>
+                  <div class="reverse-flip-back-link">
+                    <i class="fa-solid fa-arrow-left"></i> Click card to reverse
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOUTIQUE 4: HYDERABAD -->
+        <div class="boutique-card-container" tabindex="0" role="button" aria-label="Toggle Hyderabad Showroom Details">
+          <div class="boutique-card-inner">
+            <div class="boutique-card-face boutique-face-front bg-hyderabad">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-building-columns"></i> Heritage Villa</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-arrow-rotate-right"></i> Flip Details</span>
+                  </div>
+                  <h4 class="boutique-city">Hyderabad — Jubilee Hills</h4>
+                  <p class="boutique-address">
+                    Road No. 36, Near Checkpost, Jubilee Hills Luxury Circle, Hyderabad, Telangana 500033
+                  </p>
+                </div>
+                <div>
+                  <a href="tel:+914023000045" class="boutique-contact-link no-flip-action">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 (040) 2300 0045</span>
+                  </a>
+                  <button class="boutique-flip-trigger-btn" type="button">
+                    <span>Showroom Amenities &amp; Timing</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="boutique-card-face boutique-face-back bg-hyderabad">
+              <div class="boutique-card-content">
+                <div>
+                  <div class="boutique-meta-header">
+                    <span class="boutique-status-pill"><i class="fa-solid fa-ring"></i> Royal Pavilion</span>
+                    <span class="boutique-flip-hint"><i class="fa-solid fa-rotate-left"></i> Return</span>
+                  </div>
+                  <h5 class="reverse-title">Jubilee Hills Private Estate</h5>
+                  <div class="reverse-sub">Road No. 36 • Independent Maison</div>
+                  <ul class="reverse-specs-list">
+                    <li class="reverse-spec-item">
+                      <i class="fa-regular fa-clock"></i>
+                      <div><strong>Hours:</strong> Mon – Sun: 11:00 AM – 9:00 PM</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-shield-cat"></i>
+                      <div><strong>Bridal Vault:</strong> Royal Polki, Solitaires &amp; Masterpiece Sets</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-certificate"></i>
+                      <div><strong>Horology Master:</strong> Geneva-accredited watchmaker on-site</div>
+                    </li>
+                    <li class="reverse-spec-item">
+                      <i class="fa-solid fa-car-side"></i>
+                      <div><strong>Convenience:</strong> Gated Private Courtyard with Secure Valet</div>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="reverse-actions-grid">
+                    <a href="https://maps.google.com/?q=Jubilee+Hills+Road+36+Hyderabad" target="_blank" rel="noopener" class="btn-gold reverse-action-btn no-flip-action">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <span>Directions</span>
+                    </a>
+                    <button class="btn-outline reverse-action-btn no-flip-action quick-book-trigger" data-item="Hyderabad Jubilee Hills Royal Pavilion Viewing">
+                      <i class="fa-solid fa-calendar-check"></i>
+                      <span>Book Salon</span>
+                    </button>
+                  </div>
+                  <div class="reverse-flip-back-link">
+                    <i class="fa-solid fa-arrow-left"></i> Click card to reverse
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Assurance Strip -->
+  <section class="trust-assurance-strip">
+    <div class="container assurance-grid">
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="assurance-text">
+          <h5>100% Genuine</h5>
+          <p>Official Brand Authorization</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="assurance-text">
+          <h5>Insured Transit</h5>
+          <p>Complimentary Doorstep Delivery</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="assurance-text">
+          <h5>Authorized Service</h5>
+          <p>Geneva-Trained Watchmakers</p>
+        </div>
+      </div>
+      <div class="assurance-item">
+        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
+        <div class="assurance-text">
+          <h5>Secure Payment</h5>
+          <p>Encrypted Global Checkouts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Identical Brand Logo & Emblem as Header) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <div class="footer-about">
+          <!-- Footer Brand Logo Matching Header -->
+          <a href="#home" class="brand-logo" style="margin-bottom: 16px;" aria-label="Time & Gold Home">
+            <div class="brand-logo-frame">
+              <div class="brand-dial-ring"></div>
+              <img 
+                class="brand-logo-img" 
+                src="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg" 
+                alt="Time & Gold Emblem"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+              <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+                <use href="#brandHorologyEmblem" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Time &amp; Gold</span>
+              <span class="brand-sub">Short and Stylish</span>
+            </div>
+          </a>
+
+          <p>
+            India's most trusted luxury watch destination. Official authorized retailers for over 40 iconic Swiss and global horological maisons and fine diamond jewellery creators.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#products" class="footer-link">Grand Complications</a></li>
+            <li><a href="#products" class="footer-link">Men's Swiss Automatic</a></li>
+            <li><a href="#products" class="footer-link">Women's Diamond Bezel</a></li>
+            <li><a href="#jewellery-salon" class="footer-link">High Solitaire Jewellery</a></li>
+            <li><a href="#about" class="footer-link">Calibre Architecture</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Maison Services</h4>
+          <ul class="footer-links">
+            <li><a href="#contact" class="footer-link">Book Boutique Viewing</a></li>
+            <li><a href="#about" class="footer-link">Horology Restoration</a></li>
+            <li><a href="#contact" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="#jewellery-salon" class="footer-link">Diamond Authentication</a></li>
+            <li><a href="#contact" class="footer-link">Corporate Gifting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Gazette</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px; font-weight: 500;">
+            Receive encrypted announcements regarding limited dial allocations and salon previews.
+          </p>
+          <form class="newsletter-box" onsubmit="event.preventDefault(); alert('You have been enrolled into the Time & Gold VIP Gazette.');">
+            <input type="email" class="newsletter-input" placeholder="Your direct email" required />
+            <button type="submit" class="btn-gold" style="padding: 10px 18px;" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TIME &amp; GOLD. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link" style="font-size: 0.75rem;">Privacy Policy</a>
+          <a href="#" class="footer-link" style="font-size: 0.75rem;">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--text-primary);">Your Luxury Bag</h3>
+        <button id="closeCartBtn" style="font-size: 1.2rem; color: var(--text-muted);"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-drawer-items" id="cartDrawerItems">
+        <div class="cart-item-row" data-id="1">
+          <div class="cart-item-img">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tourbillon" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Monarch Celestial Tourbillon</h6>
+            <div class="cart-item-price">₹ 1,850,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="cart-item-row" data-id="2">
+          <div class="cart-item-img">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diamond Ring" />
+          </div>
+          <div class="cart-item-info">
+            <h6>Aurelia Cushion Pavé Ring</h6>
+            <div class="cart-item-price">₹ 840,000</div>
+          </div>
+          <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Total Investment</span>
+          <span class="gold-gradient-text" id="cartTotalVal">₹ 2,690,000</span>
+        </div>
+        <button class="btn-gold" style="width: 100%; justify-content: center;" onclick="alert('Redirecting to 256-bit Encrypted Luxury Checkout.');">
+          <span>Proceed To VIP Checkout</span>
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive "Book Item" VIP Reservation Modal -->
+  <div class="book-modal-overlay" id="bookModalOverlay">
+    <div class="book-modal-dialog">
+      <button class="modal-close-btn" id="closeBookModalBtn" aria-label="Close Booking Window">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="gold-gradient-text" style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 800; letter-spacing: 2px;">
+          TIME &amp; GOLD
+        </div>
+        <div style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 4px; font-weight: 600;">
+          Reserve Private Viewing &amp; Item Allocation
+        </div>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookItemSelect">Selected Masterpiece / Reference</label>
+          <input type="text" id="bookItemSelect" class="form-input" value="Monarch Celestial Tourbillon" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookSalon">Preferred Salon Location</label>
+          <select id="bookSalon" class="form-select">
+            <option value="Mumbai — Palladium Mall">Mumbai — Palladium Mall Flagship</option>
+            <option value="Delhi NCR — DLF Emporio">Delhi NCR — DLF Emporio</option>
+            <option value="Bengaluru — UB City Mall">Bengaluru — UB City Mall</option>
+            <option value="Hyderabad — Jubilee Hills">Hyderabad — Jubilee Hills Private Estate</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="bookDate">Viewing Date</label>
+            <input type="date" id="bookDate" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookTime">Preferred Time</label>
+            <input type="time" id="bookTime" class="form-input" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookGuestName">Full Name</label>
+          <input type="text" id="bookGuestName" class="form-input" placeholder="e.g. Lord Sterling" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookContact">Direct Telephone / Mobile</label>
+          <input type="tel" id="bookContact" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <span>Confirm Private Appointment</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & INTERACTION ENGINE -->
+  <script src="index.js">
+   
+  </script>
+</body>
+</html>
