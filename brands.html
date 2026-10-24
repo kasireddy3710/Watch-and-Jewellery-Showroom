@@ -64,10 +64,9 @@
         </div>
       </a>
 
-      <!-- Navigation Menu: Home, About, Products, Brands (Active), Gifting, Contact -->
+      <!-- Navigation Menu -->
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <ul class="nav-menu" id="navMenu">
           <li class="nav-item has-dropdown" id="homeNavItem">
             <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
               <span>Home</span>
@@ -81,7 +80,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-1</span>
-                    
                   </div>
                 </a>
               </li>
@@ -90,7 +88,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-2</span>
-                    
                   </div>
                 </a>
               </li>
@@ -148,50 +145,136 @@
     </div>
   </header>
 
-  <!-- Brands Page Hero Section -->
-  <section class="brands-hero">
+  <!-- SECTION 1: MAJESTIC BRANDS SHOWCASE HERO -->
+  <section class="flagship-hero-section" id="brandsHeroMaster">
+    <div class="hero-backdrop-glow"></div>
+    <div class="container flagship-hero-container">
+
+      <!-- Left Editorial Column -->
+      <div class="hero-text-col">
+        <div class="hero-pill-badge animate-hero-fade">
+          <i class="fa-solid fa-crown"></i>
+          <span>Official Authorized Salons &amp; Retailers</span>
+        </div>
+
+        <h1 class="hero-flagship-title animate-hero-fade delay-1">
+          Distinguished Maisons, <br />
+          <span class="gold-gradient-text">Immortal Artistry.</span>
+        </h1>
+
+        <p class="hero-flagship-desc animate-hero-fade delay-2">
+          Step into our curated international salon representing the pinnacle of Swiss horological complications and fine high joaillerie. Direct allocations certified with official manufacturer warranties and international authentication archives.
+        </p>
+
+        <div class="hero-btn-row animate-hero-fade delay-3">
+          <a href="#brandsDirectory" class="btn-gold">
+            <span>Explore Official Maisons</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+          <button class="btn-outline quick-book-trigger" data-item="VIP Maison Allocation & Salon Suite Appointment">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Reserve Private Salon</span>
+          </button>
+        </div>
+
+        <div class="hero-metrics-strip animate-hero-fade delay-4">
+          <div class="hero-metric-cell">
+            <span class="hero-metric-num gold-gradient-text">40+</span>
+            <span class="hero-metric-label">Swiss &amp; Global Maisons</span>
+          </div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-cell">
+            <span class="hero-metric-num gold-gradient-text">100%</span>
+            <span class="hero-metric-label">Official Manufacturer Warranty</span>
+          </div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-cell">
+            <span class="hero-metric-num gold-gradient-text">0.01s</span>
+            <span class="hero-metric-label">Geneva Chrono Precision</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Interactive Visual Column with 1 High-Resolution Photo -->
+      <div class="hero-photo-wrapper animate-hero-fade delay-2">
+        <div class="hero-orbit-dial outer"></div>
+        <div class="hero-orbit-dial inner"></div>
+
+        <div class="hero-showcase-card border-glow-wrapper" id="heroInteractivePhotoCard">
+          <div class="border-glow-inner hero-card-inner">
+            <div class="hero-photo-frame media-sheen">
+              <span class="hero-photo-badge top-right">
+                <i class="fa-solid fa-certificate"></i> Official Partner Allocation
+              </span>
+              <img 
+                src="https://i.pinimg.com/736x/a6/47/b1/a647b197b6aeee86f859f3448114ab14.jpg" 
+                alt="Swiss High-Tech Ceramic Grand Complication" 
+                class="hero-main-photo"
+              />
+              <span class="hero-photo-badge bottom-left">
+                <i class="fa-solid fa-gem"></i> Haute Horlogerie 2026
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Smooth Scrolling Indicator Cue -->
+    <a href="#brandsDirectory" class="hero-scroll-prompt" aria-label="Scroll to Official Maisons Directory">
+      <span class="scroll-cue-title">View Maisons Directory</span>
+      <div class="mouse-outline">
+        <div class="mouse-dot"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Animated Marquee of Official Maisons -->
+  <div class="brands-marquee-bar">
+    <div class="marquee-track">
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> LONGINES MASTER</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> RADO SWITZERLAND</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> TISSOT 1853</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> BALMAIN PARIS</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> FREDERIQUE CONSTANT</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> MAURICE LACROIX</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> CARTIER VAULT</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> BVLGARI ROMA</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> TIFFANY &amp; CO.</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> GRAFF DIAMONDS</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> VAN CLEEF &amp; ARPELS</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> CHOPARD GENÈVE</div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: BRANDS DIRECTORY & CATALOG -->
+  <section class="brands-hero" id="brandsDirectory">
     <div class="container">
-      <div class="section-header" style="margin-bottom: 24px;">
+      <div class="section-header" style="margin-bottom: 0;">
         <span class="section-subtitle"><i class="fa-solid fa-crown"></i> Authorized Retailer &amp; Official Salon</span>
-        <h1 class="section-title">The World's Most Prestigious Maisons</h1>
+        <h2 class="section-title">The World's Most Prestigious Maisons</h2>
         <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
           Time &amp; Gold serves as an official partner to celebrated Swiss horological masters and legendary high jewellery creators. Explore 15 distinguished icons with authenticated manufacturer warranties.
         </p>
       </div>
-
-      <!-- Category Filter Tabs (3 Gents Watches, 3 Ladies Watches, 3 Bracelets, 3 Rings, 3 Necklaces) -->
-      <div class="brand-filter-cluster">
-        <button class="brand-filter-btn active" data-filter="all"><i class="fa-solid fa-certificate"></i> All Maisons</button>
-        <button class="brand-filter-btn" data-filter="gents-watches"><i class="fa-solid fa-clock"></i> Gents Watches </button>
-        <button class="brand-filter-btn" data-filter="ladies-watches"><i class="fa-regular fa-clock"></i> Ladies Watches </button>
-        <button class="brand-filter-btn" data-filter="bracelets"><i class="fa-solid fa-circle-notch"></i> Bracelets </button>
-        <button class="brand-filter-btn" data-filter="rings"><i class="fa-solid fa-ring"></i> Rings </button>
-        <button class="brand-filter-btn" data-filter="necklaces"><i class="fa-solid fa-gem"></i> Necklaces </button>
-      </div>
-    </div>
-
-    <!-- Animated Marquee of Official Maisons -->
-    <div class="brands-marquee-bar">
-      <div class="marquee-track">
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> LONGINES MASTER</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> RADO SWITZERLAND</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> TISSOT 1853</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> BALMAIN PARIS</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> FREDERIQUE CONSTANT</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> MAURICE LACROIX</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> CARTIER VAULT</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> BVLGARI ROMA</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> TIFFANY &amp; CO.</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> GRAFF DIAMONDS</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> VAN CLEEF &amp; ARPELS</div>
-        <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> CHOPARD GENÈVE</div>
-      </div>
     </div>
   </section>
 
-  <!-- 15 Products Catalog Grid with Geometric Clipped Images & Border Glows -->
+  <!-- 15 Products Catalog Grid with Filter Cluster Moved Directly Below Header -->
   <section class="brands-catalog-section">
     <div class="container">
+
+      <!-- Category Filter Tabs (Relocated below section header) -->
+      <div class="brand-filter-cluster">
+        <button class="brand-filter-btn active" data-filter="all"><i class="fa-solid fa-certificate"></i> All Maisons</button>
+        <button class="brand-filter-btn" data-filter="gents-watches"><i class="fa-solid fa-clock"></i> Gents Watches</button>
+        <button class="brand-filter-btn" data-filter="ladies-watches"><i class="fa-regular fa-clock"></i> Ladies Watches</button>
+        <button class="brand-filter-btn" data-filter="bracelets"><i class="fa-solid fa-circle-notch"></i> Bracelets</button>
+        <button class="brand-filter-btn" data-filter="rings"><i class="fa-solid fa-ring"></i> Rings</button>
+        <button class="brand-filter-btn" data-filter="necklaces"><i class="fa-solid fa-gem"></i> Necklaces</button>
+      </div>
+
       <div class="brands-grid" id="brandsGrid">
 
         <!-- ==================== 3 GENTS WATCHES ==================== -->
@@ -340,7 +423,7 @@
                 <div class="product-pricing">₹ 475,000</div>
               </div>
               <div class="product-actions-bar">
-                <button class="btn-outline add-to-bag-btn" data-id="205" data-title="Frederique Constant Classics Art Déco Solitaire Pavé" data-price="4750000" data-img="https://tse3.mm.bing.net/th/id/OIP.sa2u50JblCcdPlRHzn3OugHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                <button class="btn-outline add-to-bag-btn" data-id="205" data-title="Frederique Constant Classics Art Déco Solitaire Pavé" data-price="475000" data-img="https://tse3.mm.bing.net/th/id/OIP.sa2u50JblCcdPlRHzn3OugHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
                   Add To Bag
                 </button>
                 <button class="btn-gold quick-book-trigger" data-item="Frederique Constant Classics Art Déco Solitaire Pavé (₹ 475,000)" style="padding: 10px 14px; font-size: 0.72rem;">
@@ -668,9 +751,7 @@
     </div>
   </section>
 
-  <!-- ==========================================================
-       ADDED LUXURY SECTION: THE PRIVATE COLLECTOR'S ALLOCATION VAULT
-       ========================================================== -->
+  <!-- 3RD SECTION: THE PRIVATE COLLECTOR'S ALLOCATION VAULT -->
   <section class="collector-allocation-section">
     <div class="container">
       <div class="section-header">
@@ -763,7 +844,7 @@
     </div>
   </section>
 
-  <!-- Official Partnership Assurance Section -->
+  <!-- 4TH SECTION: OFFICIAL PARTNERSHIP ASSURANCE -->
   <section class="partnership-assurance-section">
     <div class="container partnership-grid">
 
@@ -784,7 +865,7 @@
       <div>
         <span class="section-subtitle">Absolute Authenticity</span>
         <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">The Time &amp; Gold Standard</h2>
-        
+
         <ul class="partnership-points-list">
           <li class="partnership-point-item">
             <div class="point-icon-frame"><i class="fa-solid fa-shield-halved"></i></div>
@@ -813,41 +894,76 @@
     </div>
   </section>
 
-  <!-- Trust Assurance Strip -->
-  <section class="trust-assurance-strip">
-    <div class="container assurance-grid">
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="assurance-text">
-          <h5>100% Genuine</h5>
-          <p>Official Brand Authorization</p>
-        </div>
+  <!-- NEW ADDED SECTION: THE MASTER HOROLOGISTS ATELIER & RESTORATION SUITE -->
+  <section class="atelier-restoration-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-gears"></i> Expert Technical Care</span>
+        <h2 class="section-title">The Master Horologist's Atelier &amp; Restoration Suite</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
+          Entrust your treasured heirlooms and high complications to our certified master horologists. Operating in climate-controlled cleanrooms with original manufacturer tooling.
+        </p>
       </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
-        <div class="assurance-text">
-          <h5>Insured Transit</h5>
-          <p>Complimentary Doorstep Delivery</p>
+
+      <div class="atelier-grid">
+        <!-- Atelier Service 1 -->
+        <div class="border-glow-wrapper atelier-card">
+          <div class="border-glow-inner" style="padding: 36px 28px; background: var(--bg-surface-elevated); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="atelier-card-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <h3>Complete Movement Overhaul</h3>
+              <p>
+                Complete ultrasonic disassembly, lubrication with synthetic Swiss oils, jewel inspection, and electronic timing calibration across 6 positions.
+              </p>
+            </div>
+            <button class="btn-outline quick-book-trigger" data-item="Complete Movement Overhaul Consultation" style="width: 100%; justify-content: center; font-size: 0.72rem;">
+              <span>Schedule Service</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <div class="assurance-text">
-          <h5>Authorized Service</h5>
-          <p>Geneva-Trained Watchmakers</p>
+
+        <!-- Atelier Service 2 -->
+        <div class="border-glow-wrapper atelier-card">
+          <div class="border-glow-inner" style="padding: 36px 28px; background: var(--bg-surface-elevated); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="atelier-card-icon">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <h3>Water Resistance &amp; Pressure Testing</h3>
+              <p>
+                Dry and wet vacuum pressure testing up to 300 meters, gasket replacement with OEM compounds, and hermetic sealing integrity checks.
+              </p>
+            </div>
+            <button class="btn-outline quick-book-trigger" data-item="Water Resistance & Pressure Testing Consultation" style="width: 100%; justify-content: center; font-size: 0.72rem;">
+              <span>Schedule Service</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
-        <div class="assurance-text">
-          <h5>Secure Payment</h5>
-          <p>Encrypted Global Checkouts</p>
+
+        <!-- Atelier Service 3 -->
+        <div class="border-glow-wrapper atelier-card">
+          <div class="border-glow-inner" style="padding: 36px 28px; background: var(--bg-surface-elevated); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="atelier-card-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3>Case &amp; Bracelet Refinishing</h3>
+              <p>
+                Micro-laser welding, satin-brushed grain restoration, and mirror diamond-polishing performed strictly to manufacturer geometry specifications.
+              </p>
+            </div>
+            <button class="btn-outline quick-book-trigger" data-item="Case & Bracelet Refinishing Consultation" style="width: 100%; justify-content: center; font-size: 0.72rem;">
+              <span>Schedule Service</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Site Footer Matching Header Exactly -->
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-grid">
@@ -890,18 +1006,18 @@
             <li><a href="products.html" class="footer-link">Men's Swiss Automatic</a></li>
             <li><a href="products.html" class="footer-link">Women's Diamond Bezel</a></li>
             <li><a href="products.html" class="footer-link">High Solitaire Jewellery</a></li>
-            <li><a href="about.html" class="footer-link">Calibre Architecture</a></li>
+            <li><a href="aboutus.html" class="footer-link">Calibre Architecture</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-heading">Maison Services</h4>
           <ul class="footer-links">
-            <li><a href="index.html#contact" class="footer-link">Book Boutique Viewing</a></li>
-            <li><a href="about.html" class="footer-link">Horology Restoration</a></li>
-            <li><a href="index.html#contact" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="contact.html" class="footer-link">Book Boutique Viewing</a></li>
+            <li><a href="aboutus.html" class="footer-link">Horology Restoration</a></li>
+            <li><a href="contact.html" class="footer-link">Certified Pressure Testing</a></li>
             <li><a href="products.html" class="footer-link">Diamond Authentication</a></li>
-            <li><a href="index.html#contact" class="footer-link">Corporate Gifting</a></li>
+            <li><a href="contact.html" class="footer-link">Corporate Gifting</a></li>
           </ul>
         </div>
 
@@ -943,7 +1059,7 @@
       <div class="cart-drawer-items" id="cartDrawerItems">
         <div class="cart-item-row" data-id="201">
           <div class="cart-item-img">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Longines Master" />
+            <img src="https://th.bing.com/th/id/OIP.1wX9FmpT2MbQ_zGzNrPpoQHaGR?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Longines Master" />
           </div>
           <div class="cart-item-info">
             <h6>Longines Master Moonphase</h6>
@@ -954,7 +1070,7 @@
 
         <div class="cart-item-row" data-id="207">
           <div class="cart-item-img">
-            <img src="https://5.imimg.com/data5/SELLER/Default/2025/10/550211960/NR/CE/DU/121692302/aurora-diamond-bracelet-1000x1000.jpg" alt="Diamond Bracelet" />
+            <img src="https://iansharp.com.au/cdn/shop/products/Illusion_Set_Diamond_Tennis_Bracelet_167994-YG18_1024x1024.jpg?v=1642937156" alt="Diamond Bracelet" />
           </div>
           <div class="cart-item-info">
             <h6>Panthera Diamond Rivière</h6>
@@ -1040,7 +1156,7 @@
 
   <!-- JAVASCRIPT LOGIC & INTERACTION ENGINE -->
   <script src="brands.js">
-    
+   
   </script>
 </body>
 </html>

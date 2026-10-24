@@ -28,15 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
         rootHtml.setAttribute('data-theme', savedTheme);
       }
 
-      // 3. Circular RTL Reading Direction Switcher
+      // 3. Circular RTL Reading Direction Switcher (Fully Connected & Persisted)
       const rtlToggleBtn = document.getElementById('rtlToggleBtn');
+      
+      const applyDirection = (dir) => {
+        rootHtml.setAttribute('dir', dir);
+        if (rtlToggleBtn) {
+          rtlToggleBtn.textContent = dir === 'rtl' ? 'LTR' : 'RTL';
+        }
+      };
+
       if (rtlToggleBtn) {
         rtlToggleBtn.addEventListener('click', () => {
-          const currentDir = rootHtml.getAttribute('dir');
+          const currentDir = rootHtml.getAttribute('dir') || 'ltr';
           const nextDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
-          rootHtml.setAttribute('dir', nextDir);
-          rtlToggleBtn.textContent = nextDir === 'rtl' ? 'LTR' : 'RTL';
+          applyDirection(nextDir);
+          localStorage.setItem('tt_dir_pref', nextDir);
         });
+      }
+
+      const savedDir = localStorage.getItem('tt_dir_pref');
+      if (savedDir) {
+        applyDirection(savedDir);
       }
 
       // 4. Mobile Menu Navigation
@@ -103,14 +116,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // 6. VIP Booking Modal
+      // 6. VIP Booking Modal Engine
       const openBookModalBtn = document.getElementById('openBookModalBtn');
       const closeBookModalBtn = document.getElementById('closeBookModalBtn');
       const bookModalOverlay = document.getElementById('bookModalOverlay');
+      const bookItemSelect = document.getElementById('bookItemSelect');
       const bookingForm = document.getElementById('bookingForm');
 
+      window.triggerBookingModal = function(consultationTopic) {
+        if (consultationTopic && bookItemSelect) {
+          bookItemSelect.value = consultationTopic;
+        }
+        if (bookModalOverlay) {
+          bookModalOverlay.classList.add('active');
+        }
+      };
+
       if (openBookModalBtn && bookModalOverlay) {
-        openBookModalBtn.addEventListener('click', () => bookModalOverlay.classList.add('active'));
+        openBookModalBtn.addEventListener('click', () => triggerBookingModal('Bespoke Horological & Solitaire Viewing'));
       }
 
       if (closeBookModalBtn && bookModalOverlay) {
@@ -128,7 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
           e.preventDefault();
           const guest = document.getElementById('bookGuestName').value;
           const salon = document.getElementById('bookSalon').value;
-          alert(`Private appointment confirmed for ${guest}.\nLocation: ${salon}\nOur Head Concierge will contact you within 2 business hours.`);
+          const focus = bookItemSelect.value;
+          alert(`Private appointment confirmed for ${guest}.\n\nFocus: ${focus}\nLocation: ${salon}\n\nOur Senior Horological Concierge will contact you within 2 business hours.`);
           bookModalOverlay.classList.remove('active');
           bookingForm.reset();
         });

@@ -1062,51 +1062,105 @@
       line-height: 1.6;
     }
 
-    /* TRUST ASSURANCE STRIP */
-    .trust-assurance-strip {
-      padding-block: 50px;
-      background: var(--bg-body);
-      border-block: 1px solid var(--border-color-subtle);
+    /* NEW ADDED SECTION: THE SOVEREIGN BESPOKE ENGRAVING & MONOGRAM ATELIER */
+    .engraving-atelier-section {
+      padding-block: 100px;
+      background: radial-gradient(circle at 70% 50%, rgba(240, 199, 66, 0.08) 0%, var(--bg-surface-elevated) 70%);
+      border-top: 1px solid var(--border-color-subtle);
+      border-bottom: 1px solid var(--border-color);
     }
 
-    .assurance-grid {
+    .engraving-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-    }
-
-    .assurance-item {
-      display: flex;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 50px;
       align-items: center;
-      gap: 18px;
     }
 
-    .assurance-icon {
-      width: 50px;
-      height: 50px;
+    .engraving-preview-card {
+      background: var(--bg-surface);
+      border: 1.8px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(240, 199, 66, 0.2);
+    }
+
+    .engraving-coin-seal {
+      width: 160px;
+      height: 160px;
+      margin-inline: auto;
       border-radius: 50%;
+      border: 2px dashed var(--gold-primary);
       background: var(--badge-bg);
-      border: 1.5px solid var(--border-color);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: var(--gold-primary);
-      font-size: 1.3rem;
-      flex-shrink: 0;
+      box-shadow: 0 0 25px rgba(240, 199, 66, 0.35);
+      position: relative;
+      margin-bottom: 24px;
+      transition: var(--transition);
     }
 
-    .assurance-text h5 {
+    .engraving-coin-seal::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border-radius: 50%;
+      border: 1px solid rgba(240, 199, 66, 0.4);
+      pointer-events: none;
+    }
+
+    .preview-monogram-text {
       font-family: var(--font-display);
-      font-size: 1rem;
-      margin-bottom: 3px;
-      font-weight: 800;
-      color: var(--text-primary);
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--gold-primary);
+      text-shadow: 0 0 10px rgba(240, 199, 66, 0.5);
     }
 
-    .assurance-text p {
-      font-size: 0.8rem;
+    .preview-date-text {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       color: var(--text-secondary);
-      font-weight: 600;
+      margin-top: 4px;
+      font-weight: 700;
+    }
+
+    .engraving-form-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .engraving-metal-options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .metal-opt-btn {
+      padding: 12px 10px;
+      background: var(--bg-body);
+      border: 1.5px solid var(--border-color-subtle);
+      border-radius: var(--radius-xs);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .metal-opt-btn.active, .metal-opt-btn:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+      background: var(--badge-bg);
+      box-shadow: 0 0 12px rgba(240, 199, 66, 0.3);
     }
 
     /* FOOTER */
@@ -1452,7 +1506,8 @@
     /* RESPONSIVE */
     @media (max-width: 1024px) {
       .gifting-hero-grid,
-      .unboxing-grid {
+      .unboxing-grid,
+      .engraving-grid {
         grid-template-columns: 1fr;
         text-align: center;
       }

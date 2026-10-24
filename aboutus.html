@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Our Heritage &amp; Artisans | Time &amp; Gold</title>
+  <title>Authorized Luxury Brands &amp; Maisons | Time &amp; Gold</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +13,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
- <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="brands.css">
 </head>
 <body>
 
@@ -44,7 +44,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
 
-      <!-- Header Brand Logo with Image and SVG Fallback -->
+      <!-- Header Brand Logo with Image and Vector Fallback -->
       <a href="index.html" class="brand-logo" aria-label="Time & Gold Home">
         <div class="brand-logo-frame">
           <div class="brand-dial-ring"></div>
@@ -64,7 +64,7 @@
         </div>
       </a>
 
-      <!-- Same Navigation Links (About Set to Active) -->
+      <!-- Navigation Menu -->
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li class="nav-item has-dropdown" id="homeNavItem">
@@ -80,7 +80,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-1</span>
-                    
                   </div>
                 </a>
               </li>
@@ -89,20 +88,20 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-2</span>
-                    
                   </div>
                 </a>
               </li>
             </ul>
           </li>
+
           <li class="nav-item">
-            <a href="/aboutus.html" class="nav-link active">About</a>
+            <a href="/aboutus.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
             <a href="/products.html" class="nav-link">Products</a>
           </li>
           <li class="nav-item">
-            <a href="/brands.html" class="nav-link">Brands</a>
+            <a href="/brands.html" class="nav-link active">Brands</a>
           </li>
           <li class="nav-item">
             <a href="/gifting.html" class="nav-link">Gifting</a>
@@ -146,305 +145,825 @@
     </div>
   </header>
 
-  <!-- About Hero Section -->
-  <section class="about-hero">
-    <div class="container about-hero-grid">
-      <div>
-        <div class="about-hero-badge">
+  <!-- SECTION 1: MAJESTIC BRANDS SHOWCASE HERO -->
+  <section class="flagship-hero-section" id="brandsHeroMaster">
+    <div class="hero-backdrop-glow"></div>
+    <div class="container flagship-hero-container">
+
+      <!-- Left Editorial Column -->
+      <div class="hero-text-col">
+        <div class="hero-pill-badge animate-hero-fade">
           <i class="fa-solid fa-crown"></i>
-          <span>The Sovereign Maison of Horology</span>
+          <span>Official Authorized Salons &amp; Retailers</span>
         </div>
-        <h1 class="about-hero-title">
-          Guarding The Sacred <br />
-          <span class="gold-gradient-text">Art of Mechanical Time</span>
+
+        <h1 class="hero-flagship-title animate-hero-fade delay-1">
+          Distinguished Maisons, <br />
+          <span class="gold-gradient-text">Immortal Artistry.</span>
         </h1>
-        <p class="about-hero-desc">
-          Founded upon an uncompromised quest for horological transcendence, Time &amp; Gold unites the storied traditions of Geneva master watchmakers with the exquisite heritage of Indian high jewelry. We do not simply trade in timepieces; we preserve centuries of human brilliance.
+
+        <p class="hero-flagship-desc animate-hero-fade delay-2">
+          Step into our curated international salon representing the pinnacle of Swiss horological complications and fine high joaillerie. Direct allocations certified with official manufacturer warranties and international authentication archives.
         </p>
 
-        <div class="about-stat-strip">
-          <div>
-            <div class="stat-number">1926</div>
-            <div class="stat-label">Foundational Heritage</div>
+        <div class="hero-btn-row animate-hero-fade delay-3">
+          <a href="#brandsDirectory" class="btn-gold">
+            <span>Explore Official Maisons</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+          <button class="btn-outline quick-book-trigger" data-item="VIP Maison Allocation & Salon Suite Appointment">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Reserve Private Salon</span>
+          </button>
+        </div>
+
+        <div class="hero-metrics-strip animate-hero-fade delay-4">
+          <div class="hero-metric-cell">
+            <span class="hero-metric-num gold-gradient-text">40+</span>
+            <span class="hero-metric-label">Swiss &amp; Global Maisons</span>
           </div>
-          <div>
-            <div class="stat-number">40+</div>
-            <div class="stat-label">Swiss Grand Maisons</div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-cell">
+            <span class="hero-metric-num gold-gradient-text">100%</span>
+            <span class="hero-metric-label">Official Manufacturer Warranty</span>
           </div>
-          <div>
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Geneva &amp; GIA Certified</div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-cell">
+            <span class="hero-metric-num gold-gradient-text">0.01s</span>
+            <span class="hero-metric-label">Geneva Chrono Precision</span>
           </div>
         </div>
       </div>
 
-      <div class="about-stage-visual">
-        <div class="about-stage-halo"></div>
-        <div class="border-glow-wrapper about-hero-card">
-          <div class="border-glow-inner media-sheen">
-            <img 
-              class="img-cinematic-zoom"
-              src="https://tse2.mm.bing.net/th/id/OIP.Mh25GlL3V1-V_vW5_e2ENAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
-              alt="Artisan inspecting movement" 
-            />
-            <div class="about-card-badge">
-              <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 800; color: var(--text-primary);">
-                The Geneva Calibre Laboratory
-              </div>
-              <div style="font-size: 0.75rem; color: var(--gold-primary); font-weight: 700; margin-top: 4px;">
-                Hand-Finished Bridges &amp; Tourbillon Cages
-              </div>
+      <!-- Right Interactive Visual Column with 1 High-Resolution Photo -->
+      <div class="hero-photo-wrapper animate-hero-fade delay-2">
+        <div class="hero-orbit-dial outer"></div>
+        <div class="hero-orbit-dial inner"></div>
+
+        <div class="hero-showcase-card border-glow-wrapper" id="heroInteractivePhotoCard">
+          <div class="border-glow-inner hero-card-inner">
+            <div class="hero-photo-frame media-sheen">
+              <span class="hero-photo-badge top-right">
+                <i class="fa-solid fa-certificate"></i> Official Partner Allocation
+              </span>
+              <img 
+                src="https://i.pinimg.com/736x/a6/47/b1/a647b197b6aeee86f859f3448114ab14.jpg" 
+                alt="Swiss High-Tech Ceramic Grand Complication" 
+                class="hero-main-photo"
+              />
+              <span class="hero-photo-badge bottom-left">
+                <i class="fa-solid fa-gem"></i> Haute Horlogerie 2026
+              </span>
             </div>
           </div>
         </div>
       </div>
+
+    </div>
+
+    <!-- Smooth Scrolling Indicator Cue -->
+    <a href="#brandsDirectory" class="hero-scroll-prompt" aria-label="Scroll to Official Maisons Directory">
+      <span class="scroll-cue-title">View Maisons Directory</span>
+      <div class="mouse-outline">
+        <div class="mouse-dot"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Animated Marquee of Official Maisons -->
+  <div class="brands-marquee-bar">
+    <div class="marquee-track">
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> LONGINES MASTER</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> RADO SWITZERLAND</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> TISSOT 1853</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> BALMAIN PARIS</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> FREDERIQUE CONSTANT</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> MAURICE LACROIX</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> CARTIER VAULT</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> BVLGARI ROMA</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> TIFFANY &amp; CO.</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> GRAFF DIAMONDS</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> VAN CLEEF &amp; ARPELS</div>
+      <div class="marquee-item"><i class="fa-solid fa-shield-halved"></i> CHOPARD GENÈVE</div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: BRANDS DIRECTORY & CATALOG -->
+  <section class="brands-hero" id="brandsDirectory">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 0;">
+        <span class="section-subtitle"><i class="fa-solid fa-crown"></i> Authorized Retailer &amp; Official Salon</span>
+        <h2 class="section-title">The World's Most Prestigious Maisons</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
+          Time &amp; Gold serves as an official partner to celebrated Swiss horological masters and legendary high jewellery creators. Explore 15 distinguished icons with authenticated manufacturer warranties.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- EXTRA SECTION 1: THE EPOCHS OF HOROLOGY (INTERACTIVE TIMELINE) -->
-  <section class="timeline-section">
+  <!-- 15 Products Catalog Grid with Filter Cluster Moved Directly Below Header -->
+  <section class="brands-catalog-section">
+    <div class="container">
+
+      <!-- Category Filter Tabs (Relocated below section header) -->
+      <div class="brand-filter-cluster">
+        <button class="brand-filter-btn active" data-filter="all"><i class="fa-solid fa-certificate"></i> All Maisons</button>
+        <button class="brand-filter-btn" data-filter="gents-watches"><i class="fa-solid fa-clock"></i> Gents Watches</button>
+        <button class="brand-filter-btn" data-filter="ladies-watches"><i class="fa-regular fa-clock"></i> Ladies Watches</button>
+        <button class="brand-filter-btn" data-filter="bracelets"><i class="fa-solid fa-circle-notch"></i> Bracelets</button>
+        <button class="brand-filter-btn" data-filter="rings"><i class="fa-solid fa-ring"></i> Rings</button>
+        <button class="brand-filter-btn" data-filter="necklaces"><i class="fa-solid fa-gem"></i> Necklaces</button>
+      </div>
+
+      <div class="brands-grid" id="brandsGrid">
+
+        <!-- ==================== 3 GENTS WATCHES ==================== -->
+        <!-- Gents Watch 1 -->
+        <div class="border-glow-wrapper product-card" data-category="gents-watches">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Swiss Heritage</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://th.bing.com/th/id/OIP.1wX9FmpT2MbQ_zGzNrPpoQHaGR?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Longines Master Moonphase Chrono" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Longines • Saint-Imier</div>
+                <h3 class="product-name">Master Moonphase Chrono</h3>
+                <p class="product-specs-summary">Column-Wheel Calibre • Triple Calendar • 18K Solid Gold</p>
+                <div class="product-pricing">₹ 820,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="201" data-title="Longines Master Moonphase Chrono" data-price="820000" data-img="https://th.bing.com/th/id/OIP.1wX9FmpT2MbQ_zGzNrPpoQHaGR?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Longines Master Moonphase Chrono (₹ 820,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gents Watch 2 -->
+        <div class="border-glow-wrapper product-card" data-category="gents-watches">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">High-Tech Ceramic</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://revolutionwatch.com/wp-content/uploads/2023/04/01-Rado-Captain-Cook-Skeleton-scaled-1.jpg" 
+                alt="Rado Captain Cook Skeleton" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Rado • Lengnau</div>
+                <h3 class="product-name">Captain Cook Skeleton High-Tech</h3>
+                <p class="product-specs-summary">Monobloc Plasma Ceramic • Nivachron Hairspring • 80h Power</p>
+                <div class="product-pricing">₹ 460,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="202" data-title="Rado Captain Cook Skeleton High-Tech" data-price="460000" data-img="https://revolutionwatch.com/wp-content/uploads/2023/04/01-Rado-Captain-Cook-Skeleton-scaled-1.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Rado Captain Cook Skeleton High-Tech (₹ 460,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gents Watch 3 -->
+        <div class="border-glow-wrapper product-card" data-category="gents-watches">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Heritage Racing</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.automotivpress.fr/wp-content/uploads/2021/02/Tissot-Heritage-1973-Chronographe-2019-2-990x660.jpg" 
+                alt="Tissot Heritage 1973 Chrono" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Tissot 1853 • Le Locle</div>
+                <h3 class="product-name">Heritage 1973 Navigator Chrono</h3>
+                <p class="product-specs-summary">Valjoux A05.H31 Movement • Perforated Racing Leather • 100M</p>
+                <div class="product-pricing">₹ 310,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="203" data-title="Tissot Heritage 1973 Navigator Chrono" data-price="310000" data-img="https://www.automotivpress.fr/wp-content/uploads/2021/02/Tissot-Heritage-1973-Chronographe-2019-2-990x660.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Tissot Heritage 1973 Navigator Chrono (₹ 310,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 3 LADIES WATCHES ==================== -->
+        <!-- Ladies Watch 1 -->
+        <div class="border-glow-wrapper product-card" data-category="ladies-watches">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Parisian Haute</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.wadesilva.com/eshop/wp-content/uploads/2022/01/Balmain-Watch-Swiss-Made-B4899.33.86_1.jpg" 
+                alt="Balmain Madrigal Diamond Bezel" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Balmain • Paris</div>
+                <h3 class="product-name">Madrigal Diamond Lady Arabesque</h3>
+                <p class="product-specs-summary">Signature Arabesque Dial • 36 Wesselton Diamonds • Rose Gold</p>
+                <div class="product-pricing">₹ 390,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="204" data-title="Balmain Madrigal Diamond Lady Arabesque" data-price="390000" data-img="https://www.wadesilva.com/eshop/wp-content/uploads/2022/01/Balmain-Watch-Swiss-Made-B4899.33.86_1.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Balmain Madrigal Diamond Lady Arabesque (₹ 390,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ladies Watch 2 -->
+        <div class="border-glow-wrapper product-card" data-category="ladies-watches">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Art Déco Salon</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse3.mm.bing.net/th/id/OIP.sa2u50JblCcdPlRHzn3OugHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Frederique Constant Classics Art Déco" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Frederique Constant • Geneva</div>
+                <h3 class="product-name">Classics Art Déco Solitaire Pavé</h3>
+                <p class="product-specs-summary">Guilloché Mother of Pearl • Diamond Accents • Fluted Crown</p>
+                <div class="product-pricing">₹ 475,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="205" data-title="Frederique Constant Classics Art Déco Solitaire Pavé" data-price="475000" data-img="https://tse3.mm.bing.net/th/id/OIP.sa2u50JblCcdPlRHzn3OugHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Frederique Constant Classics Art Déco Solitaire Pavé (₹ 475,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ladies Watch 3 -->
+        <div class="border-glow-wrapper product-card" data-category="ladies-watches">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Swiss Manufacture</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://assets.catawiki.com/image/cw_ldp_l/plain/assets/catawiki/assets/2022/9/27/b/5/8/b5862737-394a-4ba9-84c0-5ad8436035d1.jpg" 
+                alt="Maurice Lacroix Fiaba Diamond" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Maurice Lacroix • Saignelégier</div>
+                <h3 class="product-name">Fiaba Moonphase Diamond Dial</h3>
+                <p class="product-specs-summary">Curved Ergonomic Case • Natural Blue Nacre • Diamond Ring</p>
+                <div class="product-pricing">₹ 350,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="206" data-title="Maurice Lacroix Fiaba Moonphase Diamond Dial" data-price="350000" data-img="https://assets.catawiki.com/image/cw_ldp_l/plain/assets/catawiki/assets/2022/9/27/b/5/8/b5862737-394a-4ba9-84c0-5ad8436035d1.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Maurice Lacroix Fiaba Moonphase Diamond Dial (₹ 350,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 3 BRACELETS ==================== -->
+        <!-- Bracelet 1 -->
+        <div class="border-glow-wrapper product-card" data-category="bracelets">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">12.50 CTW Tennis</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://iansharp.com.au/cdn/shop/products/Illusion_Set_Diamond_Tennis_Bracelet_167994-YG18_1024x1024.jpg?v=1642937156" 
+                alt="Aurora Diamond Line Rivière" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Cartier Style • Haute Joaillerie</div>
+                <h3 class="product-name">Panthera Diamond Link Rivière</h3>
+                <p class="product-specs-summary">18K White Gold • 12.50 CTW Round Brilliants • Dual Security Clasp</p>
+                <div class="product-pricing">₹ 1,180,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="207" data-title="Panthera Diamond Link Rivière" data-price="1180000" data-img="https://iansharp.com.au/cdn/shop/products/Illusion_Set_Diamond_Tennis_Bracelet_167994-YG18_1024x1024.jpg?v=1642937156" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Panthera Diamond Link Rivière (₹ 1,180,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bracelet 2 -->
+        <div class="border-glow-wrapper product-card" data-category="bracelets">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Articulating Gold</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://a.1stdibscdn.com/bvlgari-serpenti-viper-diamond-18k-rose-gold-one-coil-bracelet-s-for-sale-picture-3/v_13101/1610637356447/luxury_women_bvlgari_used_fine_jewelry_p326215_006_master.jpg" 
+                alt="Serpenti Diamond Coiled Bangle" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Bvlgari Inspired • Roma</div>
+                <h3 class="product-name">Serpenti Coiled Diamond Bangle</h3>
+                <p class="product-specs-summary">18K Rose Gold • Pavé Set Scales • Natural Emerald Eyes</p>
+                <div class="product-pricing">₹ 1,520,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="208" data-title="Serpenti Coiled Diamond Bangle" data-price="1520000" data-img="https://a.1stdibscdn.com/bvlgari-serpenti-viper-diamond-18k-rose-gold-one-coil-bracelet-s-for-sale-picture-3/v_13101/1610637356447/luxury_women_bvlgari_used_fine_jewelry_p326215_006_master.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Serpenti Coiled Diamond Bangle (₹ 1,520,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bracelet 3 -->
+        <div class="border-glow-wrapper product-card" data-category="bracelets">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Platinum 950</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse3.mm.bing.net/th/id/OIP.AkftjhK5nLlCEdCg8NoUgQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Victoria Marquise Diamond Bracelet" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Tiffany Style • New York</div>
+                <h3 class="product-name">Victoria Alternating Diamond Vine</h3>
+                <p class="product-specs-summary">Platinum 950 • Alternating Marquise &amp; Round Brilliants</p>
+                <div class="product-pricing">₹ 1,340,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="209" data-title="Victoria Alternating Diamond Vine" data-price="1340000" data-img="https://tse3.mm.bing.net/th/id/OIP.AkftjhK5nLlCEdCg8NoUgQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Victoria Alternating Diamond Vine (₹ 1,340,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 3 RINGS ==================== -->
+        <!-- Ring 1 -->
+        <div class="border-glow-wrapper product-card" data-category="rings">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">4.50 CT Radiant</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.markbroumand.com/cdn/shop/products/6443-1D196719_202_049_18k_800x.jpg?v=1677024226" 
+                alt="Graff Style Radiant Solitaire" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Graff Style • London Vault</div>
+                <h3 class="product-name">The Sovereign Radiant Solitaire</h3>
+                <p class="product-specs-summary">4.50 CT D-Flawless • Tapered Baguette Shoulders • Platinum</p>
+                <div class="product-pricing">₹ 2,850,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="210" data-title="The Sovereign Radiant Solitaire" data-price="2850000" data-img="https://www.markbroumand.com/cdn/shop/products/6443-1D196719_202_049_18k_800x.jpg?v=1677024226" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Sovereign Radiant Solitaire (₹ 2,850,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ring 2 -->
+        <div class="border-glow-wrapper product-card" data-category="rings">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Alhambra Clover</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://i.pinimg.com/originals/e7/9b/6c/e79b6c8130ab99e7556079e7bdec29e5.png" 
+                alt="Van Cleef Style Alhambra Solitaire" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Van Cleef Style • Place Vendôme</div>
+                <h3 class="product-name">Alhambra Golden Mother of Pearl</h3>
+                <p class="product-specs-summary">18K Guilloché Yellow Gold • Beaded Golden Contour • Central Diamond</p>
+                <div class="product-pricing">₹ 620,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="211" data-title="Alhambra Golden Mother of Pearl" data-price="620000" data-img="https://i.pinimg.com/originals/e7/9b/6c/e79b6c8130ab99e7556079e7bdec29e5.png" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Alhambra Golden Mother of Pearl (₹ 620,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ring 3 -->
+        <div class="border-glow-wrapper product-card" data-category="rings">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Cluster Cocktail</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://tse1.mm.bing.net/th/id/OIP.vKYHVHyOSBkmTls4xuzEEgHaHa?r=0&w=1500&h=1500&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Harry Winston Style Diamond Cluster" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Harry Winston Style • 5th Ave</div>
+                <h3 class="product-name">Winston Marquise Cluster Solitaire</h3>
+                <p class="product-specs-summary">3.80 CTW Multi-Shape Diamonds • Hand-Mounted Platinum Prongs</p>
+                <div class="product-pricing">₹ 1,780,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="212" data-title="Winston Marquise Cluster Solitaire" data-price="1780000" data-img="https://tse1.mm.bing.net/th/id/OIP.vKYHVHyOSBkmTls4xuzEEgHaHa?r=0&w=1500&h=1500&rs=1&pid=ImgDetMain&o=7&rm=3" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Winston Marquise Cluster Solitaire (₹ 1,780,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== 3 NECKLACES ==================== -->
+        <!-- Necklace 1 -->
+        <div class="border-glow-wrapper product-card" data-category="necklaces">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">GIA Type IIa • 6.42 CT</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://www.hirshlondon.com/media/catalog/product/cache/2d4529638fc78a261892c85f9c9ba3ba/p/u/pu4194.png" 
+                alt="The Sovereign Pear Cascade Necklace" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Graff Style • High Joaillerie</div>
+                <h3 class="product-name">The Sovereign Pear Diamond Cascade</h3>
+                <p class="product-specs-summary">6.42 CT D-Flawless Pear Solitaire • Double Halo • Platinum Collar</p>
+                <div class="product-pricing">₹ 4,250,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="213" data-title="The Sovereign Pear Diamond Cascade" data-price="4250000" data-img="https://www.hirshlondon.com/media/catalog/product/cache/2d4529638fc78a261892c85f9c9ba3ba/p/u/pu4194.png" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="The Sovereign Pear Diamond Cascade (₹ 4,250,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Necklace 2 -->
+        <div class="border-glow-wrapper product-card" data-category="necklaces">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Fancy Vivid Yellow</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://somethingaboutrocks.com/wp-content/uploads/2023/07/SUNRISE-Graff-Yellow-Diamond-Necklace-Close-Up-2.jpeg" 
+                alt="Sunrise Fancy Yellow Solitaire Choker" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Geneva Atelier • Haute Joaillerie</div>
+                <h3 class="product-name">Sunrise Yellow Diamond Riviera</h3>
+                <p class="product-specs-summary">8.20 CT Fancy Vivid Yellow Diamond • 22 CT White Diamond Choker</p>
+                <div class="product-pricing">₹ 5,100,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="214" data-title="Sunrise Yellow Diamond Riviera" data-price="5100000" data-img="https://somethingaboutrocks.com/wp-content/uploads/2023/07/SUNRISE-Graff-Yellow-Diamond-Necklace-Close-Up-2.jpeg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Sunrise Yellow Diamond Riviera (₹ 5,100,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Necklace 3 -->
+        <div class="border-glow-wrapper product-card" data-category="necklaces">
+          <div class="border-glow-inner">
+            <div class="clipped-media-frame media-sheen">
+              <span class="product-badge-flag">Tiered Briolette</span>
+              <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img 
+                class="img-cinematic-zoom"
+                src="https://images.dwell.com/photos/6063391372700811264/6374398849764290560/large.jpg" 
+                alt="Celeste Chandelier Diamond Drops" 
+              />
+            </div>
+            <div class="product-details">
+              <div>
+                <div class="brand-origin">Chopard Style • Haute Joaillerie</div>
+                <h3 class="product-name">Celeste Diamond Chandeliers</h3>
+                <p class="product-specs-summary">18K Solid Gold &amp; Platinum • Articulating Pavé Drops • 14.50 CTW</p>
+                <div class="product-pricing">₹ 2,400,000</div>
+              </div>
+              <div class="product-actions-bar">
+                <button class="btn-outline add-to-bag-btn" data-id="215" data-title="Celeste Diamond Chandeliers" data-price="2400000" data-img="https://images.dwell.com/photos/6063391372700811264/6374398849764290560/large.jpg" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Add To Bag
+                </button>
+                <button class="btn-gold quick-book-trigger" data-item="Celeste Diamond Chandeliers (₹ 2,400,000)" style="padding: 10px 14px; font-size: 0.72rem;">
+                  Book Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3RD SECTION: THE PRIVATE COLLECTOR'S ALLOCATION VAULT -->
+  <section class="collector-allocation-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">A Century of Provenance</span>
-        <h2 class="section-title">The Epochs of Mastery</h2>
-        <p class="section-desc">
-          Trace the century-long lineage of Time &amp; Gold from our humble beginnings in Swiss atelier workshops to becoming India's pre-eminent salon for numbered complications.
+        <span class="section-subtitle"><i class="fa-solid fa-key"></i> Maison Allocation Protocol</span>
+        <h2 class="section-title">The Private Collectors' Vault</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
+          Through official manufacturer allocations, Time &amp; Gold offers direct bespoke reservations for numbered tourbillons, minute repeaters, and museum-grade diamond creations.
         </p>
       </div>
 
-      <div class="timeline-container">
-        <!-- Epoch 1 -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-year">1926 — Geneva, Switzerland</div>
-            <h3 class="timeline-headline">The Genesis of the Calibre Escapement</h3>
-            <p class="timeline-text">
-              Master Horologist Émile Vaneau establishes our first restoration bench overlooking Lake Geneva, engineering custom hairsprings for royal pocket watches and marine chronometers.
-            </p>
+      <div class="allocation-tier-grid">
+        <!-- Tier 1 -->
+        <div class="border-glow-wrapper allocation-card">
+          <div class="allocation-card-inner">
+            <div>
+              <div class="allocation-icon-header">
+                <div class="allocation-badge-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <span class="allocation-tier-tag">Grand Calibre</span>
+              </div>
+              <h3 class="allocation-title">Haute Complications Allocation</h3>
+              <p class="allocation-desc">
+                Direct factory allocation for numbered perpetual calendars, double tourbillons, and chiming minute repeaters from Geneva and Vallée de Joux.
+              </p>
+              <ul class="allocation-perks-list">
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Factory-assigned serial reservation</li>
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Personalized caseback engraved in Switzerland</li>
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Private invitation to salon manufacture previews</li>
+              </ul>
+            </div>
+            <button class="btn-gold quick-book-trigger" data-item="Haute Complications Allocation Protocol Consultation" style="width: 100%; justify-content: center;">
+              <span>Request Calibre Allocation</span>
+            </button>
           </div>
         </div>
 
-        <!-- Epoch 2 -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-year">1964 — Mumbai &amp; Hyderabad</div>
-            <h3 class="timeline-headline">The Royal Indian Commission</h3>
-            <p class="timeline-text">
-              Invited by the royal dynasties of the Deccan to curate bespoke high jewelry dials, setting rare Golconda diamonds and Ceylon unheated sapphires directly into Swiss automatic movements.
-            </p>
+        <!-- Tier 2 -->
+        <div class="border-glow-wrapper allocation-card">
+          <div class="allocation-card-inner">
+            <div>
+              <div class="allocation-icon-header">
+                <div class="allocation-badge-icon">
+                  <i class="fa-solid fa-gem"></i>
+                </div>
+                <span class="allocation-tier-tag">Type IIa Vault</span>
+              </div>
+              <h3 class="allocation-title">High Joaillerie Gemmology</h3>
+              <p class="allocation-desc">
+                Private curation of certified D-Flawless solitaires, unheated royal blue Ceylon sapphires, and Colombian emeralds mounted on bespoke platinum.
+              </p>
+              <ul class="allocation-perks-list">
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> GIA &amp; Gübelin dual laboratory dossiers</li>
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Hand-rendered bespoke atelier designs</li>
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Conflict-free RJC chain-of-custody guarantee</li>
+              </ul>
+            </div>
+            <button class="btn-gold quick-book-trigger" data-item="High Joaillerie Bespoke Sourcing Appointment" style="width: 100%; justify-content: center;">
+              <span>Reserve Solitaire Consultation</span>
+            </button>
           </div>
         </div>
 
-        <!-- Epoch 3 -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-year">1998 — Vallée de Joux</div>
-            <h3 class="timeline-headline">Grand Complications Consortium</h3>
-            <p class="timeline-text">
-              Formalized official direct partnerships with over 40 prestigious Swiss maisons, securing exclusive allocations for perpetual calendars, minute repeaters, and gyroscopic tourbillons.
-            </p>
-          </div>
-        </div>
-
-        <!-- Epoch 4 -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-year">2026 — Pan-India Flagships</div>
-            <h3 class="timeline-headline">The Sanctuary of High Horology</h3>
-            <p class="timeline-text">
-              Over 65 luxury boutiques across Mumbai, Delhi, Bengaluru, and Hyderabad offering bespoke private collector vaults, certified pressure testing laboratories, and GIA Type IIa solitaire atelier viewing.
-            </p>
+        <!-- Tier 3 -->
+        <div class="border-glow-wrapper allocation-card">
+          <div class="allocation-card-inner">
+            <div>
+              <div class="allocation-icon-header">
+                <div class="allocation-badge-icon">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <span class="allocation-tier-tag">VIP Concierge</span>
+              </div>
+              <h3 class="allocation-title">White-Glove Salon Viewing</h3>
+              <p class="allocation-desc">
+                Experience private discreet viewings within our armored vaults across Mumbai, Delhi NCR, Bengaluru, and Hyderabad with dedicated horologists.
+              </p>
+              <ul class="allocation-perks-list">
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Secure private chauffeur &amp; valet transfer</li>
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Dedicated Geneva-accredited watchmaker on-site</li>
+                <li class="allocation-perk-item"><i class="fa-solid fa-check"></i> Private collector lounge &amp; champagne service</li>
+              </ul>
+            </div>
+            <button class="btn-gold quick-book-trigger" data-item="White-Glove Private Salon Suite Appointment" style="width: 100%; justify-content: center;">
+              <span>Book Private Salon Suite</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EXTRA SECTION 2: GUILD OF ARTISANS ATELIER -->
-  <section class="artisans-section">
+  <!-- 4TH SECTION: OFFICIAL PARTNERSHIP ASSURANCE -->
+  <section class="partnership-assurance-section">
+    <div class="container partnership-grid">
+
+      <!-- Seal Visual Frame -->
+      <div class="partnership-visual-box">
+        <div class="partnership-seal-ring">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: #f0c742; margin-bottom: 8px;">
+          Certified Authorized Retailer
+        </h3>
+        <p style="color: #ffffff; font-size: 0.88rem; max-width: 440px;">
+          Time &amp; Gold is formally certified by our Swiss and international brand partners. Every timepiece carries an authenticated electronic warranty card synced directly to the manufacture's central global registry.
+        </p>
+      </div>
+
+      <!-- Trust Pillars -->
+      <div>
+        <span class="section-subtitle">Absolute Authenticity</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">The Time &amp; Gold Standard</h2>
+
+        <ul class="partnership-points-list">
+          <li class="partnership-point-item">
+            <div class="point-icon-frame"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h5>Factory-Direct Provenance</h5>
+              <p>Direct shipments from Geneva, Le Locle, and La Chaux-de-Fonds with untouched serial numbers and tamper-evident factory packaging.</p>
+            </div>
+          </li>
+          <li class="partnership-point-item">
+            <div class="point-icon-frame"><i class="fa-solid fa-stamp"></i></div>
+            <div>
+              <h5>Official Warranty Stamping</h5>
+              <p>Your international warranty is activated on-site through our authorized retailer terminals, ensuring global service coverage at any brand boutique worldwide.</p>
+            </div>
+          </li>
+          <li class="partnership-point-item">
+            <div class="point-icon-frame"><i class="fa-solid fa-gem"></i></div>
+            <div>
+              <h5>GIA &amp; IGI Gemmological Dossiers</h5>
+              <p>Every solitaire diamond and fine gemstone is accompanied by individual laser-inscribed certificates confirming color, clarity, and cut excellence.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MASTER HOROLOGISTS ATELIER & RESTORATION SUITE -->
+  <section class="atelier-restoration-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">Behind The Loupe</span>
-        <h2 class="section-title">The Master Craftsmen Guild</h2>
-        <p class="section-desc">
-          Every gemstone is hand-selected and every calibre pinion is individually chamfered. Meet the guardians of our relentless pursuit of mechanical and gemmological perfection.
+        <span class="section-subtitle"><i class="fa-solid fa-gears"></i> Expert Technical Care</span>
+        <h2 class="section-title">The Master Horologist's Atelier &amp; Restoration Suite</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
+          Entrust your treasured heirlooms and high complications to our certified master horologists. Operating in climate-controlled cleanrooms with original manufacturer tooling.
         </p>
       </div>
 
-      <div class="artisans-grid">
-        <!-- Artisan 1 -->
-        <div class="border-glow-wrapper artisan-card">
-          <div class="border-glow-inner">
-            <div class="artisan-photo-frame media-sheen">
-              <span class="artisan-role-pill">Master Watchmaker</span>
-              <img 
-                class="img-cinematic-zoom"
-                src="https://static.vecteezy.com/system/resources/thumbnails/037/477/519/small_2x/ai-generated-handsome-man-model-wearing-blue-tuxedo-bokeh-style-background-with-generated-ai-photo.jpeg" 
-                alt="Henri Delacroix" 
-              />
-            </div>
-            <div class="artisan-info">
-              <div>
-                <h4 class="artisan-name">Henri Delacroix</h4>
-                <div class="artisan-specialty">35 Yrs • Geneva Seal Master</div>
-                <p class="artisan-bio">
-                  Accredited by the Geneva Horological Society; specializes in flying tourbillon cage balancing and hand-anglage bridge beveling.
-                </p>
+      <div class="atelier-grid">
+        <!-- Atelier Service 1 -->
+        <div class="border-glow-wrapper atelier-card">
+          <div class="border-glow-inner" style="padding: 36px 28px; background: var(--bg-surface-elevated); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="atelier-card-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
               </div>
+              <h3>Complete Movement Overhaul</h3>
+              <p>
+                Complete ultrasonic disassembly, lubrication with synthetic Swiss oils, jewel inspection, and electronic timing calibration across 6 positions.
+              </p>
             </div>
+            <button class="btn-outline quick-book-trigger" data-item="Complete Movement Overhaul Consultation" style="width: 100%; justify-content: center; font-size: 0.72rem;">
+              <span>Schedule Service</span>
+            </button>
           </div>
         </div>
 
-        <!-- Artisan 2 -->
-        <div class="border-glow-wrapper artisan-card">
-          <div class="border-glow-inner">
-            <div class="artisan-photo-frame media-sheen">
-              <span class="artisan-role-pill">Chief Gemmologist</span>
-              <img 
-                class="img-cinematic-zoom"
-                src="https://i.pinimg.com/736x/fe/0a/f4/fe0af45037efc7a894c4ef3d66716e11.jpg" 
-                alt="Aadhya Singhania" 
-              />
-            </div>
-            <div class="artisan-info">
-              <div>
-                <h4 class="artisan-name">Dr. Aadhya Singhania</h4>
-                <div class="artisan-specialty">GIA Fellow • Diamond Vault</div>
-                <p class="artisan-bio">
-                  Direct curator of our rare Type IIa D-Flawless solitaires, Colombian emeralds, and unheated royal blue Ceylon sapphires.
-                </p>
+        <!-- Atelier Service 2 -->
+        <div class="border-glow-wrapper atelier-card">
+          <div class="border-glow-inner" style="padding: 36px 28px; background: var(--bg-surface-elevated); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="atelier-card-icon">
+                <i class="fa-solid fa-droplet"></i>
               </div>
+              <h3>Water Resistance &amp; Pressure Testing</h3>
+              <p>
+                Dry and wet vacuum pressure testing up to 300 meters, gasket replacement with OEM compounds, and hermetic sealing integrity checks.
+              </p>
             </div>
+            <button class="btn-outline quick-book-trigger" data-item="Water Resistance & Pressure Testing Consultation" style="width: 100%; justify-content: center; font-size: 0.72rem;">
+              <span>Schedule Service</span>
+            </button>
           </div>
         </div>
 
-        <!-- Artisan 3 -->
-        <div class="border-glow-wrapper artisan-card">
-          <div class="border-glow-inner">
-            <div class="artisan-photo-frame media-sheen">
-              <span class="artisan-role-pill">Master Guillocheur</span>
-              <img 
-                class="img-cinematic-zoom"
-                src="https://tse2.mm.bing.net/th/id/OIP.af_C6X7kru4BaW1QlQ8gGQHaJb?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
-                alt="Laurent Mercier" 
-              />
-            </div>
-            <div class="artisan-info">
-              <div>
-                <h4 class="artisan-name">Laurent Mercier</h4>
-                <div class="artisan-specialty">Hand Rose-Engine Lathe</div>
-                <p class="artisan-bio">
-                  Carves bespoke Clous de Paris and wave dials utilizing restored 19th-century manual rose lathes with micron-level precision.
-                </p>
+        <!-- Atelier Service 3 -->
+        <div class="border-glow-wrapper atelier-card">
+          <div class="border-glow-inner" style="padding: 36px 28px; background: var(--bg-surface-elevated); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="atelier-card-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
               </div>
+              <h3>Case &amp; Bracelet Refinishing</h3>
+              <p>
+                Micro-laser welding, satin-brushed grain restoration, and mirror diamond-polishing performed strictly to manufacturer geometry specifications.
+              </p>
             </div>
-          </div>
-        </div>
-
-        <!-- Artisan 4 -->
-        <div class="border-glow-wrapper artisan-card">
-          <div class="border-glow-inner">
-            <div class="artisan-photo-frame media-sheen">
-              <span class="artisan-role-pill">High Joaillerie Setter</span>
-              <img 
-                class="img-cinematic-zoom"
-                src="https://i.pinimg.com/originals/71/7d/60/717d60741b08da81fd905e2d57bd292b.jpg" 
-                alt="Kavita Somani" 
-              />
-            </div>
-            <div class="artisan-info">
-              <div>
-                <h4 class="artisan-name">Kavita Somani</h4>
-                <div class="artisan-specialty">Invisible &amp; Pavé Setting</div>
-                <p class="artisan-bio">
-                  Renowned for setting microscopic brilliant-cut pavé diamonds on curved platinum bezels without visible metal prongs.
-                </p>
-              </div>
-            </div>
+            <button class="btn-outline quick-book-trigger" data-item="Case & Bracelet Refinishing Consultation" style="width: 100%; justify-content: center; font-size: 0.72rem;">
+              <span>Schedule Service</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EXTRA SECTION 3: THE SOVEREIGN OATH & CERTIFICATIONS -->
-  <section class="charter-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Uncompromised Ethics &amp; Standards</span>
-        <h2 class="section-title">The Sovereign Charter</h2>
-        <p class="section-desc">
-          When you acquire a masterpiece from Time &amp; Gold, you receive the full weight of global verification, ethical sourcing, and lifelong technical guardianship.
-        </p>
-      </div>
-
-      <div class="charter-grid">
-        <div class="charter-box">
-          <div class="charter-icon-emblem"><i class="fa-solid fa-stamp"></i></div>
-          <h3 class="charter-title">Geneva Seal &amp; COSC Testing</h3>
-          <p class="charter-text">
-            Every movement undergoes five-position dynamic testing across 360 hours to assure daily variance under -2/+2 seconds, certified under strict Swiss chronometer protocols.
-          </p>
-        </div>
-
-        <div class="charter-box">
-          <div class="charter-icon-emblem"><i class="fa-solid fa-hand-holding-heart"></i></div>
-          <h3 class="charter-title">100% Conflict-Free Diamonds</h3>
-          <p class="charter-text">
-            Compliant with the Kimberley Process and the Responsible Jewellery Council (RJC). Every solitaire is tracked from ethical mine to our private platinum mounting atelier.
-          </p>
-        </div>
-
-        <div class="charter-box">
-          <div class="charter-icon-emblem"><i class="fa-solid fa-vault"></i></div>
-          <h3 class="charter-title">Lifelong Vault Archiving</h3>
-          <p class="charter-text">
-            Every client acquisition is assigned a permanent ledger number in our Geneva Archives, providing guaranteed authenticity, insurance appraisal updates, and lifetime service provenance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust Assurance Strip -->
-  <section class="trust-assurance-strip">
-    <div class="container assurance-grid">
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="assurance-text">
-          <h5>100% Genuine</h5>
-          <p>Official Brand Authorization</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
-        <div class="assurance-text">
-          <h5>Insured Transit</h5>
-          <p>Complimentary Doorstep Delivery</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <div class="assurance-text">
-          <h5>Authorized Service</h5>
-          <p>Geneva-Trained Watchmakers</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
-        <div class="assurance-text">
-          <h5>Secure Payment</h5>
-          <p>Encrypted Global Checkouts</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Site Footer Matching Header Exactly -->
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-grid">
@@ -483,22 +1002,22 @@
         <div>
           <h4 class="footer-heading">Collections</h4>
           <ul class="footer-links">
-            <li><a href="index.html#products" class="footer-link">Grand Complications</a></li>
-            <li><a href="index.html#products" class="footer-link">Men's Swiss Automatic</a></li>
-            <li><a href="index.html#products" class="footer-link">Women's Diamond Bezel</a></li>
-            <li><a href="index.html#jewellery-salon" class="footer-link">High Solitaire Jewellery</a></li>
-            <li><a href="about.html" class="footer-link">Calibre Architecture</a></li>
+            <li><a href="products.html" class="footer-link">Grand Complications</a></li>
+            <li><a href="products.html" class="footer-link">Men's Swiss Automatic</a></li>
+            <li><a href="products.html" class="footer-link">Women's Diamond Bezel</a></li>
+            <li><a href="products.html" class="footer-link">High Solitaire Jewellery</a></li>
+            <li><a href="aboutus.html" class="footer-link">Calibre Architecture</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-heading">Maison Services</h4>
           <ul class="footer-links">
-            <li><a href="index.html#contact" class="footer-link">Book Boutique Viewing</a></li>
-            <li><a href="about.html" class="footer-link">Horology Restoration</a></li>
-            <li><a href="index.html#contact" class="footer-link">Certified Pressure Testing</a></li>
-            <li><a href="index.html#jewellery-salon" class="footer-link">Diamond Authentication</a></li>
-            <li><a href="index.html#contact" class="footer-link">Corporate Gifting</a></li>
+            <li><a href="contact.html" class="footer-link">Book Boutique Viewing</a></li>
+            <li><a href="aboutus.html" class="footer-link">Horology Restoration</a></li>
+            <li><a href="contact.html" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="products.html" class="footer-link">Diamond Authentication</a></li>
+            <li><a href="contact.html" class="footer-link">Corporate Gifting</a></li>
           </ul>
         </div>
 
@@ -538,24 +1057,24 @@
       </div>
 
       <div class="cart-drawer-items" id="cartDrawerItems">
-        <div class="cart-item-row">
+        <div class="cart-item-row" data-id="201">
           <div class="cart-item-img">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.ZriLNjGAmTkD_s2fmomHDwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tourbillon" />
+            <img src="https://th.bing.com/th/id/OIP.1wX9FmpT2MbQ_zGzNrPpoQHaGR?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Longines Master" />
           </div>
           <div class="cart-item-info">
-            <h6>Monarch Celestial Tourbillon</h6>
-            <div class="cart-item-price">₹ 1,850,000</div>
+            <h6>Longines Master Moonphase</h6>
+            <div class="cart-item-price">₹ 820,000</div>
           </div>
           <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
         </div>
 
-        <div class="cart-item-row">
+        <div class="cart-item-row" data-id="207">
           <div class="cart-item-img">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.LUAqx3h5__U-B2a4av3vqAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diamond Ring" />
+            <img src="https://iansharp.com.au/cdn/shop/products/Illusion_Set_Diamond_Tennis_Bracelet_167994-YG18_1024x1024.jpg?v=1642937156" alt="Diamond Bracelet" />
           </div>
           <div class="cart-item-info">
-            <h6>Aurelia Cushion Pavé Ring</h6>
-            <div class="cart-item-price">₹ 840,000</div>
+            <h6>Panthera Diamond Rivière</h6>
+            <div class="cart-item-price">₹ 1,180,000</div>
           </div>
           <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
         </div>
@@ -564,7 +1083,7 @@
       <div class="cart-drawer-footer">
         <div class="cart-subtotal-row">
           <span>Total Investment</span>
-          <span class="gold-gradient-text" id="cartTotalVal">₹ 2,690,000</span>
+          <span class="gold-gradient-text" id="cartTotalVal">₹ 2,000,000</span>
         </div>
         <button class="btn-gold" style="width: 100%; justify-content: center;" onclick="alert('Redirecting to 256-bit Encrypted Luxury Checkout.');">
           <span>Proceed To VIP Checkout</span>
@@ -586,14 +1105,14 @@
           TIME &amp; GOLD
         </div>
         <div style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 4px; font-weight: 700;">
-          Reserve Private Viewing &amp; Atelier Consultation
+          Reserve Private Maison Viewing &amp; Allocation
         </div>
       </div>
 
       <form id="bookingForm">
         <div class="form-group">
-          <label class="form-label" for="bookItemSelect">Consultation Focus</label>
-          <input type="text" id="bookItemSelect" class="form-input" value="Bespoke Horological & Solitaire Viewing" required />
+          <label class="form-label" for="bookItemSelect">Selected Creation / Maison Reference</label>
+          <input type="text" id="bookItemSelect" class="form-input" value="Longines Master Moonphase Chrono" required />
         </div>
 
         <div class="form-group">
@@ -635,8 +1154,8 @@
     </div>
   </div>
 
-  <!-- JAVASCRIPT LOGIC & ENGINE -->
-  <script src="aboutus.js">
+  <!-- JAVASCRIPT LOGIC & INTERACTION ENGINE -->
+  <script src="brands.js">
     
   </script>
 </body>

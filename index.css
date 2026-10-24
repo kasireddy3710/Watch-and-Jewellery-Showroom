@@ -12,9 +12,9 @@
       --gold-light: #F6E2A0;
       --gold-dark: #997A15;
       --gold-gradient: linear-gradient(135deg, #F8E5A7 0%, #D4AF37 50%, #947514 100%);
-      --diamond-gradient: linear-gradient(135deg, #E6F7FF 0%, #D4AF37 40%, #B9F2FF 70%, #FFFFFF 100%);
+      --diamond-gradient: linear-gradient(135deg, #FFFFFF 0%, #F8E5A7 40%, #D4AF37 70%, #FFFFFF 100%);
       --gold-glow: 0 0 25px rgba(212, 175, 55, 0.35);
-      --diamond-glow: 0 0 30px rgba(185, 242, 255, 0.45);
+      --diamond-glow: 0 0 30px rgba(248, 229, 167, 0.45);
       --rose-accent: #E2A76F;
     }
 
@@ -57,7 +57,7 @@
       --gold-light: #7b5505;
       --gold-dark: #573c03;
       --gold-gradient: linear-gradient(135deg, #b8860b 0%, #d4af37 40%, #7b5505 100%);
-      --diamond-gradient: linear-gradient(135deg, #0284c7 0%, #a37513 45%, #0369a1 100%);
+      --diamond-gradient: linear-gradient(135deg, #cf9b15 0%, #d4af37 45%, #8a6200 100%);
       --gradient-text-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
       --boutique-overlay-front: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(246, 241, 230, 0.97) 100%);
       --boutique-overlay-back: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(242, 236, 222, 0.99) 100%);
@@ -432,7 +432,6 @@
       pointer-events: none;
     }
 
-    /* Animated Gold Light Accent on Dropdown Top Border */
     .dropdown-vault-menu::before {
       content: '';
       position: absolute;
@@ -720,10 +719,10 @@
       background: conic-gradient(
         from 0deg,
         transparent 0%,
-        rgba(212, 175, 55, 0.1) 20%,
+        rgba(212, 175, 55, 0.15) 20%,
         #997a15 35%,
         #ffffff 48%,
-        #b9f2ff 51%,
+        #f8e5a7 51%,
         #d4af37 54%,
         rgba(226, 167, 111, 0.4) 65%,
         transparent 80%,
@@ -737,7 +736,7 @@
 
     .border-glow-jewel:hover::before {
       opacity: 1;
-      filter: drop-shadow(0 0 20px #b9f2ff) drop-shadow(0 0 12px var(--gold-primary));
+      filter: drop-shadow(0 0 20px #f8e5a7) drop-shadow(0 0 12px var(--gold-primary));
       animation-duration: 3s;
     }
 
@@ -1471,21 +1470,24 @@
       color: var(--text-primary);
     }
 
-    /* FINE JEWELLERY ATELIER SECTION */
+    /* =========================================================
+       FINE JEWELLERY ATELIER SECTION (NO BLUE COLORS IN HEADER)
+       ========================================================= */
     .jewellery-section {
       padding-block: 100px;
       position: relative;
-      background: radial-gradient(circle at 50% 30%, rgba(185, 242, 255, 0.05) 0%, rgba(212, 175, 55, 0.08) 35%, var(--bg-body) 75%);
+      background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.12) 0%, rgba(153, 122, 21, 0.05) 45%, var(--bg-body) 75%);
       border-block: 1px solid var(--border-color-subtle);
       overflow: hidden;
     }
 
+    /* Warm Gold Sparkles */
     .jewel-sparkle-ambient {
       position: absolute;
       pointer-events: none;
       width: 14px;
       height: 14px;
-      background: radial-gradient(circle, #ffffff 10%, #b9f2ff 50%, transparent 80%);
+      background: radial-gradient(circle, #ffffff 15%, var(--gold-primary) 55%, transparent 80%);
       border-radius: 50%;
       z-index: 2;
     }
@@ -1493,6 +1495,15 @@
     .jewel-sparkle-1 { top: 12%; left: 8%; }
     .jewel-sparkle-2 { top: 22%; right: 10%; }
     .jewel-sparkle-3 { bottom: 18%; left: 14%; }
+
+    .jewellery-section .section-subtitle {
+      color: var(--gold-primary);
+      text-shadow: none;
+    }
+
+    .jewellery-section .section-subtitle i {
+      color: var(--gold-primary);
+    }
 
     .jewel-feature-hero {
       display: grid;
@@ -1509,7 +1520,7 @@
 
     .jewel-feature-hero:hover {
       border-color: var(--gold-primary);
-      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5), 0 0 35px rgba(185, 242, 255, 0.25);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5), 0 0 35px rgba(212, 175, 55, 0.25);
     }
 
     .jewel-hero-media-wrap {
@@ -1604,7 +1615,7 @@
 
     .jewel-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45), 0 0 30px rgba(185, 242, 255, 0.35);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45), 0 0 30px rgba(212, 175, 55, 0.35);
     }
 
     .jewel-media-box {

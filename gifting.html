@@ -67,7 +67,6 @@
       <!-- Navigation Menu: Home, About, Products, Brands, Gifting (Active), Contact -->
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <ul class="nav-menu" id="navMenu">
           <li class="nav-item has-dropdown" id="homeNavItem">
             <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
               <span>Home</span>
@@ -81,7 +80,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-1</span>
-                    
                   </div>
                 </a>
               </li>
@@ -90,7 +88,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-2</span>
-                    
                   </div>
                 </a>
               </li>
@@ -181,7 +178,7 @@
           <div class="border-glow-inner media-sheen">
             <img 
               class="img-cinematic-zoom"
-              src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" 
+              src="https://www.plusprinters.co.uk/wp-content/uploads/2024/10/Luxury-Presentation-Boxes_2.webp" 
               alt="Bespoke luxury gift presentation box" 
             />
             <div class="gifting-hero-card-tag">
@@ -809,35 +806,57 @@
     </div>
   </section>
 
-  <!-- Trust Assurance Strip -->
-  <section class="trust-assurance-strip">
-    <div class="container assurance-grid">
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="assurance-text">
-          <h5>100% Genuine</h5>
-          <p>Official Brand Authorization</p>
-        </div>
+  <!-- NEW ADDED SECTION: THE SOVEREIGN BESPOKE ENGRAVING & MONOGRAM ATELIER -->
+  <section class="engraving-atelier-section" id="engravingAtelier">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-pen-nib"></i> Personalized Heirlooms</span>
+        <h2 class="section-title">The Sovereign Bespoke Engraving Atelier</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.7;">
+          Imprint your legacy. Test your initials and anniversary date below to preview your custom caseback or ring inner-band engraving in real-time.
+        </p>
       </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
-        <div class="assurance-text">
-          <h5>Insured Transit</h5>
-          <p>Complimentary Doorstep Delivery</p>
+
+      <div class="engraving-grid">
+        <!-- Live Preview Card -->
+        <div class="engraving-preview-card">
+          <div class="engraving-coin-seal" id="engravingCoinSeal">
+            <div class="preview-monogram-text" id="liveMonogramPreview">A &amp; S</div>
+            <div class="preview-date-text" id="liveDatePreview">14 • 10 • 2026</div>
+          </div>
+          <div style="font-family: var(--font-display); font-size: 1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">
+            Live Laser Monogram Preview
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); font-weight: 500;">
+            Engraved using Swiss micro-diamond laser cutters by our Geneva-trained artisans.
+          </p>
         </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <div class="assurance-text">
-          <h5>Authorized Service</h5>
-          <p>Geneva-Trained Watchmakers</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
-        <div class="assurance-text">
-          <h5>Secure Payment</h5>
-          <p>Encrypted Global Checkouts</p>
+
+        <!-- Interactive Configuration Panel -->
+        <div class="engraving-form-panel">
+          <div class="form-group">
+            <label class="form-label" for="monogramInput">Couple Initials / Monogram</label>
+            <input type="text" id="monogramInput" class="form-input" value="A &amp; S" maxlength="8" placeholder="e.g. A & S" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dateInput">Commemorative Anniversary Date</label>
+            <input type="text" id="dateInput" class="form-input" value="14 • 10 • 2026" placeholder="DD • MM • YYYY" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Precious Metal Finish</label>
+            <div class="engraving-metal-options">
+              <button class="metal-opt-btn active" data-metal="gold" onclick="setMetalStyle('gold', this)">18K Yellow Gold</button>
+              <button class="metal-opt-btn" data-metal="rose" onclick="setMetalStyle('rose', this)">18K Rose Gold</button>
+              <button class="metal-opt-btn" data-metal="platinum" onclick="setMetalStyle('platinum', this)">Platinum 950</button>
+            </div>
+          </div>
+
+          <button class="btn-gold quick-book-trigger" data-item="Bespoke Monogrammed Engraving Service Consultation" style="width: 100%; justify-content: center; margin-top: 10px;">
+            <i class="fa-solid fa-stamp"></i>
+            <span>Reserve Custom Engraving Consultation</span>
+          </button>
         </div>
       </div>
     </div>
@@ -1036,6 +1055,7 @@
 
   <!-- JAVASCRIPT LOGIC & INTERACTION ENGINE -->
   <script src="gifting.js">
+    
     
   </script>
 </body>

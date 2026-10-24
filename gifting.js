@@ -1,4 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
+function setMetalStyle(metalType, btn) {
+      document.querySelectorAll('.metal-opt-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const seal = document.getElementById('engravingCoinSeal');
+      const monogramText = document.getElementById('liveMonogramPreview');
+
+      if (metalType === 'gold') {
+        seal.style.background = 'rgba(240, 199, 66, 0.18)';
+        seal.style.borderColor = '#f0c742';
+        monogramText.style.color = '#f0c742';
+      } else if (metalType === 'rose') {
+        seal.style.background = 'rgba(235, 150, 120, 0.18)';
+        seal.style.borderColor = '#e07a5f';
+        monogramText.style.color = '#e07a5f';
+      } else if (metalType === 'platinum') {
+        seal.style.background = 'rgba(212, 244, 255, 0.18)';
+        seal.style.borderColor = '#a5d8ff';
+        monogramText.style.color = '#a5d8ff';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
 
       // 1. Header Scroll Shadow
       const siteHeader = document.getElementById('siteHeader');
@@ -172,7 +194,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // 8. VIP Booking Modal Engine
+      // 8. Live Engraving Input Sync
+      const monogramInput = document.getElementById('monogramInput');
+      const dateInput = document.getElementById('dateInput');
+      const liveMonogramPreview = document.getElementById('liveMonogramPreview');
+      const liveDatePreview = document.getElementById('liveDatePreview');
+
+      if (monogramInput && liveMonogramPreview) {
+        monogramInput.addEventListener('input', () => {
+          liveMonogramPreview.textContent = monogramInput.value || 'A & S';
+        });
+      }
+
+      if (dateInput && liveDatePreview) {
+        dateInput.addEventListener('input', () => {
+          liveDatePreview.textContent = dateInput.value || '14 • 10 • 2026';
+        });
+      }
+
+      // 9. VIP Booking Modal Engine
       const openBookModalBtn = document.getElementById('openBookModalBtn');
       const closeBookModalBtn = document.getElementById('closeBookModalBtn');
       const bookModalOverlay = document.getElementById('bookModalOverlay');

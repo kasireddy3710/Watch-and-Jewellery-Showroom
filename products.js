@@ -222,6 +222,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
+      // 9. Interactive Specular Border Mouse-Tracking Engine
+      const specularCards = document.querySelectorAll('.specular-border-card, .border-glow-wrapper');
+      specularCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+        });
+      });
+
+      // 10. Hero 3D Card Interactive Parallax on Mouse Movement
+      const heroCard = document.getElementById('heroInteractiveCard');
+      const heroSection = document.getElementById('heroMaster');
+
+      if (heroCard && heroSection) {
+        heroSection.addEventListener('mousemove', (e) => {
+          const rect = heroSection.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          
+          heroCard.style.transform = `perspective(1000px) rotateY(${x * 12}deg) rotateX(${-y * 12}deg) translateY(-8px)`;
+        });
+
+        heroSection.addEventListener('mouseleave', () => {
+          heroCard.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(0px)';
+        });
+      }
+
       // Initialize initial bag values
       updateCartTotals();
     });

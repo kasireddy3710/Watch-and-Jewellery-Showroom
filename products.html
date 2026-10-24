@@ -7,13 +7,13 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <link rel="stylesheet" href="products.css">
+ <link rel="stylesheet" href="products.css">
 </head>
 <body>
 
@@ -64,7 +64,7 @@
         </div>
       </a>
 
-      <!-- Navigation Menu: Home, About, Products (Active), Brands, Gifting, Contact -->
+      <!-- Navigation Menu -->
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li class="nav-item has-dropdown" id="homeNavItem">
@@ -80,7 +80,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-1</span>
-                    
                   </div>
                 </a>
               </li>
@@ -89,7 +88,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-2</span>
-                    
                   </div>
                 </a>
               </li>
@@ -146,37 +144,122 @@
     </div>
   </header>
 
-  <!-- Products Catalog Hero & Interactive Filter Bar -->
-  <section class="catalog-hero-section">
+  <!-- SECTION 1: MAJESTIC HERO SHOWCASE -->
+  <section class="main-hero-section" id="heroMaster">
+    <div class="hero-backdrop-glow"></div>
+    <div class="container hero-container">
+      
+      <!-- Left Content Column -->
+      <div class="hero-content">
+        <div class="hero-badge animate-hero-fade">
+          <i class="fa-solid fa-crown"></i>
+          <span>Haute Horlogerie &amp; Rare Gems</span>
+        </div>
+        
+        <h1 class="hero-main-title animate-hero-fade delay-1">
+          Timeless Precision, <br />
+          <span class="gold-gradient-text">Forged In Gold.</span>
+        </h1>
+        
+        <p class="hero-description animate-hero-fade delay-2">
+          Enter an authentic sanctuary of certified Swiss grand complications and fine solitaires. Hand-assembled by master horologists in Geneva and Le Brassus for the world's most discerning collectors.
+        </p>
+        
+        <div class="hero-action-group animate-hero-fade delay-3">
+          <a href="#catalogHero" class="btn-gold" id="exploreVaultBtn">
+            <span>Explore The Vault</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <button class="btn-outline quick-book-trigger" data-item="VIP Private Salon Consultation">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Reserve Salon Viewing</span>
+          </button>
+        </div>
+
+        <div class="hero-stats-strip animate-hero-fade delay-4">
+          <div class="hero-stat-box">
+            <span class="hero-stat-number gold-gradient-text">40+</span>
+            <span class="hero-stat-label">Swiss Maisons</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat-box">
+            <span class="hero-stat-number gold-gradient-text">100%</span>
+            <span class="hero-stat-label">GIA &amp; Geneva Seal</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat-box">
+            <span class="hero-stat-number gold-gradient-text">0.01s</span>
+            <span class="hero-stat-label">Chrono Accuracy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Interactive Visual Column with Orbit Rings -->
+      <div class="hero-visual-wrapper animate-hero-fade delay-2">
+        <div class="hero-orbit-ring hero-orbit-outer"></div>
+        <div class="hero-orbit-ring hero-orbit-inner"></div>
+
+        <div class="hero-card-frame border-glow-wrapper" id="heroInteractiveCard">
+          <div class="border-glow-inner hero-card-inner">
+            <div class="hero-image-box media-sheen">
+              <span class="hero-floating-pill top-right">
+                <i class="fa-solid fa-certificate"></i> Geneva Seal Certified
+              </span>
+              <img 
+                src="https://cdn.arnoldandson.com/content/uploads/2024/03/18160754/AS-Double-Tourbillon-WG-charoite_3-4.jpg" 
+                alt="Swiss Haute Horlogerie Double Tourbillon" 
+                class="hero-floating-img"
+              />
+              <span class="hero-floating-pill bottom-left">
+                <i class="fa-solid fa-gem"></i> Piece Unique No. 01
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Animated Smooth Scroll Cue -->
+    <a href="#catalogHero" class="hero-scroll-cue" aria-label="Scroll to The Grand Collection">
+      <span class="scroll-cue-text">Scroll To Vault</span>
+      <div class="mouse-scroll-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- SECTION 2: PRODUCTS CATALOG HERO & RELOCATED FILTER BAR -->
+  <section class="catalog-hero-section" id="catalogHero">
     <div class="container">
-      <div class="section-header" style="margin-bottom: 20px;">
+      <div class="section-header" style="margin-bottom: 0;">
         <span class="section-subtitle"><i class="fa-solid fa-gem"></i> Authenticated Haute Vault</span>
-        <h1 class="section-title">The Grand Collection</h1>
+        <h2 class="section-title">The Grand Collection</h2>
         <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
           Explore our certified curation of Swiss grand complications, haute joaillerie solitaires, solid gold chains, and masterwork diamond necklaces.
         </p>
       </div>
-
-      <!-- Filter Buttons for 6 Categories -->
-      <div class="catalog-filter-bar">
-        <button class="catalog-filter-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All Creations </button>
-        <button class="catalog-filter-btn" data-filter="gents-watches"><i class="fa-solid fa-clock"></i> Gents Watches </button>
-        <button class="catalog-filter-btn" data-filter="ladies-watches"><i class="fa-regular fa-clock"></i> Ladies Watches</button>
-        <button class="catalog-filter-btn" data-filter="rings"><i class="fa-solid fa-ring"></i> Rings</button>
-        <button class="catalog-filter-btn" data-filter="chains"><i class="fa-solid fa-link"></i> Chains </button>
-        <button class="catalog-filter-btn" data-filter="necklaces"><i class="fa-solid fa-gem"></i> Necklaces </button>
-        <button class="catalog-filter-btn" data-filter="bracelets"><i class="fa-solid fa-circle-notch"></i> Bracelets </button>
-      </div>
     </div>
   </section>
 
-  <!-- Full 18 Products Catalog Grid -->
+  <!-- Full 18 Products Catalog Grid with Filter Bar Located Directly Below Header -->
   <section class="catalog-section">
     <div class="container">
+      
+      <!-- Category Filter Bar (Relocated Below Section Header and Above Catalog Grid) -->
+      <div class="catalog-filter-bar">
+        <button class="catalog-filter-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All Creations</button>
+        <button class="catalog-filter-btn" data-filter="gents-watches"><i class="fa-solid fa-clock"></i> Gents Watches</button>
+        <button class="catalog-filter-btn" data-filter="ladies-watches"><i class="fa-regular fa-clock"></i> Ladies Watches</button>
+        <button class="catalog-filter-btn" data-filter="rings"><i class="fa-solid fa-ring"></i> Rings</button>
+        <button class="catalog-filter-btn" data-filter="chains"><i class="fa-solid fa-link"></i> Chains</button>
+        <button class="catalog-filter-btn" data-filter="necklaces"><i class="fa-solid fa-gem"></i> Necklaces</button>
+        <button class="catalog-filter-btn" data-filter="bracelets"><i class="fa-solid fa-circle-notch"></i> Bracelets</button>
+      </div>
+
       <div class="catalog-grid" id="catalogGrid">
 
-        <!-- ==================== GENTS WATCHES (3) ==================== -->
-        <!-- Product 1 -->
+        <!-- GENTS WATCHES (3) -->
         <div class="border-glow-wrapper product-card" data-category="gents-watches">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -207,7 +290,6 @@
           </div>
         </div>
 
-        <!-- Product 2 -->
         <div class="border-glow-wrapper product-card" data-category="gents-watches">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -238,7 +320,6 @@
           </div>
         </div>
 
-        <!-- Product 3 -->
         <div class="border-glow-wrapper product-card" data-category="gents-watches">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -269,11 +350,10 @@
           </div>
         </div>
 
-        <!-- ==================== LADIES WATCHES (3) ==================== -->
-        <!-- Product 4 -->
+        <!-- LADIES WATCHES (3) -->
         <div class="border-glow-wrapper product-card" data-category="ladies-watches">
           <div class="border-glow-inner">
-            <div class="product-media-frame media-sheen" id="sudha">
+            <div class="product-media-frame media-sheen">
               <span class="product-badge-flag">Mother of Pearl</span>
               <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
               <img 
@@ -301,7 +381,6 @@
           </div>
         </div>
 
-        <!-- Product 5 -->
         <div class="border-glow-wrapper product-card" data-category="ladies-watches">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -332,7 +411,6 @@
           </div>
         </div>
 
-        <!-- Product 6 -->
         <div class="border-glow-wrapper product-card" data-category="ladies-watches">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -363,8 +441,7 @@
           </div>
         </div>
 
-        <!-- ==================== RINGS (3) ==================== -->
-        <!-- Product 7 -->
+        <!-- RINGS (3) -->
         <div class="border-glow-wrapper product-card" data-category="rings">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -395,7 +472,6 @@
           </div>
         </div>
 
-        <!-- Product 8 -->
         <div class="border-glow-wrapper product-card" data-category="rings">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -426,7 +502,6 @@
           </div>
         </div>
 
-        <!-- Product 9 -->
         <div class="border-glow-wrapper product-card" data-category="rings">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -457,11 +532,10 @@
           </div>
         </div>
 
-        <!-- ==================== CHAINS (3) ==================== -->
-        <!-- Product 10 -->
+        <!-- CHAINS (3) -->
         <div class="border-glow-wrapper product-card" data-category="chains">
           <div class="border-glow-inner">
-            <div class="product-media-frame media-sheen" id="kasi">
+            <div class="product-media-frame media-sheen">
               <span class="product-badge-flag">22K Solid Gold</span>
               <button class="wishlist-heart-btn" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
               <img 
@@ -489,7 +563,6 @@
           </div>
         </div>
 
-        <!-- Product 11 -->
         <div class="border-glow-wrapper product-card" data-category="chains">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -520,7 +593,6 @@
           </div>
         </div>
 
-        <!-- Product 12 -->
         <div class="border-glow-wrapper product-card" data-category="chains">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -551,8 +623,7 @@
           </div>
         </div>
 
-        <!-- ==================== NECKLACES (3) ==================== -->
-        <!-- Product 13 -->
+        <!-- NECKLACES (3) -->
         <div class="border-glow-wrapper product-card" data-category="necklaces">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -583,7 +654,6 @@
           </div>
         </div>
 
-        <!-- Product 14 -->
         <div class="border-glow-wrapper product-card" data-category="necklaces">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -614,7 +684,6 @@
           </div>
         </div>
 
-        <!-- Product 15 -->
         <div class="border-glow-wrapper product-card" data-category="necklaces">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -645,8 +714,7 @@
           </div>
         </div>
 
-        <!-- ==================== BRACELETS (3) ==================== -->
-        <!-- Product 16 -->
+        <!-- BRACELETS (3) -->
         <div class="border-glow-wrapper product-card" data-category="bracelets">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -677,7 +745,6 @@
           </div>
         </div>
 
-        <!-- Product 17 -->
         <div class="border-glow-wrapper product-card" data-category="bracelets">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -708,7 +775,6 @@
           </div>
         </div>
 
-        <!-- Product 18 -->
         <div class="border-glow-wrapper product-card" data-category="bracelets">
           <div class="border-glow-inner">
             <div class="product-media-frame media-sheen">
@@ -743,41 +809,199 @@
     </div>
   </section>
 
-  <!-- Trust Assurance Strip -->
-  <section class="trust-assurance-strip">
-    <div class="container assurance-grid">
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="assurance-text">
-          <h5>100% Genuine</h5>
-          <p>Official Brand Authorization</p>
-        </div>
+  <!-- SECTION 3: THE MAISON SPOTLIGHT ALLOCATION -->
+  <section class="spotlight-section">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 36px;">
+        <span class="section-subtitle"><i class="fa-solid fa-crown"></i> Piece Unique Allocation</span>
+        <h2 class="section-title">The Sovereign Horological Masterwork</h2>
       </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
-        <div class="assurance-text">
-          <h5>Insured Transit</h5>
-          <p>Complimentary Doorstep Delivery</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <div class="assurance-text">
-          <h5>Authorized Service</h5>
-          <p>Geneva-Trained Watchmakers</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
-        <div class="assurance-text">
-          <h5>Secure Payment</h5>
-          <p>Encrypted Global Checkouts</p>
+
+      <div class="laser-spotlight-wrapper spotlight-card">
+        <div class="laser-spotlight-inner spotlight-layout">
+          
+          <div class="corner-optics-frame spotlight-visual-container media-sheen">
+            <div class="spotlight-pulse-halo"></div>
+            <div class="spotlight-badges">
+              <span class="spotlight-pill"><i class="fa-solid fa-certificate"></i> Geneva Seal Certified</span>
+              <span class="spotlight-pill"><i class="fa-solid fa-gem"></i> 01 of 05 Worldwide</span>
+            </div>
+            <img 
+              class="img-cinematic-zoom"
+              src="https://s.alicdn.com/@sc04/kf/H3af8f24b2a1f4ab9a9040603bfd67bfed.jpg_960x960q80.jpg" 
+              alt="Aethelgard Grand Celestial Double Tourbillon" 
+            />
+          </div>
+
+          <div class="spotlight-content">
+            <div class="spotlight-edition-tag">
+              <i class="fa-solid fa-shield-halved"></i> Private Vault Reserve
+            </div>
+            <h3 class="spotlight-title">Aethelgard Grand Celestial Double Tourbillon</h3>
+            <p class="spotlight-desc">
+              A monumental horological achievement hand-assembled in Le Brassus. Engineered with dual synchronised 60-second flying tourbillon cages, solid 18K Honey Gold architecture, and an astronomical sidereal sky chart visible through the anti-reflective sapphire exhibition back.
+            </p>
+
+            <div class="spotlight-metrics-grid">
+              <div class="spotlight-metric-item">
+                <span class="metric-value">96 Hours</span>
+                <span class="metric-label">Power Reserve</span>
+              </div>
+              <div class="spotlight-metric-item">
+                <span class="metric-value">21,600 VPH</span>
+                <span class="metric-label">Escapement Frequency</span>
+              </div>
+              <div class="spotlight-metric-item">
+                <span class="metric-value">Solid 18K</span>
+                <span class="metric-label">Honey Gold Alloy</span>
+              </div>
+            </div>
+
+            <div class="spotlight-action-row">
+              <button class="btn-gold quick-book-trigger" data-item="Aethelgard Grand Celestial Double Tourbillon (Private Allocation)">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Inquire Private Allocation</span>
+              </button>
+              <div style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; color: var(--text-primary);">
+                ₹ 4,850,000
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Site Footer Matching Header Exactly -->
+  <!-- SECTION 4: HAUTE METIERS D'ART & SALON SERVICES -->
+  <section class="atelier-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-compass-drafting"></i> Craftsmanship &amp; Provenance</span>
+        <h2 class="section-title">The Bespoke Maison Experience</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8;">
+          Beyond exceptional collecting, Time &amp; Gold delivers uncompromising artisan mastery, customized high complications, and white-glove salon allocations across the subcontinent.
+        </p>
+      </div>
+
+      <div class="atelier-grid">
+
+        <div class="specular-border-card">
+          <div class="atelier-icon-box">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+          <h3 class="atelier-card-title">Haute Joaillerie Setting</h3>
+          <p class="atelier-card-text">
+            Each diamond solitaire is hand-selected by master gemologists. We specialize in tension-set solitaires, invisible baguette channels, and GIA Triple-Excellent proportions.
+          </p>
+          <ul class="atelier-points">
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> D-to-F Flawless Natural Diamonds</li>
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> Platinum 950 &amp; 18K Hallmarked Alloys</li>
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> Custom Laser Carved Micro-Prongs</li>
+          </ul>
+          <a href="#bookingForm" class="atelier-card-link quick-book-trigger" data-item="Haute Joaillerie Consultation">
+            <span>Commission Solitaire</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="specular-border-card">
+          <div class="atelier-icon-box">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3 class="atelier-card-title">Calibre Restoration Atelier</h3>
+          <p class="atelier-card-text">
+            Our clean-room watchmaking laboratory is headed by Geneva-certified horologists trained in grand complications, perpetual calendars, and vintage restoration.
+          </p>
+          <ul class="atelier-points">
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> ISO 22810 Certified Hydrostatic Pressure Testing</li>
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> Original Manufacturer Calibre Parts</li>
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> 5-Year Global Service Warranty</li>
+          </ul>
+          <a href="#bookingForm" class="atelier-card-link quick-book-trigger" data-item="Horological Service & Restoration">
+            <span>Schedule Calibre Service</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="specular-border-card">
+          <div class="atelier-icon-box">
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
+          <h3 class="atelier-card-title">VIP Private Salons</h3>
+          <p class="atelier-card-text">
+            Experience discrete salon viewing within private suites at Mumbai Palladium, Delhi DLF Emporio, and Bengaluru UB City with champagne hospitality.
+          </p>
+          <ul class="atelier-points">
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> Armed &amp; Insured Doorstep Transit</li>
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> Personal Horology Concierge Access</li>
+            <li class="atelier-point-item"><i class="fa-solid fa-check"></i> Curated Vault Allocation Previews</li>
+          </ul>
+          <a href="#bookingForm" class="atelier-card-link quick-book-trigger" data-item="Private Boutique Salon Suite Viewing">
+            <span>Reserve Salon Suite</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW LAST SECTION: THE PRIVATE GAZETTE & VIP CONCIERGE DISPATCH -->
+  <section class="gazette-section" id="gazetteSection">
+    <div class="container">
+      <div class="gazette-grid">
+        
+        <div class="gazette-info-box">
+          <span class="section-subtitle"><i class="fa-solid fa-envelope-open-text"></i> Encrypted Dispatches</span>
+          <h2 class="section-title">The Private Gazette &amp; VIP Concierge</h2>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; font-weight: 500; line-height: 1.8; margin-bottom: 24px;">
+            Secure priority access to restricted Swiss dial allocations, unlisted Geneva auction pieces, and private solitaire viewings before public release.
+          </p>
+          <div style="display: flex; gap: 16px; align-items: center;">
+            <div style="font-size: 2rem; color: var(--gold-primary); font-family: var(--font-display); font-weight: 800;">24/7</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;">
+              Dedicated Concierge Support Across Mumbai, Delhi, Bengaluru &amp; Hyderabad
+            </div>
+          </div>
+        </div>
+
+        <div class="border-glow-wrapper gazette-form-card">
+          <div class="border-glow-inner" style="background: var(--bg-surface-elevated); padding: 32px; border-radius: inherit;">
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 18px;">
+              Request Private Collector Enrolment
+            </h3>
+            <form onsubmit="event.preventDefault(); alert('Your credentials have been securely transmitted to our Head Concierge. You will receive an encrypted invitation shortly.'); this.reset();">
+              <div class="form-group">
+                <label class="form-label">Full Name / Title</label>
+                <input type="text" class="form-input" placeholder="e.g. Lord Sterling" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Secure Email Address</label>
+                <input type="email" class="form-input" placeholder="collector@domain.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Primary Collecting Interest</label>
+                <select class="form-select">
+                  <option value="Grand Complications & Tourbillons">Grand Complications &amp; Tourbillons</option>
+                  <option value="High Solitaires & Certified Diamonds">High Solitaires &amp; Certified Diamonds</option>
+                  <option value="Solid Gold Chains & Necklaces">Solid Gold Chains &amp; Necklaces</option>
+                  <option value="Bespoke Private Commissions">Bespoke Private Commissions</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 6px;">
+                <i class="fa-solid fa-lock"></i>
+                <span>Submit Collector Application</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-grid">

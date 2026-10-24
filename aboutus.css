@@ -17,7 +17,7 @@
       --diamond-glow: 0 0 35px rgba(212, 244, 255, 0.6);
     }
 
-    /* Sovereign Dark Theme - Maximum Brightness & Crispness */
+    /* Sovereign Dark Theme */
     html[data-theme="dark"] {
       --bg-body: #060608;
       --bg-surface: #0e0e13;
@@ -31,10 +31,10 @@
       --shadow-ambient: 0 30px 60px rgba(0, 0, 0, 0.85);
       --badge-bg: rgba(240, 199, 66, 0.18);
       --card-highlight: rgba(255, 255, 255, 0.06);
-      --timeline-track: rgba(240, 199, 66, 0.25);
+      --timeline-track: rgba(240, 199, 66, 0.3);
     }
 
-    /* Ivory Silk Light Theme - High Contrast Radiance */
+    /* Ivory Silk Light Theme */
     html[data-theme="light"] {
       --bg-body: #f8f6f0;
       --bg-surface: #ffffff;
@@ -53,7 +53,7 @@
       --gold-dark: #634500;
       --gold-gradient: linear-gradient(135deg, #cf9b15 0%, #b8860b 45%, #6e4d02 100%);
       --diamond-gradient: linear-gradient(135deg, #0284c7 0%, #b8860b 50%, #0369a1 100%);
-      --timeline-track: rgba(184, 134, 11, 0.35);
+      --timeline-track: rgba(184, 134, 11, 0.4);
     }
 
     /* RESET & BASE */
@@ -224,7 +224,7 @@
       transform: translateY(-2px);
     }
 
-    /* HEADER & EXACT LOGO */
+    /* HEADER & BRAND LOGO */
     .site-header {
       position: sticky;
       top: 0;
@@ -393,7 +393,7 @@
       width: 100%;
     }
 
-    /* Home Dropdown Styling */
+    /* Home Dropdown */
     .nav-item.has-dropdown {
       position: relative;
     }
@@ -430,7 +430,6 @@
       pointer-events: none;
     }
 
-    /* Animated Gold Light Accent on Dropdown Top Border */
     .dropdown-vault-menu::before {
       content: '';
       position: absolute;
@@ -518,7 +517,6 @@
     .dropdown-vault-link:hover .dropdown-vault-sub {
       color: var(--text-secondary);
     }
-
 
     .header-actions {
       display: flex;
@@ -848,7 +846,7 @@
       z-index: 5;
     }
 
-    /* EXTRA SECTION 1: THE EPOCHS OF HOROLOGY (INTERACTIVE TIMELINE) */
+    /* SECTION 1: THE EPOCHS OF HOROLOGY (TIMELINE) */
     .timeline-section {
       padding-block: 100px;
       background: var(--bg-surface);
@@ -949,7 +947,7 @@
       font-weight: 500;
     }
 
-    /* EXTRA SECTION 2: GUILD OF ARTISANS ATELIER */
+    /* SECTION 2: GUILD OF ARTISANS ATELIER */
     .artisans-section {
       padding-block: 100px;
       position: relative;
@@ -1034,7 +1032,184 @@
       font-weight: 500;
     }
 
-    /* EXTRA SECTION 3: THE SOVEREIGN OATH & CERTIFICATIONS */
+    /* =========================================================
+       NEW SECTION: CERTIFIED TIMEPIECE SANCTUARY & CONCIERGE (CTS)
+       ========================================================= */
+    .cts-section {
+      padding-block: 100px 110px;
+      background: var(--bg-body);
+      border-top: 1px solid var(--border-color-subtle);
+      border-bottom: 1px solid var(--border-color-subtle);
+      position: relative;
+    }
+
+    .cts-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      padding: 44px;
+    }
+
+    .cts-visual-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      height: 480px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+    }
+
+    .cts-badge-stack {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 5;
+    }
+
+    .cts-pill {
+      background: rgba(10, 10, 14, 0.88);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-light);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cts-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cts-tag {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      font-weight: 800;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cts-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      line-height: 1.2;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+    }
+
+    .cts-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .cts-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .cts-metric-box {
+      background: var(--bg-surface-elevated);
+      padding: 16px 12px;
+      border-radius: var(--radius-xs);
+      border: 1px solid var(--border-color-subtle);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .cts-metric-box:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(240, 199, 66, 0.2);
+    }
+
+    .cts-metric-val {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+      display: block;
+    }
+
+    .cts-metric-lbl {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 700;
+    }
+
+    /* Corner Optics Accents for CTS Visual */
+    .corner-optics-frame {
+      position: relative;
+    }
+
+    .corner-optics-frame::before,
+    .corner-optics-frame::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--gold-primary);
+      z-index: 10;
+      pointer-events: none;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 0 10px rgba(240, 199, 66, 0.6);
+    }
+
+    .corner-optics-frame::before {
+      top: 14px;
+      left: 14px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .corner-optics-frame::after {
+      bottom: 14px;
+      right: 14px;
+      border-left: none;
+      border-top: none;
+    }
+
+    .corner-optics-frame:hover::before {
+      top: 10px;
+      left: 10px;
+      width: 28px;
+      height: 28px;
+      border-color: #ffffff;
+      box-shadow: 0 0 18px var(--gold-light);
+    }
+
+    .corner-optics-frame:hover::after {
+      bottom: 10px;
+      right: 10px;
+      width: 28px;
+      height: 28px;
+      border-color: #ffffff;
+      box-shadow: 0 0 18px var(--gold-light);
+    }
+
+    /* SECTION 3: THE SOVEREIGN OATH & CERTIFICATIONS */
     .charter-section {
       padding-block: 100px;
       background: var(--bg-surface);
@@ -1093,52 +1268,6 @@
       font-weight: 500;
     }
 
-    /* TRUST ASSURANCE STRIP */
-    .trust-assurance-strip {
-      padding-block: 50px;
-      background: var(--bg-body);
-      border-block: 1px solid var(--border-color-subtle);
-    }
-
-    .assurance-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-    }
-
-    .assurance-item {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .assurance-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: var(--badge-bg);
-      border: 1.5px solid var(--border-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold-primary);
-      font-size: 1.3rem;
-      flex-shrink: 0;
-    }
-
-    .assurance-text h5 {
-      font-family: var(--font-display);
-      font-size: 1rem;
-      margin-bottom: 3px;
-      font-weight: 800;
-      color: var(--text-primary);
-    }
-
-    .assurance-text p {
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-      font-weight: 600;
-    }
 
     /* FOOTER */
     .site-footer {
@@ -1445,7 +1574,9 @@
       box-shadow: 0 0 12px rgba(240, 199, 66, 0.35);
     }
 
-    /* RTL OVERRIDES */
+    /* =========================================================
+       COMPREHENSIVE RTL OVERRIDES & TIMELINE FIX
+       ========================================================= */
     html[dir="rtl"] {
       direction: rtl;
       text-align: right;
@@ -1467,14 +1598,6 @@
       right: 0;
     }
 
-    html[dir="rtl"] .timeline-item:nth-child(odd) {
-      text-align: left;
-    }
-
-    html[dir="rtl"] .timeline-item:nth-child(even) {
-      text-align: right;
-    }
-
     html[dir="rtl"] .cart-drawer {
       right: auto;
       left: 0;
@@ -1483,21 +1606,76 @@
       transform: translateX(-100%);
     }
 
+    html[dir="rtl"] .cart-drawer-overlay.active .cart-drawer {
+      transform: translateX(0);
+    }
+
     html[dir="rtl"] .modal-close-btn {
       right: auto;
       left: 20px;
     }
 
-    /* RESPONSIVE */
+    html[dir="rtl"] .artisan-role-pill {
+      left: auto;
+      right: 14px;
+    }
+
+    html[dir="rtl"] .cts-badge-stack {
+      left: auto;
+      right: 20px;
+    }
+
+    /* RTL Fixed Timeline Logic (Desktop) */
+    html[dir="rtl"] .timeline-container::before {
+      left: 50%;
+      right: auto;
+      transform: translateX(50%);
+    }
+
+    html[dir="rtl"] .timeline-item:nth-child(odd) {
+      left: auto;
+      right: 0;
+      text-align: left;
+      padding-left: 40px;
+      padding-right: 0;
+    }
+
+    html[dir="rtl"] .timeline-item:nth-child(odd) .timeline-node {
+      right: auto;
+      left: -11px;
+    }
+
+    html[dir="rtl"] .timeline-item:nth-child(even) {
+      left: auto;
+      right: 50%;
+      text-align: right;
+      padding-right: 40px;
+      padding-left: 0;
+    }
+
+    html[dir="rtl"] .timeline-item:nth-child(even) .timeline-node {
+      left: auto;
+      right: -11px;
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
     @media (max-width: 1024px) {
-      .about-hero-grid {
+      .about-hero-grid,
+      .cts-layout {
         grid-template-columns: 1fr;
         text-align: center;
       }
-      .about-hero-desc {
+      .about-hero-desc,
+      .cts-desc {
         margin-inline: auto;
       }
       .about-stat-strip {
+        justify-content: center;
+      }
+      .cts-visual-card {
+        height: 380px;
+      }
+      .cts-tag {
         justify-content: center;
       }
       .artisans-grid {
@@ -1532,21 +1710,43 @@
       .mobile-hamburger {
         display: block;
       }
+
+      /* LTR Mobile Timeline */
       .timeline-container::before {
         left: 20px;
       }
       .timeline-item {
         width: 100%;
         left: 0 !important;
-        padding-left: 54px;
-        padding-right: 0;
+        padding-left: 54px !important;
+        padding-right: 0 !important;
         text-align: left !important;
       }
       .timeline-node {
         left: 9px !important;
         right: auto !important;
       }
-      .artisans-grid, .charter-grid, .assurance-grid {
+
+      /* RTL Mobile Timeline Overrides */
+      html[dir="rtl"] .timeline-container::before {
+        left: auto !important;
+        right: 20px !important;
+        transform: translateX(50%) !important;
+      }
+      html[dir="rtl"] .timeline-item {
+        width: 100% !important;
+        left: auto !important;
+        right: 0 !important;
+        padding-right: 54px !important;
+        padding-left: 0 !important;
+        text-align: right !important;
+      }
+      html[dir="rtl"] .timeline-node {
+        right: 9px !important;
+        left: auto !important;
+      }
+
+      .artisans-grid, .charter-grid, .assurance-grid, .cts-metrics-grid {
         grid-template-columns: 1fr;
       }
       .footer-top-grid, .footer-bottom {
@@ -1571,5 +1771,8 @@
       .about-stat-strip {
         grid-template-columns: 1fr;
         gap: 16px;
+      }
+      .cts-layout {
+        padding: 20px;
       }
     }

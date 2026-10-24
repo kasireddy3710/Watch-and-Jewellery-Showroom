@@ -106,7 +106,7 @@
       -webkit-text-fill-color: transparent;
       display: inline-block;
       filter: var(--gradient-text-filter);
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .diamond-gradient-text {
@@ -211,6 +211,196 @@
       color: var(--gold-primary);
       background: rgba(212, 175, 55, 0.1);
       transform: translateY(-2px);
+    }
+
+    /* HERO SECTION 1 */
+    .grand-hero-section {
+      position: relative;
+      padding-block: 80px 70px;
+      background: 
+        radial-gradient(circle at 18% 25%, rgba(212, 175, 55, 0.15) 0%, transparent 55%),
+        radial-gradient(circle at 85% 70%, rgba(226, 167, 111, 0.1) 0%, transparent 60%),
+        var(--bg-body);
+      border-bottom: 1px solid var(--border-color-subtle);
+      overflow: hidden;
+    }
+
+    .grand-hero-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.15fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .grand-hero-content {
+      padding-left: 10px;
+    }
+
+    .grand-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      background: var(--badge-bg);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      margin-bottom: 22px;
+      font-weight: 700;
+      animation: heroBadgePulse 3s ease-in-out infinite alternate;
+    }
+
+    .grand-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 4.4vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .grand-hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 34px;
+      max-width: 620px;
+      animation: heroSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .grand-hero-cta-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .grand-hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border-color-subtle);
+    }
+
+    .hero-stat-item h4 {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      color: var(--gold-primary);
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .hero-stat-item p {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .grand-hero-visual {
+      position: relative;
+      animation: heroVisualFloat 6s ease-in-out infinite;
+    }
+
+    .hero-card-frame {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      height: 480px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(212, 175, 55, 0.25);
+    }
+
+    .hero-card-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.92) contrast(1.08);
+      transform: scale(1);
+      transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .grand-hero-visual:hover .hero-card-frame img {
+      transform: scale(1.08);
+    }
+
+    .hero-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10, 10, 12, 0.15) 0%, rgba(10, 10, 12, 0.88) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      pointer-events: none;
+    }
+
+    .hero-floating-pill {
+      align-self: flex-start;
+      background: rgba(17, 17, 21, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--gold-primary);
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-card-caption h5 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .hero-card-caption p {
+      font-size: 0.82rem;
+      color: var(--gold-light);
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .hero-ambient-glow {
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.28) 0%, transparent 70%);
+      z-index: -1;
+      filter: blur(30px);
+      animation: heroGlowPulse 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes heroVisualFloat {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(-0.6deg); }
+    }
+
+    @keyframes heroGlowPulse {
+      0% { opacity: 0.45; transform: scale(0.95); }
+      100% { opacity: 0.9; transform: scale(1.05); }
+    }
+
+    @keyframes heroBadgePulse {
+      0% { box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); border-color: rgba(212, 175, 55, 0.3); }
+      100% { box-shadow: 0 0 22px rgba(212, 175, 55, 0.6); border-color: var(--gold-light); }
+    }
+
+    @keyframes heroSlideUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* ANIMATED BORDER GLOW WRAPPERS */
@@ -485,7 +675,6 @@
       width: 100%;
     }
 
-    /* Home Dropdown Styling */
     .nav-item.has-dropdown {
       position: relative;
     }
@@ -522,7 +711,6 @@
       pointer-events: none;
     }
 
-    /* Animated Gold Light Accent on Dropdown Top Border */
     .dropdown-vault-menu::before {
       content: '';
       position: absolute;
@@ -610,7 +798,6 @@
     .dropdown-vault-link:hover .dropdown-vault-sub {
       color: var(--text-secondary);
     }
-
 
     .header-actions {
       display: flex;
@@ -713,11 +900,11 @@
       margin-left: 8px;
     }
 
-    /* PAGE HERO BANNER */
+    /* SECTION 2: PAGE HERO BANNER */
     .contact-hero {
       position: relative;
-      padding-block: 85px 60px;
-      background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+      padding-block: 75px 55px;
+      background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
       border-bottom: 1px solid var(--border-color-subtle);
       overflow: hidden;
     }
@@ -746,14 +933,14 @@
 
     .contact-hero-title {
       font-family: var(--font-display);
-      font-size: clamp(2.2rem, 4.2vw, 3.8rem);
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
       font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 20px;
+      line-height: 1.18;
+      margin-bottom: 18px;
     }
 
     .contact-hero-desc {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       color: var(--text-secondary);
       line-height: 1.8;
       font-weight: 450;
@@ -1068,51 +1255,52 @@
       padding-bottom: 22px;
     }
 
-    /* TRUST ASSURANCE */
-    .trust-assurance-strip {
-      padding-block: 50px;
-      background: var(--bg-body);
+
+    /* NEW SECTION: VIP CONCIERGE ATELIER APPOINTMENT STATUS & LIVE SCHEDULING RADAR (CTS) */
+    .cts-section {
+      padding-block: 100px;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color-subtle);
+    }
+
+    .cts-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .cts-card {
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      box-shadow: var(--shadow-ambient);
+    }
+
+    .cts-status-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
       border-bottom: 1px solid var(--border-color-subtle);
     }
 
-    .assurance-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
+    .cts-status-item:last-child {
+      border-bottom: none;
     }
 
-    .assurance-item {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .assurance-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: var(--badge-bg);
-      border: 1.5px solid var(--border-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold-primary);
-      font-size: 1.25rem;
-      flex-shrink: 0;
-    }
-
-    .assurance-text h5 {
-      font-family: var(--font-display);
-      font-size: 0.98rem;
-      margin-bottom: 3px;
+    .cts-status-label {
+      font-size: 0.88rem;
       font-weight: 700;
-      color: var(--text-primary);
+      color: var(--text-secondary);
     }
 
-    .assurance-text p {
-      font-size: 0.78rem;
-      color: var(--text-secondary);
-      font-weight: 500;
+    .cts-status-val {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--gold-primary);
     }
 
     /* FOOTER */
@@ -1267,10 +1455,6 @@
       transform: translateX(100%);
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       padding: 30px;
-    }
-
-    .cart-drawer-overlay.active .cart-drawer {
-      transform: translateX(0);
     }
 
     .cart-drawer-header {
@@ -1431,6 +1615,28 @@
 
     /* RESPONSIVE */
     @media (max-width: 1024px) {
+      .grand-hero-grid, .cts-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+      .grand-hero-content {
+        padding-left: 0;
+      }
+      .grand-hero-badge {
+        margin-inline: auto;
+      }
+      .grand-hero-desc {
+        margin-inline: auto;
+      }
+      .grand-hero-cta-wrap {
+        justify-content: center;
+      }
+      .hero-card-frame {
+        height: 380px;
+        max-width: 600px;
+        margin-inline: auto;
+      }
       .contact-grid, .salon-display-card {
         grid-template-columns: 1fr;
       }
@@ -1460,6 +1666,10 @@
       .mobile-hamburger {
         display: block;
       }
+      .grand-hero-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
       .form-row, .assurance-grid, .footer-top-grid, .footer-bottom {
         grid-template-columns: 1fr;
         flex-direction: column;
@@ -1484,5 +1694,8 @@
       }
       .concierge-form-card {
         padding: 24px 18px;
+      }
+      .hero-card-frame {
+        height: 320px;
       }
     }

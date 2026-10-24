@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Private Concierge & Salon Appointments | Time & Gold</title>
+  <title>Private Concierge &amp; Salon Appointments | Time &amp; Gold</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
- <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
@@ -67,7 +67,6 @@
       <!-- Navigation Menu -->
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <ul class="nav-menu" id="navMenu">
           <li class="nav-item has-dropdown" id="homeNavItem">
             <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
               <span>Home</span>
@@ -81,7 +80,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-1</span>
-                    
                   </div>
                 </a>
               </li>
@@ -90,7 +88,6 @@
                   <i class="fa-solid fa-home"></i>
                   <div class="dropdown-vault-info">
                     <span class="dropdown-vault-title">Home-2</span>
-                    
                   </div>
                 </a>
               </li>
@@ -148,17 +145,91 @@
     </div>
   </header>
 
-  <!-- Page Hero Banner -->
-  <section class="contact-hero">
+  <!-- =========================================================
+       SECTION 1 (HERO): IMAGE ON THE LEFT SIDE
+       ========================================================= -->
+  <section class="grand-hero-section" id="grandHero">
+    <div class="container grand-hero-grid">
+
+      <!-- Left Hero Visual with Image & Floating Animation -->
+      <div class="grand-hero-visual">
+        <div class="hero-ambient-glow"></div>
+        <div class="border-glow-jewel hero-card-frame">
+          <div class="border-glow-inner" style="position: relative; height: 100%;">
+            <img 
+              src="https://luxrevue.com/wp-content/uploads/2025/02/AN-Flying-Tourbillon-Titanium-blue-alligator_3-4-1024x1024.jpg" 
+              alt="Swiss Haute Horlogerie Flying Tourbillon" 
+            />
+            <div class="hero-image-overlay">
+              <span class="hero-floating-pill">
+                <i class="fa-solid fa-certificate"></i> Piece Unique Allocation
+              </span>
+              <div class="hero-card-caption">
+                <h5>The Sovereign Celestial Flying Tourbillon</h5>
+                <p>Curated Vault Selection • Geneva Seal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Hero Text Content -->
+      <div class="grand-hero-content">
+        <div class="grand-hero-badge">
+          <i class="fa-solid fa-crown"></i>
+          <span>Haute Horlogerie &amp; Private Salon</span>
+        </div>
+        <h1 class="grand-hero-title">
+          Mastery in Time, <br />
+          <span class="gold-gradient-text">Immortal in Craft</span>
+        </h1>
+        <p class="grand-hero-desc">
+          Enter an elite sanctuary of certified Swiss grand complications, rare GIA-graded diamond solitaires, and bespoke high jewellery commissions. Connect one-on-one with certified master horologists in confidential VIP suites across India.
+        </p>
+
+        <div class="grand-hero-cta-wrap">
+          <a href="#appointmentDocket" class="btn-gold">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Reserve Appointment</span>
+          </a>
+          <button class="btn-outline" onclick="triggerBookingModal('Direct Private Salon Allocation');">
+            <i class="fa-solid fa-gem"></i>
+            <span>Request Private Allocation</span>
+          </button>
+        </div>
+
+        <div class="grand-hero-stats">
+          <div class="hero-stat-item">
+            <h4>40+</h4>
+            <p>Swiss Maisons</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>100%</h4>
+            <p>Geneva Certified</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>24/7</h4>
+            <p>VIP Armored Escort</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 2: PAGE HERO BANNER
+       ========================================================= -->
+  <section class="contact-hero" id="appointmentDocket">
     <div class="container contact-hero-content">
       <div class="contact-hero-badge">
         <i class="fa-solid fa-gem"></i>
         <span>White-Glove Private Concierge</span>
       </div>
-      <h1 class="contact-hero-title">
+      <h2 class="contact-hero-title">
         Schedule a Private Consultation &amp; <br />
         <span class="gold-gradient-text">Boutique Viewing</span>
-      </h1>
+      </h2>
       <p class="contact-hero-desc">
         Whether reserving numbered Swiss calibres, commissioning bespoke solitaires, or seeking accredited master restoration, our senior horological advisors await your arrival.
       </p>
@@ -338,7 +409,7 @@
           <div class="salon-media-frame">
             <img 
               id="salonImage" 
-              src="https://tse4.mm.bing.net/th/id/OIP.eL1VLdqdwm4EKE0-TWNfhgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              src="https://images.prestigeonline.com/wp-content/uploads/sites/4/2020/09/16111334/Feminine-Area-resize-1024x519.jpg" 
               alt="Mumbai Flagship Salon" 
             />
           </div>
@@ -444,35 +515,59 @@
     </div>
   </section>
 
-  <!-- Trust Assurance Strip -->
-  <section class="trust-assurance-strip">
-    <div class="container assurance-grid">
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="assurance-text">
-          <h5>100% Genuine</h5>
-          <p>Official Brand Authorization</p>
-        </div>
+  <!-- =========================================================
+       NEW SECTION: CERTIFIED TIMEPIECE SANCTUARY & CONCIERGE STATUS (CTS)
+       ========================================================= -->
+  <section class="cts-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real-Time Concierge Metrics</span>
+        <h2 class="section-title">Certified Timepiece Sanctuary (CTS) Status</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Live availability overview of our armored transport fleet, senior watchmakers, and executive private salons.
+        </p>
       </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-truck"></i></div>
-        <div class="assurance-text">
-          <h5>Insured Transit</h5>
-          <p>Complimentary Doorstep Delivery</p>
+
+      <div class="cts-grid">
+        <div class="cts-card">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 20px; color: var(--text-primary);">
+            <i class="fa-solid fa-shield-halved" style="color: var(--gold-primary); margin-right: 8px;"></i>
+            Atelier &amp; Fleet Availability
+          </h3>
+          <div class="cts-status-item">
+            <span class="cts-status-label">Armored Secure Transport Vehicles</span>
+            <span class="cts-status-val">4 Units Active (Pan-India)</span>
+          </div>
+          <div class="cts-status-item">
+            <span class="cts-status-label">Geneva-Certified Master Watchmakers</span>
+            <span class="cts-status-val">8 Specialists Available</span>
+          </div>
+          <div class="cts-status-item">
+            <span class="cts-status-label">Private VIP Salon Suites</span>
+            <span class="cts-status-val">All 4 Flagships Open</span>
+          </div>
+          <div class="cts-status-item">
+            <span class="cts-status-label">Average Concierge Response Time</span>
+            <span class="cts-status-val">&lt; 14 Minutes</span>
+          </div>
         </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <div class="assurance-text">
-          <h5>Authorized Service</h5>
-          <p>Geneva-Trained Watchmakers</p>
-        </div>
-      </div>
-      <div class="assurance-item">
-        <div class="assurance-icon"><i class="fa-solid fa-lock"></i></div>
-        <div class="assurance-text">
-          <h5>Secure Payment</h5>
-          <p>Encrypted Global Checkouts</p>
+
+        <div class="cts-card" style="display: flex; flex-direction: column; justify-content: center; text-align: center;">
+          <div style="font-size: 2.5rem; color: var(--gold-primary); margin-bottom: 16px;">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 12px; color: var(--text-primary);">
+            Need Immediate Assistance?
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 24px; line-height: 1.7;">
+            Our senior horological advisors are available around the clock to assist with time-sensitive acquisitions or confidential viewings.
+          </p>
+          <div>
+            <button class="btn-gold" onclick="triggerBookingModal('Immediate Priority Concierge Consultation');">
+              <i class="fa-solid fa-phone"></i>
+              <span>Request Priority Callback</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

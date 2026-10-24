@@ -28,15 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
         rootHtml.setAttribute('data-theme', savedTheme);
       }
 
-      // 3. Circular RTL Reading Direction Switcher
+      // 3. Circular RTL Reading Direction Switcher (Fully Connected & Persisted)
       const rtlToggleBtn = document.getElementById('rtlToggleBtn');
+
+      const applyDirection = (dir) => {
+        rootHtml.setAttribute('dir', dir);
+        if (rtlToggleBtn) {
+          rtlToggleBtn.textContent = dir === 'rtl' ? 'LTR' : 'RTL';
+        }
+      };
+
       if (rtlToggleBtn) {
         rtlToggleBtn.addEventListener('click', () => {
-          const currentDir = rootHtml.getAttribute('dir');
+          const currentDir = rootHtml.getAttribute('dir') || 'ltr';
           const nextDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
-          rootHtml.setAttribute('dir', nextDir);
-          rtlToggleBtn.textContent = nextDir === 'rtl' ? 'LTR' : 'RTL';
+          applyDirection(nextDir);
+          localStorage.setItem('tt_dir_pref', nextDir);
         });
+      }
+
+      const savedDir = localStorage.getItem('tt_dir_pref');
+      if (savedDir) {
+        applyDirection(savedDir);
       }
 
       // 4. Mobile Menu Navigation
@@ -55,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // 5. Category Filtering Engine for 15 Creations
+      // 5. Brand Catalog Category Filter Engine
       const filterBtns = document.querySelectorAll('.brand-filter-btn');
       const productCards = document.querySelectorAll('.product-card');
 
@@ -77,23 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-      // 6. Wishlist Heart Toggle
-      document.querySelectorAll('.wishlist-heart-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          btn.classList.toggle('active');
-          const icon = btn.querySelector('i');
-          if (btn.classList.contains('active')) {
-            icon.classList.remove('fa-regular');
-            icon.classList.add('fa-solid');
-          } else {
-            icon.classList.remove('fa-solid');
-            icon.classList.add('fa-regular');
-          }
-        });
-      });
-
-      // 7. Cart Drawer Logic & Live Price Calculation
+      // 6. Cart Drawer Logic & Totals
       const openCartBtn = document.getElementById('openCartBtn');
       const closeCartBtn = document.getElementById('closeCartBtn');
       const cartDrawerOverlay = document.getElementById('cartDrawerOverlay');
@@ -128,37 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Add to Bag Event Binding
-      document.querySelectorAll('.add-to-bag-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const id = btn.getAttribute('data-id');
-          const title = btn.getAttribute('data-title');
-          const price = parseInt(btn.getAttribute('data-price'), 10);
-          const img = btn.getAttribute('data-img');
-
-          if (!cartItemsContainer) return;
-
-          const newRow = document.createElement('div');
-          newRow.className = 'cart-item-row';
-          newRow.setAttribute('data-id', id);
-          newRow.innerHTML = `
-            <div class="cart-item-img">
-              <img src="${img}" alt="${title}" />
-            </div>
-            <div class="cart-item-info">
-              <h6>${title}</h6>
-              <div class="cart-item-price">₹ ${price.toLocaleString('en-IN')}</div>
-            </div>
-            <button class="remove-cart-item-btn" style="color: var(--text-muted);"><i class="fa-solid fa-trash-can"></i></button>
-          `;
-
-          cartItemsContainer.appendChild(newRow);
-          updateCartTotals();
-          if (cartDrawerOverlay) cartDrawerOverlay.classList.add('active');
-        });
-      });
-
-      // Remove from Cart
       if (cartItemsContainer) {
         cartItemsContainer.addEventListener('click', (e) => {
           const removeBtn = e.target.closest('.remove-cart-item-btn');
@@ -172,33 +138,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // 8. VIP Booking Modal Engine
+      // 7. VIP Booking Modal Engine & Quick Triggers
       const openBookModalBtn = document.getElementById('openBookModalBtn');
       const closeBookModalBtn = document.getElementById('closeBookModalBtn');
       const bookModalOverlay = document.getElementById('bookModalOverlay');
       const bookItemSelect = document.getElementById('bookItemSelect');
       const bookingForm = document.getElementById('bookingForm');
 
-      function triggerBookingModal(itemTitle) {
-        if (itemTitle && bookItemSelect) {
-          bookItemSelect.value = itemTitle;
+      window.triggerBookingModal = function(consultationTopic) {
+        if (consultationTopic && bookItemSelect) {
+          bookItemSelect.value = consultationTopic;
         }
         if (bookModalOverlay) {
           bookModalOverlay.classList.add('active');
         }
-      }
+      };
 
-      if (openBookModalBtn) {
-        openBookModalBtn.addEventListener('click', () => triggerBookingModal('Bespoke Maison Consultation & Private Allocation'));
-      }
-
-      document.querySelectorAll('.quick-book-trigger').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const itemName = btn.getAttribute('data-item') || 'Selected Luxury Masterpiece';
-          triggerBookingModal(itemName);
-        });
+      document.body.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.quick-book-trigger');
+        if (trigger) {
+          const itemAttr = trigger.getAttribute('data-item') || 'Bespoke Horological Consultation';
+          triggerBookingModal(itemAttr);
+        }
       });
+
+      if (openBookModalBtn && bookModalOverlay) {
+        openBookModalBtn.addEventListener('click', () => triggerBookingModal('Bespoke Horological & Solitaire Viewing'));
+      }
 
       if (closeBookModalBtn && bookModalOverlay) {
         closeBookModalBtn.addEventListener('click', () => bookModalOverlay.classList.remove('active'));
@@ -214,14 +180,13 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingForm.addEventListener('submit', (e) => {
           e.preventDefault();
           const guest = document.getElementById('bookGuestName').value;
-          const piece = bookItemSelect.value;
           const salon = document.getElementById('bookSalon').value;
-          alert(`Private appointment confirmed for ${guest}.\n\nMasterpiece: ${piece}\nShowroom: ${salon}\n\nOur Head Concierge will contact you within 2 business hours.`);
+          const focus = bookItemSelect.value;
+          alert(`Private appointment confirmed for ${guest}.\n\nFocus: ${focus}\nLocation: ${salon}\n\nOur Senior Horological Concierge will contact you within 2 business hours.`);
           bookModalOverlay.classList.remove('active');
           bookingForm.reset();
         });
       }
 
-      // Initialize initial bag values
       updateCartTotals();
     });

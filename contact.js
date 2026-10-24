@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mumbai: {
           badge: '<i class="fa-solid fa-gem"></i> Flagship Maison & VIP Vault',
           title: "Mumbai — High Street Phoenix",
-          img: "https://www.commercialdesignindia.com/cloud/2023/05/24/4YllXZB1-image-1000x667.png",
+          img: "https://images.prestigeonline.com/wp-content/uploads/sites/4/2020/09/16111334/Feminine-Area-resize-1024x519.jpg",
           address: "Level 2, Palladium Mall, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
           hours: "Monday – Sunday: 11:00 AM – 9:30 PM (Concierge on call 24/7)",
           phone: "+91 (022) 2490 0012 / +91 98200 44101",
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
         delhi: {
           badge: '<i class="fa-solid fa-crown"></i> Haute Joaillerie & Master Atelier',
           title: "Delhi NCR — DLF Emporio",
-          img: "https://media.istockphoto.com/id/1406447764/photo/jewellery.jpg?s=612x612&w=0&k=20&c=39-AmuE-fhcXY0cFz71kRdYAqSC2JnI9S5jJgXLgsh8=",
+          img: "https://www.swisswatchexpo.com/images/showroom-carousel-1.jpg",
           address: "Ground Floor, Luxury Pavilion, 4 Nelson Mandela Marg, Vasant Kunj II, New Delhi 110070",
           hours: "Monday – Sunday: 11:00 AM – 9:00 PM",
           phone: "+91 (011) 4500 0023 / +91 98110 55202",
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bengaluru: {
           badge: '<i class="fa-solid fa-clock"></i> Grand Complications Lab',
           title: "Bengaluru — UB City Mall",
-          img: "https://threebestrated.in/images/KalyanJewellersJodhpur-Jodhpur-RJ-2.jpeg",
+          img: "https://i.pinimg.com/originals/19/ff/36/19ff363dd093f96ebc4ae0564e703d9e.jpg",
           address: "The Collection, 24 Vittal Mallya Road, Ashok Nagar, Bengaluru, Karnataka 560001",
           hours: "Monday – Sunday: 10:30 AM – 8:30 PM",
           phone: "+91 (080) 2200 0034 / +91 99000 77303",
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hyderabad: {
           badge: '<i class="fa-solid fa-ring"></i> Heritage Villa & Royal Vault',
           title: "Hyderabad — Jubilee Hills",
-          img: "https://tse4.mm.bing.net/th/id/OIP.3ZdC_GoLN9FmTnZAhygtqAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+          img: "https://www.dutyfreehunter.com/blog/wp-content/uploads/2024/04/FRA-AIRPORt.T1B.03.24.022.jpg",
           address: "Road No. 36, Near Checkpost, Jubilee Hills Luxury Circle, Hyderabad, Telangana 500033",
           hours: "Monday – Sunday: 11:00 AM – 9:00 PM",
           phone: "+91 (040) 2300 0045 / +91 97000 88404",
@@ -276,6 +276,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Initialize calculations
       updateCartTotals();
     });
