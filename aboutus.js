@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
 
       // 1. Header Scroll Shadow
       const siteHeader = document.getElementById('siteHeader');
@@ -28,43 +28,37 @@ document.addEventListener('DOMContentLoaded', () => {
         rootHtml.setAttribute('data-theme', savedTheme);
       }
 
-      // 3. Circular RTL Reading Direction Switcher (Fully Connected & Persisted)
+      // 3. Circular RTL Reading Direction Switcher
       const rtlToggleBtn = document.getElementById('rtlToggleBtn');
-      
-      const applyDirection = (dir) => {
-        rootHtml.setAttribute('dir', dir);
-        if (rtlToggleBtn) {
-          rtlToggleBtn.textContent = dir === 'rtl' ? 'LTR' : 'RTL';
-        }
-      };
-
       if (rtlToggleBtn) {
         rtlToggleBtn.addEventListener('click', () => {
-          const currentDir = rootHtml.getAttribute('dir') || 'ltr';
+          const currentDir = rootHtml.getAttribute('dir');
           const nextDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
-          applyDirection(nextDir);
-          localStorage.setItem('tt_dir_pref', nextDir);
+          rootHtml.setAttribute('dir', nextDir);
+          rtlToggleBtn.textContent = nextDir === 'rtl' ? 'LTR' : 'RTL';
         });
-      }
-
-      const savedDir = localStorage.getItem('tt_dir_pref');
-      if (savedDir) {
-        applyDirection(savedDir);
       }
 
       // 4. Mobile Menu Navigation
       const hamburgerBtn = document.getElementById('hamburgerBtn');
       const navMenu = document.getElementById('navMenu');
+      const homeNavItem = document.getElementById('homeNavItem');
+      const homeDropdownBtn = document.getElementById('homeDropdownBtn');
 
       if (hamburgerBtn && navMenu) {
         hamburgerBtn.addEventListener('click', () => {
           navMenu.classList.toggle('open');
         });
+      }
 
-        document.querySelectorAll('.nav-link').forEach(link => {
-          link.addEventListener('click', () => {
-            navMenu.classList.remove('open');
-          });
+      if (homeDropdownBtn && homeNavItem) {
+        homeDropdownBtn.addEventListener('click', (e) => {
+          if (window.innerWidth <= 868) {
+            e.preventDefault();
+            homeNavItem.classList.toggle('active-open');
+            const isExpanded = homeNavItem.classList.contains('active-open');
+            homeDropdownBtn.setAttribute('aria-expanded', isExpanded);
+          }
         });
       }
 
@@ -90,16 +84,22 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       if (openCartBtn && cartDrawerOverlay) {
-        openCartBtn.addEventListener('click', () => cartDrawerOverlay.classList.add('active'));
+        openCartBtn.addEventListener('click', () => {
+          cartDrawerOverlay.classList.add('active');
+        });
       }
 
       if (closeCartBtn && cartDrawerOverlay) {
-        closeCartBtn.addEventListener('click', () => cartDrawerOverlay.classList.remove('active'));
+        closeCartBtn.addEventListener('click', () => {
+          cartDrawerOverlay.classList.remove('active');
+        });
       }
 
       if (cartDrawerOverlay) {
         cartDrawerOverlay.addEventListener('click', (e) => {
-          if (e.target === cartDrawerOverlay) cartDrawerOverlay.classList.remove('active');
+          if (e.target === cartDrawerOverlay) {
+            cartDrawerOverlay.classList.remove('active');
+          }
         });
       }
 
@@ -116,33 +116,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // 6. VIP Booking Modal Engine
+      // 6. VIP Reservation Modal Engine
       const openBookModalBtn = document.getElementById('openBookModalBtn');
       const closeBookModalBtn = document.getElementById('closeBookModalBtn');
       const bookModalOverlay = document.getElementById('bookModalOverlay');
-      const bookItemSelect = document.getElementById('bookItemSelect');
+      const bookConsultationBtn = document.getElementById('bookConsultationBtn');
       const bookingForm = document.getElementById('bookingForm');
 
-      window.triggerBookingModal = function(consultationTopic) {
-        if (consultationTopic && bookItemSelect) {
-          bookItemSelect.value = consultationTopic;
-        }
+      function triggerBookingModal() {
         if (bookModalOverlay) {
           bookModalOverlay.classList.add('active');
         }
-      };
-
-      if (openBookModalBtn && bookModalOverlay) {
-        openBookModalBtn.addEventListener('click', () => triggerBookingModal('Bespoke Horological & Solitaire Viewing'));
       }
 
+      if (openBookModalBtn) openBookModalBtn.addEventListener('click', triggerBookingModal);
+      if (bookConsultationBtn) bookConsultationBtn.addEventListener('click', triggerBookingModal);
+
       if (closeBookModalBtn && bookModalOverlay) {
-        closeBookModalBtn.addEventListener('click', () => bookModalOverlay.classList.remove('active'));
+        closeBookModalBtn.addEventListener('click', () => {
+          bookModalOverlay.classList.remove('active');
+        });
       }
 
       if (bookModalOverlay) {
         bookModalOverlay.addEventListener('click', (e) => {
-          if (e.target === bookModalOverlay) bookModalOverlay.classList.remove('active');
+          if (e.target === bookModalOverlay) {
+            bookModalOverlay.classList.remove('active');
+          }
         });
       }
 
@@ -151,8 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
           e.preventDefault();
           const guest = document.getElementById('bookGuestName').value;
           const salon = document.getElementById('bookSalon').value;
-          const focus = bookItemSelect.value;
-          alert(`Private appointment confirmed for ${guest}.\n\nFocus: ${focus}\nLocation: ${salon}\n\nOur Senior Horological Concierge will contact you within 2 business hours.`);
+          alert(`Private salon appointment confirmed for ${guest} at ${salon}.\n\nOur Head Concierge will contact you within 2 business hours.`);
           bookModalOverlay.classList.remove('active');
           bookingForm.reset();
         });
