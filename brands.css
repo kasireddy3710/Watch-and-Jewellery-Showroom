@@ -808,49 +808,6 @@
       animation: floatBadge 4s ease-in-out infinite alternate-reverse;
     }
 
-    .hero-scroll-prompt {
-      align-self: center;
-      margin-top: 36px;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: var(--transition);
-      z-index: 5;
-    }
-
-    .hero-scroll-prompt:hover {
-      color: var(--gold-primary);
-      transform: translateY(3px);
-    }
-
-    .scroll-cue-title {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 800;
-    }
-
-    .mouse-outline {
-      width: 22px;
-      height: 36px;
-      border: 1.8px solid var(--gold-primary);
-      border-radius: var(--radius-full);
-      display: flex;
-      justify-content: center;
-      padding-top: 5px;
-    }
-
-    .mouse-dot {
-      width: 4px;
-      height: 7px;
-      background: var(--gold-primary);
-      border-radius: var(--radius-full);
-      animation: scrollWheelAnim 1.8s ease-in-out infinite;
-    }
-
     @keyframes heroCardFloat {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       50% { transform: translateY(-14px) rotate(0.8deg); }
@@ -859,11 +816,6 @@
     @keyframes floatBadge {
       0% { transform: translateY(0px); }
       100% { transform: translateY(-7px); }
-    }
-
-    @keyframes scrollWheelAnim {
-      0% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(12px); }
     }
 
     @keyframes pulseHeroGlow {
@@ -1067,7 +1019,7 @@
       text-shadow: 0 0 12px rgba(240, 199, 66, 0.6);
     }
 
-    /* FILTER TABS (RELOCATED BELOW TITLE HEADER) */
+    /* FILTER TABS */
     .brand-filter-cluster {
       display: flex;
       justify-content: center;
@@ -1475,6 +1427,80 @@
       color: var(--text-secondary);
       line-height: 1.6;
       margin-bottom: 24px;
+    }
+
+    /* VIP CONCIERGE CALL-TO-ACTION (CTA) SECTION */
+    .vip-cta-section {
+      padding-block: 110px;
+      background: radial-gradient(circle at 50% 50%, rgba(240, 199, 66, 0.16) 0%, var(--bg-body) 80%);
+      border-top: 1px solid var(--border-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vip-cta-banner {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: 60px 40px;
+      background: linear-gradient(135deg, rgba(22, 22, 29, 0.95) 0%, rgba(10, 10, 14, 0.98) 100%);
+      border: 1.8px solid var(--border-color);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8), 0 0 45px rgba(240, 199, 66, 0.25);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      isolation: isolate;
+    }
+
+    .vip-cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 0%, rgba(240, 199, 66, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .vip-cta-icon-badge {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--badge-bg);
+      border: 1.5px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-primary);
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      box-shadow: 0 0 25px rgba(240, 199, 66, 0.4);
+      animation: heroCardFloat 4s ease-in-out infinite;
+    }
+
+    .vip-cta-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .vip-cta-desc {
+      font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+      color: var(--text-secondary);
+      max-width: 680px;
+      line-height: 1.8;
+      margin-bottom: 36px;
+      font-weight: 500;
+    }
+
+    .vip-cta-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     /* FOOTER */

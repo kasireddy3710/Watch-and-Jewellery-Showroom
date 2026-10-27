@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+// Logo Assets Config (Change these URLs to your specific dark/light variant source paths)
+     const LOGO_CONFIG = {
+       dark: "/348ff6b1-04ec-484f-9048-3adbe8c20263.jpg",     // Dark Mode Logo Source
+       light: "/fdbb74cb-907d-422c-88f9-e7a5595067a9.jpg"    // Light Mode Logo Source
+     };
 
       // 1. Header Scroll Shadow
       const siteHeader = document.getElementById('siteHeader');
@@ -12,21 +17,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // 2. Theme Toggle (Dark vs Light Theme)
       const themeToggleBtn = document.getElementById('themeToggleBtn');
-      const rootHtml = document.documentElement;
+     const rootHtml = document.documentElement;
+     const logoImages = document.querySelectorAll('.brand-logo-img:not(svg)');
 
-      if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-          const currentTheme = rootHtml.getAttribute('data-theme');
-          const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-          rootHtml.setAttribute('data-theme', nextTheme);
-          localStorage.setItem('tt_theme_pref', nextTheme);
-        });
-      }
+     const updateLogosForTheme = (theme) => {
+       const targetSrc = LOGO_CONFIG[theme] || LOGO_CONFIG.dark;
+       logoImages.forEach(img => {
+         img.src = targetSrc;
+       });
+     };
 
-      const savedTheme = localStorage.getItem('tt_theme_pref');
-      if (savedTheme) {
-        rootHtml.setAttribute('data-theme', savedTheme);
-      }
+     const applyTheme = (theme) => {
+       rootHtml.setAttribute('data-theme', theme);
+       localStorage.setItem('tt_theme_pref', theme);
+       updateLogosForTheme(theme);
+     };
+
+     if (themeToggleBtn) {
+       themeToggleBtn.addEventListener('click', () => {
+         const currentTheme = rootHtml.getAttribute('data-theme');
+         const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+         applyTheme(nextTheme);
+       });
+     }
+
+     const savedTheme = localStorage.getItem('tt_theme_pref') || 'dark';
+     applyTheme(savedTheme);
+
 
       // 3. Circular RTL Reading Direction Switcher
       const rtlToggleBtn = document.getElementById('rtlToggleBtn');

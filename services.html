@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Services &amp; Atelier | Time &amp; Gold</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/df7a79f6-56e5-4fb2-8d94-38247ca04f66.jpg">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+ <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+  <!-- Reusable SVG Emblem Definition -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sharedLogoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F8E5A7" />
+        <stop offset="50%" stop-color="#D4AF37" />
+        <stop offset="100%" stop-color="#947514" />
+      </linearGradient>
+      <g id="brandHorologyEmblem">
+        <circle cx="50" cy="50" r="46" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" />
+        <circle cx="50" cy="50" r="41" stroke="url(#sharedLogoGoldGrad)" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+        <circle cx="50" cy="12" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="88" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="50" cy="88" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <circle cx="12" cy="50" r="2.5" fill="url(#sharedLogoGoldGrad)" />
+        <line x1="50" y1="50" x2="31" y2="29" stroke="url(#sharedLogoGoldGrad)" stroke-width="3" stroke-linecap="round" />
+        <line x1="50" y1="50" x2="71" y2="33" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="50" cy="50" r="3.5" fill="#0a0a0c" stroke="url(#sharedLogoGoldGrad)" stroke-width="2" />
+        <path d="M42 66 H58 M50 66 V78" stroke="url(#sharedLogoGoldGrad)" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- Main Luxury Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Time & Gold Home">
+        <div class="brand-logo-frame">
+          <div class="brand-dial-ring"></div>
+          <img class="brand-logo-img" src="/348ff6b1-04ec-484f-9048-3adbe8c20263.jpg" alt="Time & Gold Emblem" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+            <use href="#brandHorologyEmblem" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Time &amp; Gold</span>
+          <span class="brand-sub">Short and Stylish</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item has-dropdown" id="homeNavItem">
+            <a href="/index.html" class="nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-chevron"></i>
+            </a>
+
+            <!-- Luxury Home Sub-links Dropdown Menu -->
+            <ul class="dropdown-vault-menu" id="homeDropdownMenu">
+              <li class="dropdown-vault-item">
+                <a href="/index.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-1</span>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-vault-item">
+                <a href="/home2.html" class="dropdown-vault-link">
+                  <i class="fa-solid fa-home"></i>
+                  <div class="dropdown-vault-info">
+                    <span class="dropdown-vault-title">Home-2</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="brands.html" class="nav-link">Brands</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="action-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        <button class="rtl-circle-btn" id="rtlToggleBtn">RTL</button>
+        <button class="btn-book-header quick-book-trigger" data-item="General Atelier Consultation"><i class="fa-solid fa-calendar-check"></i><span>Book Item</span></button>
+        <button class="action-btn" id="cartBtn" title="View Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadgeCount">0</span>
+        </button>
+        <button class="mobile-hamburger" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fa-solid fa-screwdriver-wrench"></i><span>Geneva Certified Ateliers</span></div>
+        <h1 class="hero-title">Premier Horological &amp; <br /><span class="gold-gradient-text">Gemstone Services</span></h1>
+        <p class="hero-desc">
+          Entrust your grand complications and fine diamond heirlooms to our Swiss-trained master watchmakers and certified gemmologists across our Pan-India flagships.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#service-1" class="btn-gold"><span>Explore Services</span><i class="fa-solid fa-arrow-down"></i></a>
+          <button class="btn-outline quick-book-trigger" data-item="General Atelier Consultation"><i class="fa-solid fa-calendar-check"></i><span>Book Consultation</span></button>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <div class="stage-ambient-halo"></div>
+        <div class="border-glow-wrapper hero-showcase-card">
+          <div class="border-glow-inner media-sheen">
+            <img class="img-cinematic-zoom" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/bb/9a/df.jpg" alt="Horology Atelier" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1 -->
+  <section class="atelier-section-block" id="service-1">
+    <div class="container atelier-split-grid">
+      <div class="border-glow-wrapper atelier-media-frame media-sheen">
+        <div class="border-glow-inner">
+          <img class="img-cinematic-zoom" src="https://www.stevensher.com.au/wp-content/uploads/2021/08/steven-sher-services-watch-clock-repairs.jpg" alt="Movement Overhaul" />
+        </div>
+      </div>
+      <div class="atelier-content-wrap">
+        <span class="section-subtitle">Horology Care</span>
+        <h3>Complete Movement Overhaul &amp; Calibration</h3>
+        <p>
+          Every complex caliber undergoes total disassembly, ultrasonic bath cleaning of all gear trains, re-lubrication using Swiss synthetic oils, and rigorous 360-hour chronometric testing in five thermal positions.
+        </p>
+        <ul class="atelier-features-list">
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Complete disassembly &amp; ultrasonic cleaning</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Precision hairspring adjustment &amp; timing</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> 2-Year International Service Warranty</li>
+        </ul>
+        <button class="btn-gold quick-book-trigger" data-item="Complete Movement Overhaul">Book Overhaul</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="atelier-section-block">
+    <div class="container atelier-split-grid reverse">
+      <div class="border-glow-wrapper atelier-media-frame media-sheen">
+        <div class="border-glow-inner">
+          <img class="img-cinematic-zoom" src="https://tse1.mm.bing.net/th/id/OIP.3mP32NJEEaAYMkd5gwXBxwHaEx?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pressure Testing" />
+        </div>
+      </div>
+      <div class="atelier-content-wrap">
+        <span class="section-subtitle">Diagnostic Laboratory</span>
+        <h3>Pressure Testing &amp; Seal Replacement</h3>
+        <p>
+          Dry and wet vacuum pressure testing chambers simulate underwater depths up to 100 Bar. We replace all synthetic caseback o-rings, crystal gaskets, and triple-lock crown tubes to guarantee watertight integrity.
+        </p>
+        <ul class="atelier-features-list">
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> 100 Bar dry &amp; wet pressure testing</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Genuine Swiss o-ring &amp; crystal gasket renewal</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Same-day turnaround available at flagship salons</li>
+        </ul>
+        <button class="btn-gold quick-book-trigger" data-item="Pressure Testing & Seal Replacement">Book Pressure Testing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="atelier-section-block">
+    <div class="container atelier-split-grid">
+      <div class="border-glow-wrapper atelier-media-frame media-sheen">
+        <div class="border-glow-inner">
+          <img class="img-cinematic-zoom" src="https://th.bing.com/th/id/R.69a370a536a8fac464e8c77e1336a9ec?rik=lCBMwcByi%2bwNag&riu=http%3a%2f%2fwww.jewellerybusiness.com%2fwp-content%2fuploads%2f2016%2f03%2fRetip-03.jpg&ehk=2zHEWO4QBbIVt95WYBF5%2b9rmwP8qcWJ3e6l7hKAyrVA%3d&risl=&pid=ImgRaw&r=0" alt="Refurbishment" />
+        </div>
+      </div>
+      <div class="atelier-content-wrap">
+        <span class="section-subtitle">Aesthetic Restoration</span>
+        <h3>Laser Micro-Welding &amp; Case Polishing</h3>
+        <p>
+          Restore your timepiece to pristine factory condition. Our master polishers utilize high-precision laser micro-welding to fill deep scratches and dents on gold and titanium cases, followed by hand-satin brushing.
+        </p>
+        <ul class="atelier-features-list">
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Advanced laser micro-welding for deep dents</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Hand-finished satin brushing and mirror polishing</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Preservation of original case geometry</li>
+        </ul>
+        <button class="btn-gold quick-book-trigger" data-item="Laser Micro-Welding & Case Polishing">Book Refurbishment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="atelier-section-block">
+    <div class="container atelier-split-grid reverse">
+      <div class="border-glow-wrapper atelier-media-frame media-sheen">
+        <div class="border-glow-inner">
+          <img class="img-cinematic-zoom" src="https://img.freepik.com/premium-photo/gemologist-inspecting-amethyst-crystals-precision-expertise-gemstone-appraisal_985774-2665.jpg" alt="Gemmology Appraisal" />
+        </div>
+      </div>
+      <div class="atelier-content-wrap">
+        <span class="section-subtitle">Haute Joaillerie Atelier</span>
+        <h3>Certified Diamond &amp; Solitaire Appraisal</h3>
+        <p>
+          Official GIA and IGI certified gemmological grading and valuation reports. Ideal for comprehensive insurance coverage, estate settlements, or verifying diamond color, clarity, and cut parameters.
+        </p>
+        <ul class="atelier-features-list">
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> On-site GIA accredited gemmologists</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Comprehensive insurance &amp; estate valuation certificates</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Laser inscription verification</li>
+        </ul>
+        <button class="btn-gold quick-book-trigger" data-item="Certified Diamond & Solitaire Appraisal">Book Appraisal</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="atelier-section-block">
+    <div class="container atelier-split-grid">
+      <div class="border-glow-wrapper atelier-media-frame media-sheen">
+        <div class="border-glow-inner">
+          <img class="img-cinematic-zoom" src="https://images.squarespace-cdn.com/content/v1/582eec4d9de4bb705e49d8dc/1628348295577-WPJ25VIJVRQ4VYN4OYYD/custom-straps+(10).JPG" alt="Custom Straps" />
+        </div>
+      </div>
+      <div class="atelier-content-wrap">
+        <span class="section-subtitle">Bespoke Boutique</span>
+        <h3>Custom Straps &amp; Deployant Clasps Bar</h3>
+        <p>
+          Personalize your timepiece at our dedicated Strap Bar. Choose from handcrafted Louisiana alligator, hand-stitched calfskin, or vulcanized rubber straps fitted with 18K solid gold deployant buckles.
+        </p>
+        <ul class="atelier-features-list">
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Exotic alligator &amp; full-grain leather hides</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Custom wrist-sizing &amp; quick-release pins</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Solid 18K gold and titanium deployant clasps</li>
+        </ul>
+        <button class="btn-gold quick-book-trigger" data-item="Custom Straps & Deployant Clasps Bar">Explore Strap Bar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 -->
+  <section class="atelier-section-block">
+    <div class="container atelier-split-grid reverse">
+      <div class="border-glow-wrapper atelier-media-frame media-sheen">
+        <div class="border-glow-inner">
+          <img class="img-cinematic-zoom" src="https://cdn.shopify.com/s/files/1/1002/3629/6534/files/B194.png?v=1776677374" alt="Jewellery Spa" />
+        </div>
+      </div>
+      <div class="atelier-content-wrap">
+        <span class="section-subtitle">Precious Maintenance</span>
+        <h3>High Jewellery Ultrasonic Spa &amp; Rhodium Plating</h3>
+        <p>
+          Revive the radiant brilliance of your diamond tennis bracelets, necklaces, and cocktail rings. Our ultrasonic bath removes microscopic oils, while fresh rhodium plating restores pristine white luster.
+        </p>
+        <ul class="atelier-features-list">
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Professional ultrasonic bath &amp; steam cleansing</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Prong integrity check &amp; stone tightening</li>
+          <li class="atelier-feature-item"><i class="fa-solid fa-circle-check"></i> Premium multi-layer rhodium re-plating</li>
+        </ul>
+        <button class="btn-gold quick-book-trigger" data-item="High Jewellery Ultrasonic Spa & Rhodium Plating">Book Jewellery Spa</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: EXCLUSIVE BOOKING CTA -->
+  <section class="cta-sanctuary-section">
+    <div class="container">
+      <div class="border-glow-wrapper cta-sanctuary-card">
+        <div class="border-glow-inner" style="padding: 50px;">
+          <span class="section-subtitle">Private Concierge</span>
+          <h2 class="section-title">Schedule Your <span class="gold-gradient-text">Private Salon Visit</span></h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin-inline: auto; margin-bottom: 32px; font-size: 1rem;">
+            Experience unhurried hospitality, private collector lounges, and direct consultation with our master horologists at any of our Pan-India flagships.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <button class="btn-gold quick-book-trigger" data-item="VIP Salon Private Appointment" style="padding: 14px 36px;"><i class="fa-solid fa-calendar-check"></i><span>Reserve Appointment Now</span></button>
+            <a href="contact.html" class="btn-outline" style="padding: 14px 32px;"><i class="fa-solid fa-location-dot"></i><span>View Flagship Salons</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;" aria-label="Time & Gold Home">
+            <div class="brand-logo-frame">
+              <div class="brand-dial-ring"></div>
+              <img class="brand-logo-img" src="/348ff6b1-04ec-484f-9048-3adbe8c20263.jpg" alt="Time & Gold Emblem" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+                <use href="#brandHorologyEmblem" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Time &amp; Gold</span>
+              <span class="brand-sub">Short and Stylish</span>
+            </div>
+          </a>
+          <p>India's most trusted luxury watch destination. Official authorized retailers for over 40 iconic Swiss and global horological maisons and fine diamond jewellery creators.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Grand Complications</a></li>
+            <li><a href="products.html" class="footer-link">Men's Swiss Automatic</a></li>
+            <li><a href="products.html" class="footer-link">Women's Diamond Bezel</a></li>
+            <li><a href="products.html" class="footer-link">High Solitaire Jewellery</a></li>
+            <li><a href="products.html" class="footer-link">Calibre Architecture</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Maison Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Book Service Appointment</a></li>
+            <li><a href="services.html" class="footer-link">Horology Restoration</a></li>
+            <li><a href="services.html" class="footer-link">Certified Pressure Testing</a></li>
+            <li><a href="services.html" class="footer-link">Diamond Authentication</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Gifting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Private Gazette</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Receive encrypted announcements regarding limited dial allocations and salon previews.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 TIME &amp; GOLD. All Rights Reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="footer-link" style="font-size: 0.75rem;">Privacy Policy</a>
+          <a href="#" class="footer-link" style="font-size: 0.75rem;">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="book-modal-overlay" id="bookModalOverlay">
+    <div class="book-modal-dialog">
+      <button class="modal-close-btn" id="closeBookModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <a href="#home" class="brand-logo" style="margin-bottom: 16px;" aria-label="Time & Gold Home">
+            <div class="brand-logo-frame">
+              <div class="brand-dial-ring"></div>
+              <img 
+                class="brand-logo-img" 
+                src="/348ff6b1-04ec-484f-9048-3adbe8c20263.jpg" 
+                alt="Time & Gold Emblem"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+              <svg class="brand-logo-img" viewBox="0 0 100 100" fill="none" role="img" aria-label="Time & Gold Emblem" style="display: none;">
+                <use href="#brandHorologyEmblem" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Time &amp; Gold</span>
+              <span class="brand-sub">Short and Stylish</span>
+            </div>
+          </a>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookItemSelect">Selected Service / Masterpiece</label>
+          <input type="text" id="bookItemSelect" class="form-input" value="Complete Movement Overhaul" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookSalon">Preferred Salon Location</label>
+          <select id="bookSalon" class="form-select">
+            <option value="Mumbai — Palladium Mall">Mumbai — Palladium Mall Flagship</option>
+            <option value="Delhi NCR — DLF Emporio">Delhi NCR — DLF Emporio</option>
+            <option value="Bengaluru — UB City Mall">Bengaluru — UB City Mall</option>
+            <option value="Hyderabad — Jubilee Hills">Hyderabad — Jubilee Hills Private Estate</option>
+          </select>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="bookDate">Date</label>
+            <input type="date" id="bookDate" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookTime">Time</label>
+            <input type="time" id="bookTime" class="form-input" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookGuestName">Full Name</label>
+          <input type="text" id="bookGuestName" class="form-input" placeholder="e.g. Lord Sterling" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookContact">Telephone / Mobile</label>
+          <input type="tel" id="bookContact" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+          <i class="fa-solid fa-calendar-check"></i><span>Confirm Service Booking</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Engine -->
+  <script src="services.js">
+    
+  </script>
+</body>
+</html>
